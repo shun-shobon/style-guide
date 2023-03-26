@@ -1,0 +1,13 @@
+{
+  "name": "@shun-shobon/eslint-config",
+  "version": "0.1.0",
+  "description": "My personal ESLint shareable config",
+  "author": "Shuntaro Nishizawa <me@s2n.tech>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "pnpm@7.30.3",
+  "scripts": {},
+  "devDependencies": {
+    "unbuild": "^1.1.2"
+  }
+}

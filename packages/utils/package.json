@@ -5,5 +5,27 @@
   "author": "Shuntaro Nishizawa <me@s2n.tech>",
   "license": "MIT",
   "private": true,
-  "scripts": {}
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint:tsc": "tsc"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.56.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "typescript": "^5.0.2"
+  }
 }

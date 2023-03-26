@@ -6,8 +6,13 @@
   "license": "MIT",
   "private": true,
   "packageManager": "pnpm@7.30.3",
-  "scripts": {},
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint:tsc": "pnpm -r lint:tsc"
+  },
   "devDependencies": {
+    "@tsconfig/node-lts-strictest": "^18.12.1",
+    "typescript": "^5.0.2",
     "unbuild": "^1.1.2"
   }
 }

@@ -7,10 +7,13 @@
   "packageManager": "pnpm@7.30.3",
   "scripts": {
     "build": "pnpm -r build",
+    "lint:eslint": "pnpm -r lint:eslint",
     "lint:tsc": "pnpm -r lint:tsc"
   },
   "devDependencies": {
+    "@shun-shobon/eslint-config-base": "workspace:^0.1.0",
     "@tsconfig/node-lts-strictest": "^18.12.1",
+    "eslint": "^8.36.0",
     "typescript": "^5.0.2",
     "unbuild": "^1.1.2"
   }

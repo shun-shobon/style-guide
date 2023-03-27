@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "build": "unbuild",
+    "lint:eslint": "eslint src --ext .ts",
     "lint:tsc": "tsc"
   },
   "dependencies": {

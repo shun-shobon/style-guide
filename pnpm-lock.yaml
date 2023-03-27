@@ -4,11 +4,15 @@ importers:
 
   .:
     specifiers:
+      '@shun-shobon/eslint-config-base': workspace:^0.1.0
       '@tsconfig/node-lts-strictest': ^18.12.1
+      eslint: ^8.36.0
       typescript: ^5.0.2
       unbuild: ^1.1.2
     devDependencies:
+      '@shun-shobon/eslint-config-base': link:packages/base
       '@tsconfig/node-lts-strictest': 18.12.1
+      eslint: 8.36.0
       typescript: 5.0.2
       unbuild: 1.1.2
 

@@ -126,6 +126,10 @@ export default defineConfig({
     "unicorn/prefer-module": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/no-array-callback-reference": "off",
+    // 安全でない正規表現を警告
+    "unicorn/no-unsafe-regex": "warn",
+    // なるべく repleaseAll を使用する
+    "unicorn/prefer-string-replace-all": "warn",
   },
   overrides: [
     {

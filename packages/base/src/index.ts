@@ -12,6 +12,10 @@ export default defineConfig({
     // Prettierが行うフォーマット系のルールを無効化
     "prettier",
   ],
+  plugins: [
+    // import/export のソート関連のルール
+    "simple-import-sort",
+  ],
   rules: {
     // `_`から始まる変数名以外の未使用変数を警告
     "no-unused-vars": ["warn", ignorePattern],
@@ -108,6 +112,9 @@ export default defineConfig({
     "require-unicode-regexp": "warn",
     // シンボルに名前を付ける
     "symbol-description": "warn",
+    // import/export の順序を整理
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
   },
   overrides: [
     {

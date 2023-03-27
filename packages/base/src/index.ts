@@ -9,6 +9,8 @@ export default defineConfig({
   extends: [
     // ESLintの推奨ルールを有効化
     "eslint:recommended",
+    // unicornの推奨ルールを有効化
+    "plugin:unicorn/recommended",
     // Prettierが行うフォーマット系のルールを無効化
     "prettier",
   ],
@@ -115,6 +117,15 @@ export default defineConfig({
     // import/export の順序を整理
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
+    // unicornの推奨ルールから不要なものを無効化
+    "unicorn/filename-case": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-array-for-each": "off",
+    "unicorn/no-negated-condition": "off",
+    "unicorn/prefer-module": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/no-array-callback-reference": "off",
   },
   overrides: [
     {

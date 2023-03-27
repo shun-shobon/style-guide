@@ -57,8 +57,6 @@ export default defineConfig({
     "no-multi-assign": "error",
     // 複数行文字列を警告
     "no-multi-str": "warn",
-    // 読みにくい否定条件を警告
-    "no-negated-condition": "warn",
     // `Function`/`Object`/`String`/`Number`/`Boolean` のコンストラクタを許可しない
     "no-new-func": "error",
     "no-new-object": "error",

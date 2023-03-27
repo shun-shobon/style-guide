@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        linter:
-          - tsc
+        package:
+          - base
+          - utils
     steps:
       - uses: actions/checkout@v3
       - uses: shun-shobon/actions/setup-node@master
@@ -19,4 +20,5 @@ jobs:
           node-version: lts/*
 
       - run: pnpm build
-      - run: pnpm run lint:${{ matrix.linter }}
+      - run: pnpm run --filter ./packages/${{ matrix.package }} lint:eslint
+      - run: pnpm run --filter ./packages/${{ matrix.package }} lint:tsc

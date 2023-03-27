@@ -6,9 +6,7 @@
   "private": true,
   "packageManager": "pnpm@7.30.3",
   "scripts": {
-    "build": "pnpm -r build",
-    "lint:eslint": "pnpm -r lint:eslint",
-    "lint:tsc": "pnpm -r lint:tsc"
+    "build": "pnpm run -r build"
   },
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:^0.1.0",

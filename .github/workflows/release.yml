@@ -1,0 +1,30 @@
+name: release
+on:
+  workflow_call:
+    secrets:
+      NPM_TOKEN:
+        required: true
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: shun-shobon/actions/setup-node@master
+        with:
+          node-version: lts/*
+      - run: pnpm build
+
+      - uses: actions/setup-node@v3
+        with:
+          registry-url: https://registry.npmjs.org/
+      - run: pnpm publish -r --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          registry-url: https://npm.pkg.github.com/
+      - run: pnpm publish -r --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

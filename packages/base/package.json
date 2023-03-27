@@ -1,10 +1,9 @@
 {
   "name": "@shun-shobon/eslint-config-base",
   "version": "0.1.0",
-  "description": "My personal ESLint shareable config (base)",
+  "description": "My shareable ESLint config (base)",
   "author": "Shuntaro Nishizawa <me@s2n.tech>",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "exports": {
     ".": {

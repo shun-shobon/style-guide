@@ -1,7 +1,7 @@
 {
   "name": "@shun-shobon/eslint-config",
   "version": "0.1.0",
-  "description": "My personal ESLint shareable config",
+  "description": "My shareable ESLint config",
   "author": "Shuntaro Nishizawa <me@s2n.tech>",
   "license": "MIT",
   "private": true,

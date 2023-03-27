@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.1.2...eslint-config-base-v0.2.0) (2023-03-27)
+
+
+### Features
+
+* **base:** Add import sorting ([cd62201](https://github.com/shun-shobon/eslint-config/commit/cd622018f846da156eaeffd6e4a4e5df3c14fc93))
+* **base:** Add unicorn ([5b9e0ac](https://github.com/shun-shobon/eslint-config/commit/5b9e0acdb2e94ef0cd011291fda9d847a22314dc))
+* **base:** Add unicorn rules ([5b4bf90](https://github.com/shun-shobon/eslint-config/commit/5b4bf90bc0d7c7dee77502dd9662f2515929be4e))
+
+
+### Bug Fixes
+
+* **base:** Disable some unicorn recommended rules ([e2192ed](https://github.com/shun-shobon/eslint-config/commit/e2192ed976316cc85cd2665a93700600a22dbd56))
+
 ## [0.1.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.1.1...eslint-config-base-v0.1.2) (2023-03-27)
 
 

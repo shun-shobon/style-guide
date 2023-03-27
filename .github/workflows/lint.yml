@@ -18,4 +18,5 @@ jobs:
         with:
           node-version: lts/*
 
+      - run: pnpm build
       - run: pnpm run lint:${{ matrix.linter }}

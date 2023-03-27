@@ -151,6 +151,8 @@ export default defineConfig({
         // 未使用の式を警告
         "no-unused-expressions": "off",
         "@typescript-eslint/no-unused-expressions": "warn",
+        // union型での `void` を許可
+        "@typescript-eslint/no-invalid-void-type": "off",
       },
     },
   ],

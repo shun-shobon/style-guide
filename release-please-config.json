@@ -1,0 +1,26 @@
+{
+  "$schema": "https://github.com/googleapis/release-please/raw/main/schemas/config.json",
+  "packages": {
+    "packages/base": {
+      "component": "base"
+    },
+    "packages/utils": {
+      "component": "utils"
+    }
+  },
+  "release-type": "node",
+  "bump-minor-pre-major": true,
+  "include-v-in-tag": false,
+  "include-component-in-tag": false,
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    },
+    {
+      "type": "linked-versions",
+      "group-name": "eslint",
+      "components": ["base", "utils"]
+    }
+  ]
+}

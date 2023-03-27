@@ -85,8 +85,8 @@ export default defineConfig({
     "no-var": "error",
     // オブジェクトのショートハンド記法を使用していない場合は警告
     "object-shorthand": "warn",
-    // 変数宣言は1行に1つにする
-    "one-var": "error",
+    // 変数宣言は1つの識別子ごとに1つにする
+    "one-var": ["error", "never"],
     // 演算子のショートハンド記法を使用していない場合は警告
     "operator-assignment": "warn",
     // コールバック関数をアロー関数にする

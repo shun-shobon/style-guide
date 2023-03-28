@@ -20,7 +20,7 @@ export default defineConfig({
   ],
   parserOptions: {
     // TypeScript の型チェックを有効化
-    target: true,
+    project: true,
   },
   rules: {
     // `_`から始まる変数名以外の未使用変数を警告

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v0.1.0...eslint-config-react-v0.1.1) (2023-03-28)
+
+
+### Bug Fixes
+
+* **react:** Fix extends ([6ce95f5](https://github.com/shun-shobon/eslint-config/commit/6ce95f5c7a443814429c2cc6e006a07d4555bd6c))
+
 ## [0.1.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v0.0.1...eslint-config-react-v0.1.0) (2023-03-28)
 
 

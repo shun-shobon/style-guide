@@ -9,6 +9,8 @@ export default defineConfig({
         "plugin:react/recommended",
         // React v17 以降の JSX Runtime を使う場合の不要なルールを無効化
         "plugin:react/jsx-runtime",
+        // React Hooks の推奨ルールを有効化
+        "plugin:react-hooks/recommended",
         // Prettierが行うフォーマット系のルールを無効化
         "prettier",
       ],

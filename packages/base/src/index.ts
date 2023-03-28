@@ -18,6 +18,10 @@ export default defineConfig({
     // import/export のソート関連のルール
     "simple-import-sort",
   ],
+  parserOptions: {
+    // TypeScript の型チェックを有効化
+    target: true,
+  },
   rules: {
     // `_`から始まる変数名以外の未使用変数を警告
     "no-unused-vars": ["warn", ignorePattern],

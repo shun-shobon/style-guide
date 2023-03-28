@@ -50,6 +50,9 @@ importers:
 
   packages/react:
     dependencies:
+      '@shun-shobon/eslint-config-base':
+        specifier: workspace:*
+        version: link:../base
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:*
         version: link:../utils

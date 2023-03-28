@@ -12,7 +12,7 @@ export default defineConfig({
         // React Hooks の推奨ルールを有効化
         "plugin:react-hooks/recommended",
         // jsx-a11y の推奨ルールを有効化
-        "eslint-plugin-jsx-a11y/recommended",
+        "plugin:jsx-a11y/recommended",
         // Prettierが行うフォーマット系のルールを無効化
         "prettier",
       ],

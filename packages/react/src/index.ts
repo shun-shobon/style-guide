@@ -11,6 +11,8 @@ export default defineConfig({
         "plugin:react/jsx-runtime",
         // React Hooks の推奨ルールを有効化
         "plugin:react-hooks/recommended",
+        // jsx-a11y の推奨ルールを有効化
+        "eslint-plugin-jsx-a11y/recommended",
         // Prettierが行うフォーマット系のルールを無効化
         "prettier",
       ],
@@ -35,6 +37,12 @@ export default defineConfig({
         "react/no-invalid-html-attribute": "warn",
         // コンポーネント内でコンポーネントを定義するのを許可しない
         "react/no-unstable-nested-components": "error",
+        // 曖昧なリンクのテキストを許可しない
+        "jsx-a11y/anchor-ambiguous-text": "error",
+        // インタラクティブな要素にラベルが付いていないことを許可しない
+        "jsx-a11y/control-has-associated-label": "error",
+        // フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
+        "jsx-a11y/no-aria-hidden-on-focusable": "error",
       },
     },
   ],

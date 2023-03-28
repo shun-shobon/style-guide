@@ -5,13 +5,11 @@ on:
     branches:
       - master
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     outputs:
       releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
@@ -32,6 +30,9 @@ jobs:
 
   release:
     needs: release-please
+    permissions:
+      contents: read
+      packages: write
     if: ${{ needs.release-please.outputs.releases_created }}
     uses: ./.github/workflows/release.yml
     secrets: inherit

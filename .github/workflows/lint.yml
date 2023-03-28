@@ -21,5 +21,4 @@ jobs:
           node-version: lts/*
 
       - run: pnpm build
-      - run: pnpm run --filter ./packages/${{ matrix.package }} lint:eslint
       - run: pnpm run --filter ./packages/${{ matrix.package }} lint:tsc

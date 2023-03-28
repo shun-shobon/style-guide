@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.2.1...eslint-config-base-v0.3.0) (2023-03-28)
+
+
+### Features
+
+* Enable type-checking option ([902be5c](https://github.com/shun-shobon/eslint-config/commit/902be5cf08a9d2f2691e008182e434b7843efa2c))
+
 ## [0.2.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.2.0...eslint-config-base-v0.2.1) (2023-03-28)
 
 

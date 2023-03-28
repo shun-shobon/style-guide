@@ -6,8 +6,7 @@ on:
       - master
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
   packages: write
 
 jobs:
@@ -21,6 +20,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
+          token: ${{ secrets.RELEASE_TOKEN }}
           release-type: node
           command: manifest
 

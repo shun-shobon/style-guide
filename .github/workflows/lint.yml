@@ -12,6 +12,7 @@ jobs:
       matrix:
         package:
           - base
+          - react
           - utils
     steps:
       - uses: actions/checkout@v3

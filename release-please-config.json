@@ -2,6 +2,7 @@
   "$schema": "https://github.com/googleapis/release-please/raw/main/schemas/config.json",
   "packages": {
     "packages/base": {},
+    "packages/react": {},
     "packages/utils": {}
   },
   "bump-minor-pre-major": true,

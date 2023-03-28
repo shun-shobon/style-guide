@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.3.0...eslint-config-base-v0.3.1) (2023-03-28)
+
+
+### Bug Fixes
+
+* Fix property name ([e415062](https://github.com/shun-shobon/eslint-config/commit/e41506253c2e0a10dcee43d2bed776bdd26f4f47))
+
 ## [0.3.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.2.1...eslint-config-base-v0.3.0) (2023-03-28)
 
 

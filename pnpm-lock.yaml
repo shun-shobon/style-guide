@@ -4,9 +4,15 @@ importers:
 
   .:
     devDependencies:
+      '@shun-shobon/eslint-config-base':
+        specifier: workspace:^
+        version: link:packages/base
       '@tsconfig/node-lts-strictest':
         specifier: ^18.12.1
         version: 18.12.1
+      eslint:
+        specifier: ^8.37.0
+        version: 8.37.0
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5

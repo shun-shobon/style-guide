@@ -12,7 +12,7 @@
     "build:react": "pnpm --prefix ./packages/react run build"
   },
   "devDependencies": {
-    "@shun-shobon/eslint-config-base": "workspace:^",
+    "@shun-shobon/eslint-config-base": "workspace:*",
     "@tsconfig/node-lts": "^18.12.1",
     "@tsconfig/strictest": "^2.0.0",
     "eslint": "^8.37.0",

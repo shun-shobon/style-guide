@@ -1,7 +1,7 @@
 {
-  "extends": "@tsconfig/node-lts-strictest/tsconfig.json",
+  "extends": ["@tsconfig/strictest", "@tsconfig/node-lts"],
   "compilerOptions": {
-    "ignoreDeprecations": "5.0",
+    "module": "nodenext",
     "noEmit": true
   }
 }

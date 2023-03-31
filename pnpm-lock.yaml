@@ -5,7 +5,7 @@ importers:
   .:
     devDependencies:
       '@shun-shobon/eslint-config-base':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:packages/base
       '@tsconfig/node-lts':
         specifier: ^18.12.1

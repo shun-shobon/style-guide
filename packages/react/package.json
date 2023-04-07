@@ -38,6 +38,6 @@
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:*",
     "eslint": "^8.37.0",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   }
 }

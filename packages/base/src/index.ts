@@ -11,6 +11,10 @@ export default defineConfig({
     "eslint:recommended",
     // unicornの推奨ルールを有効化
     "plugin:unicorn/recommended",
+    // importの推奨ルールを有効化
+    "plugin:import/recommended",
+    // importのTypeScript用ルールを有効化
+    "plugin:import/typescript",
     // Prettierが行うフォーマット系のルールを無効化
     "prettier",
   ],

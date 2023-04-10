@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.3.2...eslint-config-base-v0.4.0) (2023-04-10)
+
+
+### Features
+
+* **base:** Add import rules ([815cae1](https://github.com/shun-shobon/eslint-config/commit/815cae1ba17557f48620e62dd21fc9f3c7493461))
+
 ## [0.3.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.3.1...eslint-config-base-v0.3.2) (2023-04-04)
 
 

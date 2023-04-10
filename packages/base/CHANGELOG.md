@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.0...eslint-config-base-v0.4.1) (2023-04-10)
+
+
+### Bug Fixes
+
+* Remove import rules ([4a9d7c3](https://github.com/shun-shobon/eslint-config/commit/4a9d7c304d7191d1c7e24cec9e7b45e1b7e80ea7))
+
 ## [0.4.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.3.2...eslint-config-base-v0.4.0) (2023-04-10)
 
 

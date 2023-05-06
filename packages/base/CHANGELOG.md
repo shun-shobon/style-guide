@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.6](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.5...eslint-config-base-v0.4.6) (2023-05-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to ^46.0.1 ([#50](https://github.com/shun-shobon/eslint-config/issues/50)) ([303fefb](https://github.com/shun-shobon/eslint-config/commit/303fefba1a22bb179af194a6d7d3d1e26360a17d))
+* **deps:** update dependency eslint-plugin-unicorn to v47 ([#52](https://github.com/shun-shobon/eslint-config/issues/52)) ([84a8e5f](https://github.com/shun-shobon/eslint-config/commit/84a8e5f4e2d66c182755429839b8e54b0c9d3012))
+
 ## [0.4.5](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.4...eslint-config-base-v0.4.5) (2023-05-01)
 
 

@@ -8,8 +8,8 @@ importers:
         specifier: workspace:*
         version: link:packages/base
       '@tsconfig/node-lts':
-        specifier: ^18.12.1
-        version: 18.12.1
+        specifier: ^18.12.2
+        version: 18.12.2
       '@tsconfig/strictest':
         specifier: ^2.0.1
         version: 2.0.1
@@ -704,8 +704,8 @@ packages:
       rollup: 3.20.2
     dev: true
 
-  /@tsconfig/node-lts@18.12.1:
-    resolution: {integrity: sha512-UkIaMWDwJ+qJX/os8lzYh7m47qQJY7sIp1WZiEStASrpzczp27+jA0fJES+IjnS2OlDDLeBghNrVkKw8iYIRdA==}
+  /@tsconfig/node-lts@18.12.2:
+    resolution: {integrity: sha512-1zbWpsZkChnemJsRm+G2EyjuPueNPkjBEfp08ET1uCv0CUL/5AK1IZvFtEsw7ZyEqojIydye3mwt6k8isULj4A==}
     dev: true
 
   /@tsconfig/strictest@2.0.1:

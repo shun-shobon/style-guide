@@ -84,6 +84,16 @@
   * peerDependencies
     * @shun-shobon/eslint-config-base bumped to 0.4.7
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.1.8
+  * devDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.4.8
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.4.8
+
 ## [0.1.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v0.1.0...eslint-config-react-v0.1.1) (2023-03-28)
 
 

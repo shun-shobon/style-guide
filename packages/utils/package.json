@@ -24,7 +24,7 @@
     "lint:tsc": "tsc"
   },
   "dependencies": {
-    "@typescript-eslint/utils": "^5.59.9"
+    "@typescript-eslint/utils": "^5.59.11"
   },
   "devDependencies": {
     "eslint": "^8.42.0",

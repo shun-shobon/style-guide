@@ -1,5 +1,5 @@
 {
-  "packages/base": "0.4.11",
-  "packages/react": "0.1.14",
-  "packages/utils": "0.1.11"
+  "packages/base": "0.4.12",
+  "packages/react": "0.1.15",
+  "packages/utils": "0.1.12"
 }

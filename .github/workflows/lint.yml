@@ -13,6 +13,7 @@ jobs:
       matrix:
         package:
           - base
+          - next
           - react
           - utils
     steps:

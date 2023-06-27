@@ -7,10 +7,10 @@
   "packageManager": "pnpm@8.6.5",
   "scripts": {
     "build": "run-s build:*",
+    "build:utils": "pnpm --prefix ./packages/utils run build",
     "build:base": "pnpm --prefix ./packages/base run build",
-    "build:next": "pnpm --prefix ./packages/react run build",
     "build:react": "pnpm --prefix ./packages/react run build",
-    "build:utils": "pnpm --prefix ./packages/utils run build"
+    "build:next": "pnpm --prefix ./packages/react run build"
   },
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:*",

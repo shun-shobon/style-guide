@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.1.1...eslint-config-next-v0.1.2) (2023-06-28)
+
+
+### Bug Fixes
+
+* Change version ([f29cbe0](https://github.com/shun-shobon/eslint-config/commit/f29cbe009f0b62499613eadfa7c684690531c36e))
+
 ## [0.1.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.1.0...eslint-config-next-v0.1.1) (2023-06-27)
 
 

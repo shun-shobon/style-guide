@@ -10,7 +10,7 @@
     "build:utils": "pnpm --prefix ./packages/utils run build",
     "build:base": "pnpm --prefix ./packages/base run build",
     "build:react": "pnpm --prefix ./packages/react run build",
-    "build:next": "pnpm --prefix ./packages/react run build"
+    "build:next": "pnpm --prefix ./packages/next run build"
   },
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:*",

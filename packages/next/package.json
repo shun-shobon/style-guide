@@ -24,7 +24,7 @@
     "lint:tsc": "tsc"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.10",
+    "@next/eslint-plugin-next": "^13.4.11",
     "@shun-shobon/eslint-config-utils": "workspace:*"
   },
   "peerDependencies": {

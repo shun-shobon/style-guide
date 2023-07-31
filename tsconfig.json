@@ -1,7 +1,6 @@
 {
   "extends": ["@tsconfig/strictest", "@tsconfig/node-lts"],
   "compilerOptions": {
-    "module": "nodenext",
     "noEmit": true
   }
 }

@@ -147,8 +147,6 @@ export default defineConfig({
     // switch文のcase節を常にブロックにするのは冗長なので必要なときのみブロックにする
     "unicorn/switch-case-braces": ["error", "avoid"],
 
-    // 安全でない正規表現を警告
-    "unicorn/no-unsafe-regex": "warn",
     // なるべく repleaseAll を使用する
     "unicorn/prefer-string-replace-all": "warn",
   },

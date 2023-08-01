@@ -1,5 +1,17 @@
 # Changelog
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.1.17
+  * devDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.4.17
+    * @shun-shobon/eslint-config-react bumped to 0.1.20
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.4.17
+    * @shun-shobon/eslint-config-react bumped to 0.1.20
+
 ## [0.1.4](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.1.3...eslint-config-next-v0.1.4) (2023-07-31)
 
 

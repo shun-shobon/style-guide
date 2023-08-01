@@ -1,6 +1,6 @@
 {
   "name": "@shun-shobon/eslint-config-next",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "My shareable ESLint config (next)",
   "author": "Shuntaro Nishizawa <me@s2n.tech>",
   "license": "MIT",

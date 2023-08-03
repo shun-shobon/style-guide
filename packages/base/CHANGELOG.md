@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.18](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.17...eslint-config-base-v0.4.18) (2023-08-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to ^8.10.0 ([#115](https://github.com/shun-shobon/eslint-config/issues/115)) ([efb07cf](https://github.com/shun-shobon/eslint-config/commit/efb07cfe482ca6aff13f7d92c37f0214ec3e5e07))
+
 ## [0.4.17](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.16...eslint-config-base-v0.4.17) (2023-07-31)
 
 

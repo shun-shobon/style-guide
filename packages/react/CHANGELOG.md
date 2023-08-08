@@ -174,6 +174,24 @@
   * peerDependencies
     * @shun-shobon/eslint-config-base bumped to 0.4.17
 
+## [0.1.22](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v0.1.21...eslint-config-react-v0.1.22) (2023-08-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v9 ([#99](https://github.com/shun-shobon/eslint-config/issues/99)) ([b02280e](https://github.com/shun-shobon/eslint-config/commit/b02280ec2c0434808172da778f99e9cd81782e06))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.1.18
+  * devDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.4.19
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.4.19
+
 ## [0.1.21](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v0.1.20...eslint-config-react-v0.1.21) (2023-08-03)
 
 

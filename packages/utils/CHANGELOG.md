@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v0.1.18...eslint-config-utils-v0.2.0) (2023-08-13)
+
+
+### Features
+
+* Add repository ([3983237](https://github.com/shun-shobon/eslint-config/commit/3983237f4a1e40119e925324e893b228554bdb06))
+
 ## [0.1.18](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v0.1.17...eslint-config-utils-v0.1.18) (2023-08-08)
 
 

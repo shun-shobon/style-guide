@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.5.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.19...eslint-config-base-v0.5.0) (2023-08-13)
+
+
+### Features
+
+* Add repository ([3983237](https://github.com/shun-shobon/eslint-config/commit/3983237f4a1e40119e925324e893b228554bdb06))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.2.0
+
 ## [0.4.19](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.4.18...eslint-config-base-v0.4.19) (2023-08-08)
 
 

@@ -22,6 +22,26 @@
     * @shun-shobon/eslint-config-base bumped to 0.4.18
     * @shun-shobon/eslint-config-react bumped to 0.1.21
 
+## [0.2.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.1.7...eslint-config-next-v0.2.0) (2023-08-13)
+
+
+### Features
+
+* Add repository ([3983237](https://github.com/shun-shobon/eslint-config/commit/3983237f4a1e40119e925324e893b228554bdb06))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.2.0
+  * devDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.5.0
+    * @shun-shobon/eslint-config-react bumped to 0.2.0
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 0.5.0
+    * @shun-shobon/eslint-config-react bumped to 0.2.0
+
 ## [0.1.7](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.1.6...eslint-config-next-v0.1.7) (2023-08-08)
 
 

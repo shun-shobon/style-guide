@@ -44,6 +44,6 @@
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:*",
     "eslint": "^8.47.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   }
 }

@@ -30,7 +30,7 @@
     "lint:tsc": "tsc"
   },
   "dependencies": {
-    "@typescript-eslint/utils": "^6.5.0"
+    "@typescript-eslint/utils": "^6.6.0"
   },
   "devDependencies": {
     "eslint": "^8.48.0",

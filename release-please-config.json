@@ -6,7 +6,6 @@
     "packages/react": {},
     "packages/utils": {}
   },
-  "bump-minor-pre-major": true,
   "plugins": [
     {
       "type": "node-workspace"

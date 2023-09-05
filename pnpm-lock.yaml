@@ -82,6 +82,9 @@ importers:
 
   packages/react:
     dependencies:
+      '@shun-shobon/eslint-config-base':
+        specifier: workspace:*
+        version: link:../base
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:*
         version: link:../utils
@@ -98,15 +101,9 @@ importers:
         specifier: ^4.6.0
         version: 4.6.0(eslint@8.48.0)
     devDependencies:
-      '@shun-shobon/eslint-config-base':
-        specifier: workspace:*
-        version: link:../base
       eslint:
         specifier: ^8.48.0
         version: 8.48.0
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
 
   packages/utils:
     dependencies:

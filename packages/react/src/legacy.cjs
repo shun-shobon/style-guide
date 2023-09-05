@@ -1,6 +1,4 @@
-import { defineConfig } from "@shun-shobon/eslint-config-utils";
-
-export default defineConfig({
+module.exports = {
   overrides: [
     {
       files: ["*.jsx", "*.tsx"],
@@ -46,4 +44,4 @@ export default defineConfig({
       },
     },
   ],
-});
+};

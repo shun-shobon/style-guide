@@ -1,11 +1,11 @@
-import { defineConfig } from "@shun-shobon/eslint-config-utils";
+const { defineConfig } = require("@shun-shobon/eslint-config-utils");
 
 const ignorePattern = {
   varsIgnorePattern: "^_",
   argsIgnorePattern: "^_",
 };
 
-export default defineConfig({
+module.exports = defineConfig({
   extends: [
     // ESLintの推奨ルールを有効化
     "eslint:recommended",

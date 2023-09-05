@@ -8,8 +8,8 @@ type Rule = "off" | "warn" | "error";
 type RuleConfig = Rule | [Rule, ...Array<unknown>];
 
 export interface Config {
-  files: Array<string>;
-  ignores: Array<string>;
-  plugins: Record<string, unknown>;
-  rules: Record<string, RuleConfig>;
+  files?: Array<string>;
+  ignores?: Array<string>;
+  plugins?: Record<string, unknown>;
+  rules?: Record<string, RuleConfig>;
 }

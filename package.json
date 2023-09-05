@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "packageManager": "pnpm@8.7.3",
+  "type": "module",
   "scripts": {
     "build": "run-s build:*",
     "build:utils": "pnpm --prefix ./packages/utils run build",

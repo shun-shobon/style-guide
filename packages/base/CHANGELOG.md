@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.1...eslint-config-base-v1.0.2) (2023-09-05)
+
+
+### Bug Fixes
+
+* **base:** Fix importing file ([0ffb03f](https://github.com/shun-shobon/eslint-config/commit/0ffb03fbdd38fb5705da915867c62d49f3ea2340))
+
 ## [1.0.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.0...eslint-config-base-v1.0.1) (2023-09-05)
 
 

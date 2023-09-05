@@ -34,6 +34,27 @@
     * @shun-shobon/eslint-config-base bumped to 0.5.2
     * @shun-shobon/eslint-config-react bumped to 0.2.2
 
+## [1.0.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.2.2...eslint-config-next-v1.0.0) (2023-09-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add flat config ([#148](https://github.com/shun-shobon/eslint-config/issues/148))
+
+### Features
+
+* Add flat config ([#148](https://github.com/shun-shobon/eslint-config/issues/148)) ([dd7069f](https://github.com/shun-shobon/eslint-config/commit/dd7069fff8da6493843fe96abe12e5d17da6441f))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @shun-shobon/eslint-config-utils bumped to 1.0.0
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 1.0.0
+    * @shun-shobon/eslint-config-react bumped to 1.0.0
+
 ## [0.2.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v0.2.0...eslint-config-next-v0.2.1) (2023-08-22)
 
 

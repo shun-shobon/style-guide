@@ -16,7 +16,7 @@ const config = {
   },
   rules: {
     // recommended と重複しているルールを無効化
-    ...ts.configs["eslint-recommended"].rules,
+    ...ts.configs["eslint-recommended"].overrides[0].rules,
 
     // TODO: recommended-requiring-type-checking は既に deprecated であり，なおかつ strict-type-checking で代用可能なため置き換える
     // recommended + 型チェックのルールを使用

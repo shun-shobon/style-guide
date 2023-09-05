@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v0.2.2...eslint-config-utils-v1.0.0) (2023-09-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add flat config ([#148](https://github.com/shun-shobon/eslint-config/issues/148))
+
+### Features
+
+* Add flat config ([#148](https://github.com/shun-shobon/eslint-config/issues/148)) ([dd7069f](https://github.com/shun-shobon/eslint-config/commit/dd7069fff8da6493843fe96abe12e5d17da6441f))
+
 ## [0.2.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v0.2.1...eslint-config-utils-v0.2.2) (2023-09-05)
 
 

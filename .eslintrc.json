@@ -1,6 +1,0 @@
-{
-  "extends": ["@shun-shobon/base"],
-  "parserOptions": {
-    "project": ["./tsconfig.json", "./packages/*/tsconfig.json"]
-  }
-}

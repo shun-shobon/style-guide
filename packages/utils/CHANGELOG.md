@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v1.0.0...eslint-config-utils-v1.0.1) (2023-09-05)
+
+
+### Bug Fixes
+
+* Fix export files ([9fdde5d](https://github.com/shun-shobon/eslint-config/commit/9fdde5dd3d267dc500a0c089e60ddc9e7bb89bdc))
+
 ## [1.0.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v0.2.2...eslint-config-utils-v1.0.0) (2023-09-05)
 
 

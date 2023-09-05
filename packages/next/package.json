@@ -20,11 +20,11 @@
     "README.md"
   ],
   "scripts": {
-    "lint:eslint": "eslint src"
+    "lint:eslint": "eslint src",
+    "lint-fix:eslint": "pnpm run lint:eslint --fix"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.19",
-    "@shun-shobon/eslint-config-utils": "workspace:*"
+    "@next/eslint-plugin-next": "^13.4.19"
   },
   "peerDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:*",
@@ -32,6 +32,7 @@
     "eslint": "^8.48.0"
   },
   "devDependencies": {
+    "@shun-shobon/eslint-config-utils": "workspace:*",
     "eslint": "^8.48.0"
   }
 }

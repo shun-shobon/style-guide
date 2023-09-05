@@ -20,11 +20,11 @@
     "README.md"
   ],
   "scripts": {
-    "lint:eslint": "eslint src"
+    "lint:eslint": "eslint src",
+    "lint-fix:eslint": "pnpm run lint:eslint --fix"
   },
   "dependencies": {
     "@eslint/js": "^8.48.0",
-    "@shun-shobon/eslint-config-utils": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "eslint-config-prettier": "^9.0.0",
@@ -32,9 +32,10 @@
     "eslint-plugin-unicorn": "^48.0.1"
   },
   "peerDependencies": {
+    "@shun-shobon/eslint-config-utils": "workspace:*",
     "eslint": "^8.48.0"
   },
   "devDependencies": {
-    "eslint": "^8.48.0"
+    "@shun-shobon/eslint-config-utils": "workspace:*"
   }
 }

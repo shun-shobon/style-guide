@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.0...eslint-config-base-v1.0.1) (2023-09-05)
+
+
+### Bug Fixes
+
+* Fix export files ([9fdde5d](https://github.com/shun-shobon/eslint-config/commit/9fdde5dd3d267dc500a0c089e60ddc9e7bb89bdc))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @shun-shobon/eslint-config-utils bumped to 1.0.1
+  * peerDependencies
+    * @shun-shobon/eslint-config-utils bumped to 1.0.1
+
 ## [1.0.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.5.2...eslint-config-base-v1.0.0) (2023-09-05)
 
 

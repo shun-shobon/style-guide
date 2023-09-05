@@ -1,6 +1,6 @@
 {
   "name": "@shun-shobon/eslint-config-utils",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "My shareable ESLint config (utilities)",
   "author": "Shuntaro Nishizawa <me@s2n.tech>",
   "repository": {

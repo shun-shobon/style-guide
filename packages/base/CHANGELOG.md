@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.6.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.5.2...eslint-config-base-v0.6.0) (2023-09-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add flat config ([#148](https://github.com/shun-shobon/eslint-config/issues/148))
+
+### Features
+
+* Add flat config ([#148](https://github.com/shun-shobon/eslint-config/issues/148)) ([dd7069f](https://github.com/shun-shobon/eslint-config/commit/dd7069fff8da6493843fe96abe12e5d17da6441f))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.3.0
+  * peerDependencies
+    * @shun-shobon/eslint-config-utils bumped to 0.3.0
+
 ## [0.5.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v0.5.1...eslint-config-base-v0.5.2) (2023-09-05)
 
 

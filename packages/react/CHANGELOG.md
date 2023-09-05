@@ -184,6 +184,13 @@
   * peerDependencies
     * @shun-shobon/eslint-config-base bumped to 0.5.2
 
+## [1.0.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v1.0.1...eslint-config-react-v1.0.2) (2023-09-05)
+
+
+### Bug Fixes
+
+* **react:** Fix files config ([06c55a0](https://github.com/shun-shobon/eslint-config/commit/06c55a0d75968df6138fc4879ec20336c84073d5))
+
 ## [1.0.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v1.0.0...eslint-config-react-v1.0.1) (2023-09-05)
 
 

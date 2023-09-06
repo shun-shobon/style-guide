@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.2...eslint-config-base-v1.0.3) (2023-09-06)
+
+
+### Bug Fixes
+
+* Change export place ([abe7db8](https://github.com/shun-shobon/eslint-config/commit/abe7db8206a5c40b0d4b045bf505c088bdaa0729))
+
 ## [1.0.2](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.1...eslint-config-base-v1.0.2) (2023-09-05)
 
 

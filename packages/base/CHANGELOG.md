@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.3...eslint-config-base-v1.0.4) (2023-09-06)
+
+
+### Bug Fixes
+
+* **base:** Fix legacy config ([70f5a1f](https://github.com/shun-shobon/eslint-config/commit/70f5a1fdc915616d493fcba80ddf09685f558a38))
+
 ## [1.0.3](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.2...eslint-config-base-v1.0.3) (2023-09-06)
 
 

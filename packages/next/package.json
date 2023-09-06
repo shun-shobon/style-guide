@@ -11,10 +11,10 @@
   "license": "MIT",
   "type": "module",
   "exports": {
-    ".": "./src/index.js",
-    "./legacy": "./src/legacy.cjs"
+    ".": "./src/index.cjs",
+    "./flat": "./src/flat.js"
   },
-  "main": "./src/index.js",
+  "main": "./src/index.cjs",
   "files": [
     "src",
     "LICENSE",
@@ -28,8 +28,8 @@
     "@next/eslint-plugin-next": "^13.4.19"
   },
   "peerDependencies": {
-    "@shun-shobon/eslint-config-base": "workspace:*",
-    "@shun-shobon/eslint-config-react": "workspace:*",
+    "@shun-shobon/eslint-config-base": "workspace:^",
+    "@shun-shobon/eslint-config-react": "workspace:^",
     "eslint": "^8.48.0"
   },
   "devDependencies": {

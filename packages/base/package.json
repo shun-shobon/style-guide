@@ -11,10 +11,10 @@
   "license": "MIT",
   "type": "module",
   "exports": {
-    ".": "./src/index.js",
-    "./legacy": "./src/legacy.cjs"
+    ".": "./src/index.cjs",
+    "./flat": "./src/flat.js"
   },
-  "main": "./src/index.js",
+  "main": "./src/index.cjs",
   "files": [
     "src",
     "LICENSE",
@@ -33,7 +33,6 @@
     "eslint-plugin-unicorn": "^48.0.1"
   },
   "peerDependencies": {
-    "@shun-shobon/eslint-config-utils": "workspace:*",
     "eslint": "^8.48.0"
   },
   "devDependencies": {

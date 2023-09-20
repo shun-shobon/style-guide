@@ -58,8 +58,8 @@ importers:
   packages/next:
     dependencies:
       '@next/eslint-plugin-next':
-        specifier: ^13.5.1
-        version: 13.5.1
+        specifier: ^13.5.2
+        version: 13.5.2
       '@shun-shobon/eslint-config-base':
         specifier: workspace:^
         version: link:../base
@@ -186,8 +186,8 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 
-  /@next/eslint-plugin-next@13.5.1:
-    resolution: {integrity: sha512-LBlI3iQvlzRE7Y6AfIyHKuM4T6REGmFgweN2tBqEUVEfgxERBLOutV2xckXEp3Y3VbfJBBXKZNfDzs20gHimSg==}
+  /@next/eslint-plugin-next@13.5.2:
+    resolution: {integrity: sha512-Ew8DOUerJYGRo8pI84SVwn9wxxx8sH92AanCXSkkLJM2W0RJEWy+BqWSCfrlA/3ZIczEl4l4o4lOeTGBPYfBJg==}
     dependencies:
       glob: 7.1.7
     dev: false

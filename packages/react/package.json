@@ -32,10 +32,10 @@
   },
   "peerDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:^",
-    "eslint": "^8.49.0"
+    "eslint": "^8.50.0"
   },
   "devDependencies": {
     "@shun-shobon/eslint-config-utils": "workspace:*",
-    "eslint": "^8.49.0"
+    "eslint": "^8.50.0"
   }
 }

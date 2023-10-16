@@ -25,7 +25,7 @@
     "lint-fix:eslint": "pnpm run lint:eslint --fix"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.5.4"
+    "@next/eslint-plugin-next": "^13.5.5"
   },
   "peerDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:^",

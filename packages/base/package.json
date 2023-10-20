@@ -25,7 +25,7 @@
     "lint-fix:eslint": "pnpm run lint:eslint --fix"
   },
   "dependencies": {
-    "@eslint/js": "^8.51.0",
+    "@eslint/js": "^8.52.0",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint-config-prettier": "^9.0.0",

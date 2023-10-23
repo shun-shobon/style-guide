@@ -30,7 +30,7 @@ jobs:
           node-version-file: .tool-versions
 
       - name: Setup | Registry
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           registry-url: ${{ matrix.url }}
 

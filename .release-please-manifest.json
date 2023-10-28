@@ -1,6 +1,6 @@
 {
   "packages/base": "1.0.9",
-  "packages/next": "1.0.5",
+  "packages/next": "1.0.6",
   "packages/react": "1.0.3",
   "packages/utils": "1.0.1"
 }

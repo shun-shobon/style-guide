@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.9...eslint-config-base-v1.0.10) (2023-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v49 ([#199](https://github.com/shun-shobon/eslint-config/issues/199)) ([13a01eb](https://github.com/shun-shobon/eslint-config/commit/13a01eb95e5d6e17a76a5a562ad635c19368f5c1))
+
 ## [1.0.9](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.8...eslint-config-base-v1.0.9) (2023-10-25)
 
 

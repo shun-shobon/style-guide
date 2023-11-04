@@ -30,10 +30,10 @@
   "peerDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:^",
     "@shun-shobon/eslint-config-react": "workspace:^",
-    "eslint": "^8.52.0"
+    "eslint": "^8.53.0"
   },
   "devDependencies": {
     "@shun-shobon/eslint-config-utils": "workspace:*",
-    "eslint": "^8.52.0"
+    "eslint": "^8.53.0"
   }
 }

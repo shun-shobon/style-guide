@@ -184,6 +184,20 @@
   * peerDependencies
     * @shun-shobon/eslint-config-base bumped to 0.5.2
 
+## [1.0.4](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v1.0.3...eslint-config-react-v1.0.4) (2023-11-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsx-a11y to ^6.8.0 ([#206](https://github.com/shun-shobon/eslint-config/issues/206)) ([f257a13](https://github.com/shun-shobon/eslint-config/commit/f257a136aeffcdf65b0cb195700da347f6118975))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 1.0.11
+
 ## [1.0.3](https://github.com/shun-shobon/eslint-config/compare/eslint-config-react-v1.0.2...eslint-config-react-v1.0.3) (2023-09-06)
 
 

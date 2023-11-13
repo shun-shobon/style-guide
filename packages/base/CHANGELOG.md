@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.12](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.11...eslint-config-base-v1.0.12) (2023-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update linters to ^6.11.0 ([#215](https://github.com/shun-shobon/eslint-config/issues/215)) ([608bbb4](https://github.com/shun-shobon/eslint-config/commit/608bbb4bdd5ea0ed42e98d4e3c0e5476ae5b5cd7))
+
 ## [1.0.11](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.10...eslint-config-base-v1.0.11) (2023-11-06)
 
 

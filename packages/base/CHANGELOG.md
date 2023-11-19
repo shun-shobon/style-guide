@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.13](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.12...eslint-config-base-v1.0.13) (2023-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to ^8.54.0 ([#219](https://github.com/shun-shobon/eslint-config/issues/219)) ([e113c87](https://github.com/shun-shobon/eslint-config/commit/e113c87c0ad503c7657c5a14674c61d778e80316))
+
 ## [1.0.12](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.11...eslint-config-base-v1.0.12) (2023-11-13)
 
 

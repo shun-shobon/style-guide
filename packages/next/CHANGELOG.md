@@ -34,6 +34,20 @@
     * @shun-shobon/eslint-config-base bumped to 0.5.2
     * @shun-shobon/eslint-config-react bumped to 0.2.2
 
+## [1.0.9](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v1.0.8...eslint-config-next-v1.0.9) (2023-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/eslint-plugin-next to ^14.0.3 ([#217](https://github.com/shun-shobon/eslint-config/issues/217)) ([90aafdf](https://github.com/shun-shobon/eslint-config/commit/90aafdf241e8b2c771acd4131e9664700d589251))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * peerDependencies
+    * @shun-shobon/eslint-config-base bumped to 1.0.13
+
 ## [1.0.8](https://github.com/shun-shobon/eslint-config/compare/eslint-config-next-v1.0.7...eslint-config-next-v1.0.8) (2023-11-13)
 
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.14](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.13...eslint-config-base-v1.0.14) (2023-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to ^6.13.0 ([#228](https://github.com/shun-shobon/eslint-config/issues/228)) ([7a1a36b](https://github.com/shun-shobon/eslint-config/commit/7a1a36b4a3f4b453211ad76e9385a3c77957d7be))
+* **deps:** update dependency @typescript-eslint/parser to ^6.13.0 ([#227](https://github.com/shun-shobon/eslint-config/issues/227)) ([947551d](https://github.com/shun-shobon/eslint-config/commit/947551d399f80145b627e7a0b05832cde2b3c7ec))
+* **deps:** update linters to ^6.12.0 ([#223](https://github.com/shun-shobon/eslint-config/issues/223)) ([8d647bd](https://github.com/shun-shobon/eslint-config/commit/8d647bd225d016ee78bb1dfc9e473bf21d63b955))
+* **deps:** update linters to ^6.13.1 ([#229](https://github.com/shun-shobon/eslint-config/issues/229)) ([9b0ab57](https://github.com/shun-shobon/eslint-config/commit/9b0ab57bf2b56ff4262913323695525914d41cad))
+
 ## [1.0.13](https://github.com/shun-shobon/eslint-config/compare/eslint-config-base-v1.0.12...eslint-config-base-v1.0.13) (2023-11-19)
 
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v1.0.1...eslint-config-utils-v2.0.0) (2023-12-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* **utils:** Add `defineConfig`
+
+### Features
+
+* **utils:** Add `defineConfig` ([6dc2ec6](https://github.com/shun-shobon/eslint-config/commit/6dc2ec681a1ccd048fce016f43965d1b0b8574e0))
+* **utils:** Add globs ([f0c88e5](https://github.com/shun-shobon/eslint-config/commit/f0c88e5d8e1938aa7cea2afb4c0019f733bedefa))
+
 ## [1.0.1](https://github.com/shun-shobon/eslint-config/compare/eslint-config-utils-v1.0.0...eslint-config-utils-v1.0.1) (2023-09-05)
 
 

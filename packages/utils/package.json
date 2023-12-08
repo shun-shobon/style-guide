@@ -10,12 +10,19 @@
   },
   "license": "MIT",
   "type": "module",
+  "main": "./dist/index.js",
   "exports": {
-    ".": "./src/index.js"
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
   },
   "files": [
     "src",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "@typescript-eslint/utils": "^6.13.2"
+  }
 }

@@ -7,5 +7,6 @@
     "allowJs": true,
     "moduleResolution": "bundler",
     "module": "esnext"
-  }
+  },
+  "exclude": ["**/node_modules", "**/dist"]
 }

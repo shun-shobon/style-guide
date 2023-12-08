@@ -4,6 +4,8 @@
     "@tsconfig/node-lts/tsconfig.json"
   ],
   "compilerOptions": {
-    "allowJs": true
+    "allowJs": true,
+    "moduleResolution": "bundler",
+    "module": "esnext"
   }
 }

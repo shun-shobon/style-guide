@@ -25,5 +25,15 @@
     "dist",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "@eslint/js": "^8.55.0",
+    "@shun-shobon/eslint-config-utils": "workspace:^"
+  },
+  "peerDependencies": {
+    "eslint": "^8.27.0"
+  },
+  "devDependencies": {
+    "@types/eslint__js": "^8.42.3"
+  }
 }

@@ -28,7 +28,8 @@
   ],
   "dependencies": {
     "@eslint/js": "^8.55.0",
-    "@shun-shobon/eslint-config-utils": "workspace:^"
+    "@shun-shobon/eslint-config-utils": "workspace:^",
+    "eslint-plugin-simple-import-sort": "^10.0.0"
   },
   "peerDependencies": {
     "eslint": "^8.27.0"

@@ -78,6 +78,9 @@ importers:
       eslint-plugin-simple-import-sort:
         specifier: ^10.0.0
         version: 10.0.0(eslint@8.55.0)
+      eslint-plugin-unicorn:
+        specifier: ^49.0.0
+        version: 49.0.0(eslint@8.55.0)
     devDependencies:
       '@types/eslint__js':
         specifier: ^8.42.3

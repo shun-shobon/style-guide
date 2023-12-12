@@ -1,7 +1,7 @@
 import { configs } from "@eslint/js";
-import type { Config } from "@shun-shobon/eslint-config-utils";
+import { defineRules } from "@shun-shobon/eslint-config-utils";
 
-export const rules: Config.Rules = {
+export const rules = defineRules({
   ...configs.recommended.rules,
 
   // Arrayの関数に`return`を忘れないようにする
@@ -152,4 +152,4 @@ export const rules: Config.Rules = {
 
   // シンボルに名前を付ける
   "symbol-description": "warn",
-};
+});

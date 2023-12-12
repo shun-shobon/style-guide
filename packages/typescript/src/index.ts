@@ -89,6 +89,9 @@ export default defineConfig({
   files: [GLOB_TS],
   languageOptions: {
     parser,
+    parserOptions: {
+      EXPERIMENTAL_useProjectService: true,
+    },
   },
   plugins,
   rules,

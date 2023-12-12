@@ -113,9 +113,9 @@ importers:
       '@shun-shobon/eslint-config-base':
         specifier: workspace:^
         version: link:../base
-      eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@8.55.0)
+      '@shun-shobon/eslint-config-utils':
+        specifier: workspace:^
+        version: link:../utils
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.55.0)
@@ -126,15 +126,15 @@ importers:
         specifier: ^4.6.0
         version: 4.6.0(eslint@8.55.0)
     devDependencies:
-      '@shun-shobon/eslint-config-utils':
-        specifier: workspace:*
-        version: link:../utils
       eslint:
         specifier: ^8.55.0
         version: 8.55.0
 
   packages/typescript:
     dependencies:
+      '@shun-shobon/eslint-config-javascript':
+        specifier: workspace:^
+        version: link:../javascript
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:^
         version: link:../utils
@@ -144,6 +144,12 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^6.13.2
         version: 6.13.2(eslint@8.55.0)(typescript@5.3.3)
+      eslint:
+        specifier: ^8.0.0
+        version: 8.55.0
+      typescript:
+        specifier: '*'
+        version: 5.3.3
 
   packages/utils:
     dependencies:

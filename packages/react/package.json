@@ -10,32 +10,33 @@
   },
   "license": "MIT",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.cjs",
-    "./flat": "./src/flat.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
   },
-  "main": "./src/index.cjs",
   "files": [
-    "src",
+    "dist",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "lint:eslint": "eslint src",
-    "lint-fix:eslint": "pnpm run lint:eslint --fix"
+    "build": "tsup src/index.ts"
   },
   "dependencies": {
-    "eslint-config-prettier": "^9.1.0",
+    "@shun-shobon/eslint-config-utils": "workspace:^",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:^",
-    "eslint": "^8.53.0"
+    "eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@shun-shobon/eslint-config-utils": "workspace:*",
     "eslint": "^8.55.0"
   }
 }

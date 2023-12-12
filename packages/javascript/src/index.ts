@@ -5,13 +5,13 @@ import {
 } from "@shun-shobon/eslint-config-utils";
 import { GLOB_SRC } from "@shun-shobon/eslint-config-utils/globs";
 
-import * as basic from "./basic";
-import * as imports from "./imports";
-import * as unicorn from "./unicorn";
+import * as basic from "./configs/basic";
+import * as import_ from "./configs/import";
+import * as unicorn from "./configs/unicorn";
 
-export const plugins = compilePlugins(imports.plugins, unicorn.plugins);
+export const plugins = compilePlugins(import_.plugins, unicorn.plugins);
 
-export const rules = compileRules(basic.rules, imports.rules, unicorn.rules);
+export const rules = compileRules(basic.rules, import_.rules, unicorn.rules);
 
 export default defineConfig({
   files: [GLOB_SRC],

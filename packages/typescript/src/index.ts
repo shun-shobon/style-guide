@@ -5,6 +5,7 @@ import {
   definePlugins,
   defineRules,
   combineRules,
+  renameAlias,
 } from "@shun-shobon/eslint-config-utils";
 import { type Config } from "@shun-shobon/eslint-config-utils";
 import { GLOB_TS } from "@shun-shobon/eslint-config-utils/globs";
@@ -16,15 +17,21 @@ export const plugins = definePlugins(
   typescript as unknown as Config.Plugin
 );
 
-const disableRules = defineRules(
-  typescript.configs["eslint-recommended"]!.overrides![0]!.rules!
-);
-const enableRules = defineRules(ALIAS_TYPESCRIPT, {
+const baseRules = combineRules(
+  // ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
+  defineRules(typescript.configs["eslint-recommended"]!.overrides![0]!.rules!),
   // 厳密なルール + 型チェックのルールを有効化
-  ...typescript.configs["strict-type-checked"]!.rules!,
+  renameAlias(
+    ALIAS_TYPESCRIPT,
+    typescript.configs["strict-type-checked"]!.rules!
+  ),
   // コーディング規約 + 型チェックのルールを有効化
-  ...typescript.configs["stylistic-type-checked"]!.rules!,
-
+  renameAlias(
+    ALIAS_TYPESCRIPT,
+    typescript.configs["stylistic-type-checked"]!.rules!
+  )
+);
+const overrideRules = defineRules(ALIAS_TYPESCRIPT, {
   // exportされている関数は型の明示を必須にする
   "explicit-module-boundary-types": "warn",
 
@@ -76,7 +83,7 @@ const enableRules = defineRules(ALIAS_TYPESCRIPT, {
   ],
 });
 
-export const rules = combineRules(disableRules, enableRules);
+export const rules = combineRules(baseRules, overrideRules);
 
 export default defineConfig({
   files: [GLOB_TS],

@@ -1,4 +1,9 @@
-import { defineRules, definePlugins } from "@shun-shobon/eslint-config-utils";
+import {
+  defineRules,
+  definePlugins,
+  combineRules,
+  renameAlias,
+} from "@shun-shobon/eslint-config-utils";
 import type { Config } from "@shun-shobon/eslint-config-utils";
 // @ts-expect-error: This package doesn't have types
 import unicorn from "eslint-plugin-unicorn";
@@ -7,9 +12,12 @@ export const ALIAS_UNICORN = "unicorn";
 
 export const plugins = definePlugins(ALIAS_UNICORN, unicorn as Config.Plugin);
 
-export const rules = defineRules(ALIAS_UNICORN, {
-  ...(unicorn.configs.recommended.rules as Config.Rules),
+const baseRules = renameAlias(
+  ALIAS_UNICORN,
+  unicorn.configs.recommended.rules as Config.Rules
+);
 
+const overrideRules = defineRules(ALIAS_UNICORN, {
   // Prettierで整形できるルールは無効化
   "empty-brace-spaces": "off",
   "no-nested-ternary": "off",
@@ -50,3 +58,5 @@ export const rules = defineRules(ALIAS_UNICORN, {
   // switch文のcase節を常にブロックにするのは冗長なので必要なときのみブロックにする
   "switch-case-braces": ["warn", "avoid"],
 });
+
+export const rules = combineRules(baseRules, overrideRules);

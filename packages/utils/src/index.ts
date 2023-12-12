@@ -23,10 +23,22 @@ export function defineRules(
 
   const [alias, rules] = args;
   return Object.fromEntries(
-    Object.entries(rules).map(([key, value]) => [
-      `${alias}/${key.replace(/^.*\//, "")}`,
-      value,
-    ])
+    Object.entries(rules).map(([key, value]) => [`${alias}/${key}`, value])
+  );
+}
+
+export function renameAlias(
+  alias: string,
+  rules: FlatConfig.Rules
+): FlatConfig.Rules {
+  return Object.fromEntries(
+    Object.entries(rules).map(([key, value]) => {
+      if (key.match(/^.*\//) !== null) {
+        return [key.replace(/^.*\//, `${alias}/`), value];
+      }
+
+      return [key, value];
+    })
   );
 }
 

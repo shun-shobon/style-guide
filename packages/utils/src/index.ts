@@ -36,11 +36,11 @@ export function defineConfig(
   return configs;
 }
 
-export function compileRules(...rules: FlatConfig.Rules[]): FlatConfig.Rules {
+export function combineRules(...rules: FlatConfig.Rules[]): FlatConfig.Rules {
   return Object.assign({}, ...rules);
 }
 
-export function compilePlugins(
+export function combinePlugins(
   ...plugins: FlatConfig.Plugins[]
 ): FlatConfig.Plugins {
   return Object.assign({}, ...plugins);

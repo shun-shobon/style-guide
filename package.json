@@ -13,7 +13,7 @@
   "devDependencies": {
     "@shun-shobon/eslint-config-base": "workspace:*",
     "@shun-shobon/eslint-config-utils": "workspace:*",
-    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/node-lts": "^20.1.0",
     "@tsconfig/strictest": "^2.0.2",
     "@types/node": "^20.10.4",
     "eslint": "^8.55.0",

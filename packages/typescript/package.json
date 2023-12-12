@@ -27,6 +27,13 @@
     "README.md"
   ],
   "dependencies": {
-    "@shun-shobon/eslint-config-utils": "workspace:^"
+    "@shun-shobon/eslint-config-utils": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2"
+  },
+  "peerDependencies": {
+    "@shun-shobon/eslint-config-javascript": "workspace:^",
+    "eslint": "^8.0.0",
+    "typescript": "*"
   }
 }

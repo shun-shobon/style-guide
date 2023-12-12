@@ -138,6 +138,12 @@ importers:
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:^
         version: link:../utils
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^6.13.2
+        version: 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.3)
+      '@typescript-eslint/parser':
+        specifier: ^6.13.2
+        version: 6.13.2(eslint@8.55.0)(typescript@5.3.3)
 
   packages/utils:
     dependencies:

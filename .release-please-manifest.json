@@ -3,5 +3,6 @@
   "packages/javascript": "1.0.0",
   "packages/next": "1.0.9",
   "packages/react": "1.0.4",
+  "packages/typescript": "1.0.0",
   "packages/utils": "1.0.1"
 }

@@ -1,0 +1,32 @@
+{
+  "name": "@shun-shobon/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "My shareable ESLint config (TypeScript)",
+  "author": "Shuntaro Nishizawa <me@s2n.tech>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shun-shobon/eslint-config.git",
+    "directory": "packages/typescript"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@shun-shobon/eslint-config-utils": "workspace:^"
+  }
+}

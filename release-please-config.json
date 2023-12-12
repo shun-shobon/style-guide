@@ -5,6 +5,7 @@
     "packages/javascript": {},
     "packages/next": {},
     "packages/react": {},
+    "packages/typescript": {},
     "packages/utils": {}
   },
   "plugins": [

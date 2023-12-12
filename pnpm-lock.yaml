@@ -135,25 +135,9 @@ importers:
 
   packages/typescript:
     dependencies:
-      '@eslint/js':
-        specifier: ^8.55.0
-        version: 8.55.0
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:^
         version: link:../utils
-      eslint:
-        specifier: ^8.27.0
-        version: 8.55.0
-      eslint-plugin-simple-import-sort:
-        specifier: ^10.0.0
-        version: 10.0.0(eslint@8.55.0)
-      eslint-plugin-unicorn:
-        specifier: ^49.0.0
-        version: 49.0.0(eslint@8.55.0)
-    devDependencies:
-      '@types/eslint__js':
-        specifier: ^8.42.3
-        version: 8.42.3
 
   packages/utils:
     dependencies:

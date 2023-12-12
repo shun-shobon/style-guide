@@ -81,6 +81,9 @@ importers:
       eslint-plugin-unicorn:
         specifier: ^49.0.0
         version: 49.0.0(eslint@8.55.0)
+      globals:
+        specifier: ^13.24.0
+        version: 13.24.0
     devDependencies:
       '@types/eslint__js':
         specifier: ^8.42.3
@@ -129,6 +132,28 @@ importers:
       eslint:
         specifier: ^8.55.0
         version: 8.55.0
+
+  packages/typescript:
+    dependencies:
+      '@eslint/js':
+        specifier: ^8.55.0
+        version: 8.55.0
+      '@shun-shobon/eslint-config-utils':
+        specifier: workspace:^
+        version: link:../utils
+      eslint:
+        specifier: ^8.27.0
+        version: 8.55.0
+      eslint-plugin-simple-import-sort:
+        specifier: ^10.0.0
+        version: 10.0.0(eslint@8.55.0)
+      eslint-plugin-unicorn:
+        specifier: ^49.0.0
+        version: 49.0.0(eslint@8.55.0)
+    devDependencies:
+      '@types/eslint__js':
+        specifier: ^8.42.3
+        version: 8.42.3
 
   packages/utils:
     dependencies:
@@ -1578,6 +1603,13 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
+
+  /globals@13.24.0:
+    resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
+    engines: {node: '>=8'}
+    dependencies:
+      type-fest: 0.20.2
+    dev: false
 
   /globalthis@1.0.3:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}

@@ -4,6 +4,7 @@ import {
   compilePlugins,
 } from "@shun-shobon/eslint-config-utils";
 import { GLOB_SRC } from "@shun-shobon/eslint-config-utils/globs";
+import globals from "globals";
 
 import * as basic from "./configs/basic";
 import * as import_ from "./configs/import";
@@ -17,4 +18,11 @@ export default defineConfig({
   files: [GLOB_SRC],
   plugins,
   rules,
+  languageOptions: {
+    globals: {
+      ...globals.browser,
+      ...globals.node,
+      ...globals.es2021,
+    },
+  },
 });

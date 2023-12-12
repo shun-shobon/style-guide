@@ -30,7 +30,8 @@
     "@eslint/js": "^8.55.0",
     "@shun-shobon/eslint-config-utils": "workspace:^",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^49.0.0"
+    "eslint-plugin-unicorn": "^49.0.0",
+    "globals": "^13.24.0"
   },
   "peerDependencies": {
     "eslint": "^8.27.0"

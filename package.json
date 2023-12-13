@@ -11,7 +11,8 @@
     "lint-fix:eslint": "pnpm run -r lint-fix:eslint"
   },
   "devDependencies": {
-    "@shun-shobon/eslint-config-base": "workspace:*",
+    "@shun-shobon/eslint-config-javascript": "workspace:*",
+    "@shun-shobon/eslint-config-typescript": "workspace:*",
     "@shun-shobon/eslint-config-utils": "workspace:*",
     "@tsconfig/node-lts": "^18.12.5",
     "@tsconfig/strictest": "^2.0.2",

@@ -1,12 +1,35 @@
 {
-  "extends": [
-    "@tsconfig/strictest/tsconfig.json",
-    "@tsconfig/node-lts/tsconfig.json"
-  ],
   "compilerOptions": {
-    "allowJs": true,
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "lib": ["es2023"],
+    "module": "esnext",
     "moduleResolution": "bundler",
-    "module": "esnext"
+
+    "composite": true,
+    "declaration": true
   },
+  "references": [
+    { "path": "./packages/javascript" },
+    { "path": "./packages/typescript" },
+    { "path": "./packages/react" }
+  ],
   "exclude": ["**/node_modules", "**/dist"]
 }

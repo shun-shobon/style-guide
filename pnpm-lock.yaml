@@ -8,9 +8,12 @@ importers:
 
   .:
     devDependencies:
-      '@shun-shobon/eslint-config-base':
+      '@shun-shobon/eslint-config-javascript':
         specifier: workspace:*
-        version: link:packages/base
+        version: link:packages/javascript
+      '@shun-shobon/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:packages/typescript
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:*
         version: link:packages/utils

@@ -1,10 +1,10 @@
-import {
-  definePlugins,
-  renameAlias,
-  combineRules,
-  defineRules,
-} from "@shun-shobon/eslint-config-utils";
 import type { Config } from "@shun-shobon/eslint-config-utils";
+import {
+  combineRules,
+  definePlugins,
+  defineRules,
+  renameAlias,
+} from "@shun-shobon/eslint-config-utils";
 // @ts-expect-error: This package don't have types
 import jsxA11y from "eslint-plugin-jsx-a11y";
 
@@ -14,6 +14,7 @@ export const plugins = definePlugins(ALIAS_JSX_A11Y, jsxA11y as Config.Plugin);
 
 const baseRules = renameAlias(
   ALIAS_JSX_A11Y,
+  // eslint-disable-next-line typescript/no-unsafe-member-access
   jsxA11y.configs.recommended.rules as Config.Rules
 );
 

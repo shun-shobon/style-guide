@@ -1,10 +1,10 @@
-import {
-  defineRules,
-  definePlugins,
-  renameAlias,
-  combineRules,
-} from "@shun-shobon/eslint-config-utils";
 import type { Config } from "@shun-shobon/eslint-config-utils";
+import {
+  combineRules,
+  definePlugins,
+  defineRules,
+  renameAlias,
+} from "@shun-shobon/eslint-config-utils";
 // @ts-expect-error: This package don't have types
 import react from "eslint-plugin-react";
 
@@ -14,8 +14,10 @@ export const plugins = definePlugins(ALIAS_REACT, react as Config.Plugin);
 
 const baseRules = combineRules(
   // reactの推奨ルールを有効化
+  // eslint-disable-next-line typescript/no-unsafe-member-access
   renameAlias(ALIAS_REACT, react.configs.recommended.rules as Config.Rules),
   // React v17以降のJSX Runtimeを使う場合の不要なルールを無効化
+  // eslint-disable-next-line typescript/no-unsafe-member-access
   renameAlias(ALIAS_REACT, react.configs["jsx-runtime"].rules as Config.Rules)
 );
 

@@ -1,10 +1,10 @@
+import type { Config } from "@shun-shobon/eslint-config-utils";
 import {
-  defineRules,
-  definePlugins,
   combineRules,
+  definePlugins,
+  defineRules,
   renameAlias,
 } from "@shun-shobon/eslint-config-utils";
-import type { Config } from "@shun-shobon/eslint-config-utils";
 // @ts-expect-error: This package doesn't have types
 import unicorn from "eslint-plugin-unicorn";
 
@@ -14,6 +14,7 @@ export const plugins = definePlugins(ALIAS_UNICORN, unicorn as Config.Plugin);
 
 const baseRules = renameAlias(
   ALIAS_UNICORN,
+  // eslint-disable-next-line typescript/no-unsafe-member-access
   unicorn.configs.recommended.rules as Config.Rules
 );
 

@@ -1,4 +1,5 @@
-import { configs } from "@eslint/js";
+import pkg from "@eslint/js";
+const { configs } = pkg;
 import { defineRules } from "@shun-shobon/eslint-config-utils";
 
 export const rules = defineRules({

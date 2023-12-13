@@ -1,7 +1,7 @@
 import {
-  defineConfig,
   combinePlugins,
   combineRules,
+  defineConfig,
 } from "@shun-shobon/eslint-config-utils";
 import { GLOB_SRC } from "@shun-shobon/eslint-config-utils/globs";
 import globals from "globals";

@@ -1,13 +1,13 @@
 import {
-  defineConfig,
   combinePlugins,
   combineRules,
+  defineConfig,
 } from "@shun-shobon/eslint-config-utils";
 import { GLOB_JSX } from "@shun-shobon/eslint-config-utils/globs";
 
+import * as jsxA11y from "./jsx-a11y";
 import * as react from "./react";
 import * as reactHooks from "./react-hooks";
-import * as jsxA11y from "./jsx-a11y";
 
 export const plugins = combinePlugins(
   react.plugins,

@@ -1,14 +1,14 @@
-import typescript from "@typescript-eslint/eslint-plugin";
-import parser from "@typescript-eslint/parser";
+import type { Config } from "@shun-shobon/eslint-config-utils";
 import {
+  combineRules,
   defineConfig,
   definePlugins,
   defineRules,
-  combineRules,
   renameAlias,
 } from "@shun-shobon/eslint-config-utils";
-import { type Config } from "@shun-shobon/eslint-config-utils";
 import { GLOB_TS } from "@shun-shobon/eslint-config-utils/globs";
+import typescript from "@typescript-eslint/eslint-plugin";
+import parser from "@typescript-eslint/parser";
 
 export const ALIAS_TYPESCRIPT = "typescript";
 
@@ -19,15 +19,18 @@ export const plugins = definePlugins(
 
 const baseRules = combineRules(
   // ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
+  // eslint-disable-next-line typescript/no-non-null-assertion
   defineRules(typescript.configs["eslint-recommended"]!.overrides![0]!.rules!),
   // 厳密なルール + 型チェックのルールを有効化
   renameAlias(
     ALIAS_TYPESCRIPT,
+    // eslint-disable-next-line typescript/no-non-null-assertion
     typescript.configs["strict-type-checked"]!.rules!
   ),
   // コーディング規約 + 型チェックのルールを有効化
   renameAlias(
     ALIAS_TYPESCRIPT,
+    // eslint-disable-next-line typescript/no-non-null-assertion
     typescript.configs["stylistic-type-checked"]!.rules!
   )
 );

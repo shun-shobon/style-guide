@@ -1,5 +1,5 @@
-import { defineRules, definePlugins } from "@shun-shobon/eslint-config-utils";
 import type { Config } from "@shun-shobon/eslint-config-utils";
+import { definePlugins, defineRules } from "@shun-shobon/eslint-config-utils";
 // @ts-expect-error: This package doesn't have types
 import importSort from "eslint-plugin-simple-import-sort";
 

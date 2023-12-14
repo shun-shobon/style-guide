@@ -1,6 +1,6 @@
 import { isPackageExists } from "local-pkg";
 
-import { importSort, javascript, typescript, unicorn } from "./configs";
+import { importSort, javascript, react, typescript, unicorn } from "./configs";
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { interopDefault } from "./utils";
 
@@ -11,6 +11,7 @@ export async function shun_shobon(
   const {
     gitignore: enableGitignore = true,
     typescript: enableTypescript = isPackageExists("typescript"),
+    react: enableReact = isPackageExists("react"),
   } = options;
 
   const configQueue: Awaitable<ConfigItem[]>[] = [];
@@ -32,6 +33,14 @@ export async function shun_shobon(
 
   if (enableTypescript) {
     configQueue.push(typescript());
+  }
+
+  if (enableReact) {
+    configQueue.push(
+      react({
+        typescript: enableTypescript,
+      })
+    );
   }
 
   const configs = await Promise.all(configQueue).then((configs) =>

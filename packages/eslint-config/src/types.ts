@@ -28,4 +28,18 @@ export interface OptionsConfig {
    * @default auto-detect based on the dependencies
    */
   typescript?: boolean;
+
+  /**
+   * Enable React support.
+   *
+   * @default auto-detect based on the dependencies
+   */
+  react?: boolean;
+}
+
+export interface OptionsHasTypeScript {
+  /**
+   * Enable TypeScript support.
+   */
+  typescript?: boolean;
 }

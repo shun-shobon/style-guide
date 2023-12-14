@@ -28,6 +28,11 @@
     "build": "tsup src/index.ts"
   },
   "dependencies": {
-    "eslint-define-config": "^2.0.0"
+    "@eslint/js": "^8.55.0",
+    "eslint-define-config": "^2.0.0",
+    "globals": "^13.24.0"
+  },
+  "devDependencies": {
+    "@types/eslint__js": "^8.42.3"
   }
 }

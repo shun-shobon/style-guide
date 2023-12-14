@@ -5,6 +5,6 @@ export interface ConfigItem
   /**
    * Relax plugins type limitation, as most of the plugins did not have correct type info yet.
    */
-  plugins?: Record<string, unknown>;
+  plugins?: Record<string, any>;
   rules?: Partial<Rules>;
 }

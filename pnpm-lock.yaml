@@ -29,6 +29,9 @@ importers:
       eslint-define-config:
         specifier: ^2.0.0
         version: 2.0.0
+      eslint-plugin-simple-import-sort:
+        specifier: ^10.0.0
+        version: 10.0.0(eslint@8.55.0)
       globals:
         specifier: ^13.24.0
         version: 13.24.0

@@ -1,4 +1,5 @@
 {
+  "packages/eslint-config": "0.1.0",
   "packages/javascript": "1.0.0",
   "packages/next": "1.0.9",
   "packages/react": "1.0.4",

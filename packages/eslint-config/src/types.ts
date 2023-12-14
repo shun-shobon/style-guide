@@ -35,6 +35,13 @@ export interface OptionsConfig {
    * @default auto-detect based on the dependencies
    */
   react?: boolean;
+
+  /**
+   * Enable Next.js support.
+   *
+   * @default auto-detect based on the dependencies
+   */
+  next?: boolean;
 }
 
 export interface OptionsHasTypeScript {

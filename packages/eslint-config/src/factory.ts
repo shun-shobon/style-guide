@@ -1,12 +1,11 @@
 import type { ConfigItem } from "./types";
 import { javascript, importSort, unicorn } from "./configs";
 
-type ConfigBuilder = (...userConfigs: ConfigItem[]) => ConfigItem[];
-
-export function createShunShobonConfig(): ConfigBuilder {
+export function shun_shobon(...userConfigs: ConfigItem[]): ConfigItem[] {
   const configs: ConfigItem[] = [];
 
+  // basic configs
   configs.push(...javascript(), ...importSort(), ...unicorn());
 
-  return (...userConfigs) => [...configs, ...userConfigs];
+  return [...configs, ...userConfigs];
 }

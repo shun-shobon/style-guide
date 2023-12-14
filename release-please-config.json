@@ -1,7 +1,6 @@
 {
   "$schema": "https://github.com/googleapis/release-please/raw/main/schemas/config.json",
   "packages": {
-    "packages/base": {},
     "packages/javascript": {},
     "packages/next": {},
     "packages/react": {},

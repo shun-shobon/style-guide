@@ -1,12 +1,7 @@
 {
   "$schema": "https://github.com/googleapis/release-please/raw/main/schemas/config.json",
   "packages": {
-    "packages/eslint-config": {},
-    "packages/javascript": {},
-    "packages/next": {},
-    "packages/react": {},
-    "packages/typescript": {},
-    "packages/utils": {}
+    "packages/eslint-config": {}
   },
   "plugins": [
     {

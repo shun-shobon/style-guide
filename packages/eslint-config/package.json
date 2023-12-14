@@ -26,5 +26,8 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts"
+  },
+  "dependencies": {
+    "eslint-define-config": "^2.0.0"
   }
 }

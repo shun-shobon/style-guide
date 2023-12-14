@@ -34,6 +34,9 @@ jobs:
         with:
           registry-url: ${{ matrix.url }}
 
+      - name: Run | Build
+        run: pnpm build
+
       - name: Publish | ${{ matrix.name }}
         run: pnpm publish -r --access public
         env:

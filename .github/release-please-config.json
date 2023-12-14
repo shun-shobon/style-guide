@@ -3,6 +3,7 @@
   "packages": {
     "packages/eslint-config": {}
   },
+  "bootstrap-sha": "ff03d5a9d60d86069c4816bea67f02ce94d887b7",
   "release-type": "node",
   "bump-minor-pre-major": true,
   "plugins": [

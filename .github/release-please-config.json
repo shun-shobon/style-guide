@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com/googleapis/release-please/raw/main/schemas/config.json",
   "packages": {
-    "./packages/eslint-config": {}
+    "packages/eslint-config": {}
   },
   "release-type": "node",
   "bump-minor-pre-major": true,

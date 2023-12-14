@@ -1,7 +1,5 @@
 import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
-export { FlatConfig as Config };
-
 export function definePlugins(
   alias: string,
   plugin: FlatConfig.Plugin
@@ -33,8 +31,8 @@ export function renameAlias(
 ): FlatConfig.Rules {
   return Object.fromEntries(
     Object.entries(rules).map(([key, value]) => {
-      if (key.match(/^.*\//) !== null) {
-        return [key.replace(/^.*\//, `${alias}/`), value];
+      if (key.match(/^.*\//u) !== null) {
+        return [key.replace(/^.*\//u, `${alias}/`), value];
       }
 
       return [key, value];
@@ -49,11 +47,15 @@ export function defineConfig(
 }
 
 export function combineRules(...rules: FlatConfig.Rules[]): FlatConfig.Rules {
+  // eslint-disable-next-line typescript/no-unsafe-return
   return Object.assign({}, ...rules);
 }
 
 export function combinePlugins(
   ...plugins: FlatConfig.Plugins[]
 ): FlatConfig.Plugins {
+  // eslint-disable-next-line typescript/no-unsafe-return
   return Object.assign({}, ...plugins);
 }
+
+export type { FlatConfig as Config } from "@typescript-eslint/utils/ts-eslint";

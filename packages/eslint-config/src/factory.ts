@@ -1,11 +1,33 @@
-import type { ConfigItem } from "./types";
+import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { javascript, importSort, unicorn } from "./configs";
+import { interopDefault } from "./utils";
 
-export function shun_shobon(...userConfigs: ConfigItem[]): ConfigItem[] {
-  const configs: ConfigItem[] = [];
+export async function shun_shobon(
+  options: OptionsConfig = {},
+  ...userConfigs: ConfigItem[]
+): Promise<ConfigItem[]> {
+  const { gitignore: enableGitignore = true } = options;
+
+  const configQueue: Awaitable<ConfigItem[]>[] = [];
 
   // basic configs
-  configs.push(...javascript(), ...importSort(), ...unicorn());
+  configQueue.push(javascript(), importSort(), unicorn());
+
+  if (enableGitignore) {
+    configQueue.push(
+      interopDefault(import("eslint-config-flat-gitignore")).then(
+        (gitignore) => [
+          gitignore(
+            typeof enableGitignore !== "boolean" ? enableGitignore : undefined
+          ),
+        ]
+      )
+    );
+  }
+
+  const configs = await Promise.all(configQueue).then((configs) =>
+    configs.flat()
+  );
 
   return [...configs, ...userConfigs];
 }

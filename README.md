@@ -1,11 +1,7 @@
-# @shun-shobon/eslint-config
+# Configs
 
-My shareable ESLint config.
+shun-shobon's shareable configs for ESLint.
 
 ## packages
 
-- [@shun-shobon/eslint-config-utils](./packages/utils/README.md)
-- [@shun-shobon/eslint-config-javascript](./packages/javascript/README.md)
-- [@shun-shobon/eslint-config-typescript](./packages/typescript/README.md)
-- [@shun-shobon/eslint-config-react](./packages/react/README.md)
-- [@shun-shobon/eslint-config-next](./packages/next/README.md)
+- [@shun-shobon/eslint-config](./packages/eslint-config/README.md)

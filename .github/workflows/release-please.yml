@@ -19,10 +19,12 @@ jobs:
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Run | Release please
-        uses: google-github-actions/release-please-action@v4
+        uses: google-github-actions/release-please-action@v3
         id: release
         with:
           token: ${{ steps.token.outputs.token }}
+          release-type: node
+          command: manifest
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
 

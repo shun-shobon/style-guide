@@ -1,17 +1,18 @@
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
-import { javascript, importSort, unicorn } from "./configs";
+import { javascript, importSort, unicorn, typescript } from "./configs";
 import { interopDefault } from "./utils";
+import { isPackageExists } from "local-pkg";
 
 export async function shun_shobon(
   options: OptionsConfig = {},
   ...userConfigs: ConfigItem[]
 ): Promise<ConfigItem[]> {
-  const { gitignore: enableGitignore = true } = options;
+  const {
+    gitignore: enableGitignore = true,
+    typescript: enableTypescript = isPackageExists("typescript"),
+  } = options;
 
   const configQueue: Awaitable<ConfigItem[]>[] = [];
-
-  // basic configs
-  configQueue.push(javascript(), importSort(), unicorn());
 
   if (enableGitignore) {
     configQueue.push(
@@ -23,6 +24,13 @@ export async function shun_shobon(
         ]
       )
     );
+  }
+
+  // basic configs
+  configQueue.push(javascript(), importSort(), unicorn());
+
+  if (enableTypescript) {
+    configQueue.push(typescript());
   }
 
   const configs = await Promise.all(configQueue).then((configs) =>

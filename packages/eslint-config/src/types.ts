@@ -20,4 +20,11 @@ export interface OptionsConfig {
    * @default true
    */
   gitignore?: boolean | FlatGitignoreOptions;
+
+  /**
+   * Enable TypeScript support.
+   *
+   * @default auto-detect based on the dependencies
+   */
+  typescript?: boolean;
 }

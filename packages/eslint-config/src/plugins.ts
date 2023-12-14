@@ -1,3 +1,4 @@
+// eslint-disable-next-line typescript/ban-ts-comment
 // @ts-nocheck
 
 export { default as configJs } from "@eslint/js";

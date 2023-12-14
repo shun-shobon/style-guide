@@ -1,7 +1,8 @@
-import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
-import { javascript, importSort, unicorn, typescript } from "./configs";
-import { interopDefault } from "./utils";
 import { isPackageExists } from "local-pkg";
+
+import { importSort, javascript, typescript, unicorn } from "./configs";
+import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
+import { interopDefault } from "./utils";
 
 export async function shun_shobon(
   options: OptionsConfig = {},

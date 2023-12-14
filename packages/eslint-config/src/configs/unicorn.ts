@@ -1,13 +1,16 @@
-import type { ConfigItem } from "../types";
 import { pluginUnicorn } from "../plugins";
+import type { ConfigItem } from "../types";
 
 export function unicorn(): ConfigItem[] {
   return [
     {
       plugins: {
+        // eslint-disable-next-line typescript/no-unsafe-assignment
         unicorn: pluginUnicorn,
       },
+      // eslint-disable-next-line typescript/no-unsafe-assignment
       rules: {
+        // eslint-disable-next-line typescript/no-unsafe-member-access
         ...pluginUnicorn.configs.recommended.rules,
 
         // Prettierで整形できるルールは無効化

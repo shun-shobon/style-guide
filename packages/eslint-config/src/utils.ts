@@ -5,6 +5,7 @@ export async function interopDefault<T>(
 ): Promise<T extends { default: infer U } ? U : T> {
   const resolved = await module;
 
+  // eslint-disable-next-line typescript/no-unsafe-return, typescript/no-unsafe-member-access, typescript/no-explicit-any
   return (resolved as any).default ?? resolved;
 }
 

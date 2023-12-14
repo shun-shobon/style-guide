@@ -1,4 +1,4 @@
-import { GLOB_TS, GLOB_TSX, GLOB_SRC } from "../globs";
+import { GLOB_SRC, GLOB_TS, GLOB_TSX } from "../globs";
 import type { ConfigItem } from "../types";
 import { interopDefault, renameRules } from "../utils";
 
@@ -26,6 +26,7 @@ export async function typescript(): Promise<ConfigItem[]> {
       rules: {
         // 厳密なルール + 型チェックのルールを有効化
         ...renameRules(
+          // eslint-disable-next-line typescript/no-non-null-assertion
           pluginTypescript.configs["strict-type-checked"]!.rules!,
           "@typescript-eslint/",
           "typescript/"
@@ -33,6 +34,7 @@ export async function typescript(): Promise<ConfigItem[]> {
 
         // コーディング規約 + 型チェックのルールを有効化
         ...renameRules(
+          // eslint-disable-next-line typescript/no-non-null-assertion
           pluginTypescript.configs["stylistic-type-checked"]!.rules!,
           "@typescript-eslint/",
           "typescript/"
@@ -77,22 +79,13 @@ export async function typescript(): Promise<ConfigItem[]> {
         // 一貫性のためと、awaitが無くなったときにasyncを外すのは面倒なため
         // また、スタックトレースが読みやすくなる
         "typescript/return-await": ["warn", "always"],
-
-        // if文にboolean以外を許可しない
-        "typescript/strict-boolean-expressions": [
-          "error",
-          {
-            allowString: false,
-            allowNumber: false,
-            allowNullableObject: false,
-          },
-        ],
       },
     },
     {
       files: [GLOB_TS, GLOB_TSX],
       rules: {
         // ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
+        // eslint-disable-next-line typescript/no-non-null-assertion
         ...pluginTypescript.configs["eslint-recommended"]!.overrides![0]!
           .rules!,
       },

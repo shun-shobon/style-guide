@@ -1,10 +1,11 @@
-import type { ConfigItem } from "../types";
 import { pluginImportSort } from "../plugins";
+import type { ConfigItem } from "../types";
 
 export function importSort(): ConfigItem[] {
   return [
     {
       plugins: {
+        // eslint-disable-next-line typescript/no-unsafe-assignment
         "import-sort": pluginImportSort,
       },
       rules: {

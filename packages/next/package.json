@@ -28,7 +28,6 @@
     "@next/eslint-plugin-next": "^14.0.4"
   },
   "peerDependencies": {
-    "@shun-shobon/eslint-config-base": "workspace:^",
     "@shun-shobon/eslint-config-react": "workspace:^",
     "eslint": "^8.53.0"
   },

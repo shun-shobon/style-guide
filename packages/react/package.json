@@ -33,7 +33,6 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
-    "@shun-shobon/eslint-config-base": "workspace:^",
     "eslint": "^8.0.0"
   },
   "devDependencies": {

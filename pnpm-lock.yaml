@@ -8,21 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@shun-shobon/eslint-config-javascript':
-        specifier: workspace:*
-        version: link:packages/javascript
-      '@shun-shobon/eslint-config-typescript':
-        specifier: workspace:*
-        version: link:packages/typescript
-      '@shun-shobon/eslint-config-utils':
-        specifier: workspace:*
-        version: link:packages/utils
-      '@types/node':
-        specifier: ^20.10.4
-        version: 20.10.4
-      eslint:
-        specifier: ^8.55.0
-        version: 8.55.0
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
@@ -32,34 +17,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-
-  packages/base:
-    dependencies:
-      '@eslint/js':
-        specifier: ^8.55.0
-        version: 8.55.0
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.13.2
-        version: 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.3)
-      '@typescript-eslint/parser':
-        specifier: ^6.13.2
-        version: 6.13.2(eslint@8.55.0)(typescript@5.3.3)
-      eslint:
-        specifier: ^8.53.0
-        version: 8.55.0
-      eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@8.55.0)
-      eslint-plugin-simple-import-sort:
-        specifier: ^10.0.0
-        version: 10.0.0(eslint@8.55.0)
-      eslint-plugin-unicorn:
-        specifier: ^49.0.0
-        version: 49.0.0(eslint@8.55.0)
-    devDependencies:
-      '@shun-shobon/eslint-config-utils':
-        specifier: workspace:*
-        version: link:../utils
 
   packages/javascript:
     dependencies:
@@ -91,9 +48,6 @@ importers:
       '@next/eslint-plugin-next':
         specifier: ^14.0.4
         version: 14.0.4
-      '@shun-shobon/eslint-config-base':
-        specifier: workspace:^
-        version: link:../base
       '@shun-shobon/eslint-config-react':
         specifier: workspace:^
         version: link:../react
@@ -107,9 +61,6 @@ importers:
 
   packages/react:
     dependencies:
-      '@shun-shobon/eslint-config-base':
-        specifier: workspace:^
-        version: link:../base
       '@shun-shobon/eslint-config-utils':
         specifier: workspace:^
         version: link:../utils
@@ -606,12 +557,6 @@ packages:
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
-
-  /@types/node@20.10.4:
-    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: true
 
   /@types/normalize-package-data@2.4.4:
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1226,15 +1171,6 @@ packages:
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
-
-  /eslint-config-prettier@9.1.0(eslint@8.55.0):
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 8.55.0
-    dev: false
 
   /eslint-plugin-jsx-a11y@6.8.0(eslint@8.55.0):
     resolution: {integrity: sha512-Hdh937BS3KdwwbBaKd5+PLCOmYY6U4f2h9Z2ktwtNKvIdIEu137rjYbcb9ApSbVJfWxANNuiKTD/9tOKjK9qOA==}
@@ -2830,10 +2766,6 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
-
-  /undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: true
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}

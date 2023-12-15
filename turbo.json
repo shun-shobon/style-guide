@@ -5,10 +5,16 @@
 			"dependsOn": ["^build"],
 			"outputs": ["dist/**"]
 		},
+		"format": {
+			"dependsOn": ["build"]
+		},
+		"format:check": {
+			"dependsOn": ["build"]
+		},
 		"lint": {
 			"dependsOn": ["build"]
 		},
-		"format": {
+		"lint:fix": {
 			"dependsOn": ["build"]
 		}
 	}

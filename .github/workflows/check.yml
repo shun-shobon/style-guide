@@ -33,3 +33,17 @@ jobs:
 
       - name: Run | Lint
         run: pnpm run lint
+
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup | Node.js
+        uses: shun-shobon/actions/setup-node@master
+        with:
+          node-version-file: .tool-versions
+
+      - name: Run | Format
+        run: pnpm run format:check

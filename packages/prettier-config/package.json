@@ -27,7 +27,9 @@
 	"scripts": {
 		"build": "tsup src/index.ts",
 		"format": "prettier --write .",
-		"lint": "eslint ."
+		"format:check": "prettier --check .",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix ."
 	},
 	"peerDependencies": {
 		"prettier": "^3.0.0"

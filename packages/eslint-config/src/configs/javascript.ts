@@ -53,9 +53,6 @@ export function javascript(): ConfigItem[] {
 				// 未使用のプライベートクラスメンバーを警告
 				"no-unused-private-class-members": "warn",
 
-				// 定義前に変数や関数を使用しない
-				"no-use-before-define": "error",
-
 				// `_`から始まる変数名以外の未使用変数を警告
 				"no-unused-vars": [
 					"warn",

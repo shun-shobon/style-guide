@@ -22,4 +22,16 @@ export interface OptionsConfig {
 	 * @default auto-detect based on the dependencies
 	 */
 	tailwindcss?: boolean;
+
+	/**
+	 * Ignore files.
+	 */
+	ignoreFiles?: string[];
+}
+
+export interface OptionsIgnores {
+	/**
+	 * Ignore files.
+	 */
+	ignoreFiles?: string[];
 }

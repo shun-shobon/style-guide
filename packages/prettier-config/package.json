@@ -1,39 +1,43 @@
 {
 	"name": "@shun-shobon/prettier-config",
 	"version": "0.0.1",
+	"type": "module",
 	"description": "shun-shobon's Prettier config",
-	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech)",
-	"homepage": "https://github.com/shun-shobon/configs/packages/prettier-config#readme",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/shun-shobon/configs.git",
 		"directory": "packages/prettier-config"
 	},
+	"homepage": "https://github.com/shun-shobon/configs/packages/prettier-config#readme",
+	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech)",
 	"license": "MIT",
-	"sideEffects": false,
-	"type": "module",
 	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.js",
 			"require": "./dist/index.cjs"
 		}
 	},
+	"types": "./dist/index.d.ts",
 	"files": [
 		"dist",
-		"LICENSE",
-		"README.md"
+		"README.md",
+		"LICENSE"
 	],
 	"scripts": {
 		"build": "tsup src/index.ts",
-		"lint": "eslint .",
-		"format": "prettier --write ."
-	},
-	"devDependencies": {
-		"prettier": "^3.1.1"
+		"format": "prettier --write .",
+		"lint": "eslint ."
 	},
 	"peerDependencies": {
 		"prettier": "^3.0.0"
-	}
+	},
+	"dependencies": {
+		"prettier-plugin-pkg": "^0.18.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.4",
+		"prettier": "^3.1.1"
+	},
+	"sideEffects": false
 }

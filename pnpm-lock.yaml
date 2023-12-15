@@ -83,7 +83,14 @@ importers:
         version: 8.42.3
 
   packages/prettier-config:
+    dependencies:
+      prettier-plugin-pkg:
+        specifier: ^0.18.0
+        version: 0.18.0(prettier@3.1.1)
     devDependencies:
+      '@types/node':
+        specifier: ^20.10.4
+        version: 20.10.4
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
@@ -548,6 +555,12 @@ packages:
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  /@types/node@20.10.4:
+    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
 
   /@types/normalize-package-data@2.4.4:
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2279,11 +2292,19 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  /prettier-plugin-pkg@0.18.0(prettier@3.1.1):
+    resolution: {integrity: sha512-cme+OUHj25cVj3HwGK6ek/GkCHhlhM1u/IYspOHYsFImaXMJCmjs8xeCcvLreD0HMX5QxObot+3TtQR3Bd2wHw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      prettier: ^3.0.0
+    dependencies:
+      prettier: 3.1.1
+    dev: false
+
   /prettier@3.1.1:
     resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
 
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -2870,6 +2891,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}

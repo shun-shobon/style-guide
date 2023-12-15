@@ -29,10 +29,10 @@ export async function shun_shobon(
       interopDefault(import("eslint-config-flat-gitignore")).then(
         (gitignore) => [
           gitignore(
-            typeof enableGitignore !== "boolean" ? enableGitignore : undefined
+            typeof enableGitignore !== "boolean" ? enableGitignore : undefined,
           ),
-        ]
-      )
+        ],
+      ),
     );
   }
 
@@ -47,7 +47,7 @@ export async function shun_shobon(
     configQueue.push(
       react({
         typescript: enableTypescript,
-      })
+      }),
     );
   }
 
@@ -56,7 +56,7 @@ export async function shun_shobon(
   }
 
   const configs = await Promise.all(configQueue).then((configs) =>
-    configs.flat()
+    configs.flat(),
   );
 
   return [...configs, ...userConfigs];

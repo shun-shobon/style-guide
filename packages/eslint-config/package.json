@@ -26,7 +26,8 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@eslint/js": "^8.55.0",

@@ -3,7 +3,7 @@ import type { ConfigItem, OptionsHasTypeScript } from "../types";
 import { interopDefault } from "../utils";
 
 export async function react(
-  options: OptionsHasTypeScript = {}
+  options: OptionsHasTypeScript = {},
 ): Promise<ConfigItem[]> {
   const { typescript = true } = options;
 
@@ -21,7 +21,7 @@ export async function react(
     {
       plugins: {
         // eslint-disable-next-line typescript/no-unsafe-assignment
-        react: pluginReact,
+        "react": pluginReact,
         // eslint-disable-next-line typescript/no-unsafe-assignment
         "react-hooks": pluginReactHooks,
         // eslint-disable-next-line typescript/no-unsafe-assignment

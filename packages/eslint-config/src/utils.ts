@@ -1,7 +1,7 @@
 import type { Awaitable, ConfigItem } from "./types";
 
 export async function interopDefault<T>(
-  module: Awaitable<T>
+  module: Awaitable<T>,
 ): Promise<T extends { default: infer U } ? U : T> {
   const resolved = await module;
 
@@ -12,12 +12,12 @@ export async function interopDefault<T>(
 export function renameRules(
   rules: Required<ConfigItem>["rules"],
   from: string,
-  to: string
+  to: string,
 ): ConfigItem["rules"] {
   return Object.fromEntries(
     Object.entries(rules).map(([key, value]) => [
       key.startsWith(from) ? `${to}${key.slice(from.length)}` : key,
       value,
-    ])
+    ]),
   );
 }

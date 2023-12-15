@@ -69,7 +69,7 @@ export function javascript(): ConfigItem[] {
         "require-atomic-updates": "error",
 
         // 循環的複雑度を15以上を警告
-        complexity: ["warn", 15],
+        "complexity": ["warn", 15],
 
         // switch文のデフォルトケースを最後にする
         "default-case-last": "error",
@@ -78,7 +78,7 @@ export function javascript(): ConfigItem[] {
         "default-param-last": "error",
 
         // nullチェックを除いて厳密でない等価演算子を許可しない
-        eqeqeq: ["error", "always", { null: "ignore" }],
+        "eqeqeq": ["error", "always", { null: "ignore" }],
 
         // getter/setterをグループ化
         "grouped-accessor-pairs": ["error", "setBeforeGet"],
@@ -166,7 +166,7 @@ export function javascript(): ConfigItem[] {
         "prefer-spread": "warn",
 
         // `parseInt`には基数を渡す
-        radix: "error",
+        "radix": "error",
 
         // 正規表現のユニコードフラグを使用する
         "require-unicode-regexp": "warn",

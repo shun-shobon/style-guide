@@ -29,7 +29,7 @@ export async function typescript(): Promise<ConfigItem[]> {
           // eslint-disable-next-line typescript/no-non-null-assertion
           pluginTypescript.configs["strict-type-checked"]!.rules!,
           "@typescript-eslint/",
-          "typescript/"
+          "typescript/",
         ),
 
         // コーディング規約 + 型チェックのルールを有効化
@@ -37,7 +37,7 @@ export async function typescript(): Promise<ConfigItem[]> {
           // eslint-disable-next-line typescript/no-non-null-assertion
           pluginTypescript.configs["stylistic-type-checked"]!.rules!,
           "@typescript-eslint/",
-          "typescript/"
+          "typescript/",
         ),
 
         // exportされている関数は型の明示を必須にする

@@ -1,53 +1,53 @@
 {
-  "name": "@shun-shobon/eslint-config",
-  "version": "0.1.0",
-  "description": "shun-shobon's ESLint config",
-  "author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech)",
-  "homepage": "https://github.com/shun-shobon/eslint-config/packages/eslint-config#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shun-shobon/eslint-config.git",
-    "directory": "packages/eslint-config"
-  },
-  "license": "MIT",
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "scripts": {
-    "build": "tsup src/index.ts",
-    "lint": "eslint .",
-    "format": "prettier --write ."
-  },
-  "dependencies": {
-    "@eslint/js": "^8.55.0",
-    "@next/eslint-plugin-next": "^14.0.4",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "eslint-config-flat-gitignore": "^0.1.2",
-    "eslint-define-config": "^2.0.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unicorn": "^49.0.0",
-    "globals": "^13.24.0",
-    "local-pkg": "^0.5.0"
-  },
-  "devDependencies": {
-    "@types/eslint__js": "^8.42.3"
-  },
-  "peerDependencies": {
-    "eslint": "^8.21.0"
-  }
+	"name": "@shun-shobon/eslint-config",
+	"version": "0.1.0",
+	"description": "shun-shobon's ESLint config",
+	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech)",
+	"homepage": "https://github.com/shun-shobon/eslint-config/packages/eslint-config#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shun-shobon/eslint-config.git",
+		"directory": "packages/eslint-config"
+	},
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts",
+		"lint": "eslint .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@eslint/js": "^8.55.0",
+		"@next/eslint-plugin-next": "^14.0.4",
+		"@typescript-eslint/eslint-plugin": "^6.14.0",
+		"@typescript-eslint/parser": "^6.14.0",
+		"eslint-config-flat-gitignore": "^0.1.2",
+		"eslint-define-config": "^2.0.0",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"eslint-plugin-unicorn": "^49.0.0",
+		"globals": "^13.24.0",
+		"local-pkg": "^0.5.0"
+	},
+	"devDependencies": {
+		"@types/eslint__js": "^8.42.3"
+	},
+	"peerDependencies": {
+		"eslint": "^8.21.0"
+	}
 }

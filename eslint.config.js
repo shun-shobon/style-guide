@@ -6,7 +6,7 @@ const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
 
 export default shun_shobon({
-  gitignore: {
-    files: [path.join(__dirname, ".gitignore")],
-  },
+	gitignore: {
+		files: [path.join(__dirname, ".gitignore")],
+	},
 });

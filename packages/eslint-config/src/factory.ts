@@ -1,63 +1,63 @@
 import { isPackageExists } from "local-pkg";
 
 import {
-  importSort,
-  javascript,
-  next,
-  react,
-  typescript,
-  unicorn,
+	importSort,
+	javascript,
+	next,
+	react,
+	typescript,
+	unicorn,
 } from "./configs";
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { interopDefault } from "./utils";
 
 export async function shun_shobon(
-  options: OptionsConfig = {},
-  ...userConfigs: ConfigItem[]
+	options: OptionsConfig = {},
+	...userConfigs: ConfigItem[]
 ): Promise<ConfigItem[]> {
-  const {
-    gitignore: enableGitignore = true,
-    typescript: enableTypescript = isPackageExists("typescript"),
-    react: enableReact = isPackageExists("react"),
-    next: enableNext = isPackageExists("next"),
-  } = options;
+	const {
+		gitignore: enableGitignore = true,
+		typescript: enableTypescript = isPackageExists("typescript"),
+		react: enableReact = isPackageExists("react"),
+		next: enableNext = isPackageExists("next"),
+	} = options;
 
-  const configQueue: Awaitable<ConfigItem[]>[] = [];
+	const configQueue: Awaitable<ConfigItem[]>[] = [];
 
-  if (enableGitignore) {
-    configQueue.push(
-      interopDefault(import("eslint-config-flat-gitignore")).then(
-        (gitignore) => [
-          gitignore(
-            typeof enableGitignore !== "boolean" ? enableGitignore : undefined,
-          ),
-        ],
-      ),
-    );
-  }
+	if (enableGitignore) {
+		configQueue.push(
+			interopDefault(import("eslint-config-flat-gitignore")).then(
+				(gitignore) => [
+					gitignore(
+						typeof enableGitignore !== "boolean" ? enableGitignore : undefined,
+					),
+				],
+			),
+		);
+	}
 
-  // basic configs
-  configQueue.push(javascript(), importSort(), unicorn());
+	// basic configs
+	configQueue.push(javascript(), importSort(), unicorn());
 
-  if (enableTypescript) {
-    configQueue.push(typescript());
-  }
+	if (enableTypescript) {
+		configQueue.push(typescript());
+	}
 
-  if (enableReact) {
-    configQueue.push(
-      react({
-        typescript: enableTypescript,
-      }),
-    );
-  }
+	if (enableReact) {
+		configQueue.push(
+			react({
+				typescript: enableTypescript,
+			}),
+		);
+	}
 
-  if (enableNext) {
-    configQueue.push(next());
-  }
+	if (enableNext) {
+		configQueue.push(next());
+	}
 
-  const configs = await Promise.all(configQueue).then((configs) =>
-    configs.flat(),
-  );
+	const configs = await Promise.all(configQueue).then((configs) =>
+		configs.flat(),
+	);
 
-  return [...configs, ...userConfigs];
+	return [...configs, ...userConfigs];
 }

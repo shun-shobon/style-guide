@@ -33,6 +33,7 @@
 		"prettier": "^3.0.0"
 	},
 	"dependencies": {
+		"prettier-plugin-jsdoc": "^1.1.1",
 		"prettier-plugin-pkg": "^0.18.0"
 	},
 	"devDependencies": {

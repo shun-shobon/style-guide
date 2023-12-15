@@ -1,7 +1,8 @@
 {
   "$schema": "https://github.com/googleapis/release-please/raw/main/schemas/config.json",
   "packages": {
-    "packages/eslint-config": {}
+    "packages/eslint-config": {},
+    "packages/prettier-config": {}
   },
   "bootstrap-sha": "ff03d5a9d60d86069c4816bea67f02ce94d887b7",
   "release-type": "node",

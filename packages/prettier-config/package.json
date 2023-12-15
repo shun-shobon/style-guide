@@ -30,5 +30,8 @@
   },
   "devDependencies": {
     "prettier": "^3.1.1"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
   }
 }

@@ -1,5 +1,3 @@
 node_modules/
 dist/
 .turbo/
-CHANGELOG.md
-pnpm-lock.yaml

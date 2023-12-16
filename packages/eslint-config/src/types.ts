@@ -43,6 +43,13 @@ export interface OptionsConfig {
 	 * @default auto-detect based on the dependencies
 	 */
 	next?: boolean;
+
+	/**
+	 * Enable Storybook support.
+	 *
+	 * @default auto-detect based on the dependencies
+	 */
+	storybook?: boolean;
 }
 
 export interface OptionsHasTypeScript {

@@ -12,3 +12,8 @@ export const GLOB_TS = `**/*.${GLOB_TS_EXT}`;
 
 export const GLOB_TSX_EXT = "?([cm])tsx";
 export const GLOB_TSX = `**/*.${GLOB_TSX_EXT}`;
+
+export const GLOB_STORYBOOK_EXT = `@(stories|story).${GLOB_TSX_EXT}`;
+export const GLOB_STORYBOOK = `**/*.${GLOB_STORYBOOK_EXT}`;
+
+export const GLOB_STORYBOOK_CONFIG = `**/.storybook/main.${GLOB_SRC_EXT}`;

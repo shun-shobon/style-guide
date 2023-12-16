@@ -5,6 +5,7 @@ import {
 	javascript,
 	next,
 	react,
+	storybook,
 	typescript,
 	unicorn,
 } from "./configs";
@@ -20,6 +21,7 @@ export async function shun_shobon(
 		typescript: enableTypescript = isPackageExists("typescript"),
 		react: enableReact = isPackageExists("react"),
 		next: enableNext = isPackageExists("next"),
+		storybook: enableStorybook = isPackageExists("storybook"),
 	} = options;
 
 	const configQueue: Awaitable<ConfigItem[]>[] = [];
@@ -53,6 +55,10 @@ export async function shun_shobon(
 
 	if (enableNext) {
 		configQueue.push(next());
+	}
+
+	if (enableStorybook) {
+		configQueue.push(storybook());
 	}
 
 	const configs = await Promise.all(configQueue).then((configs) =>

@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.2.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.1.0...eslint-config-v0.2.0) (2023-12-16)
+
+
+### Features
+
+* **eslint-config:** Add storybook rules ([bf53b8c](https://github.com/shun-shobon/configs/commit/bf53b8c4a27e539946470ef513d486f64d947543))
+* **prettier-config:** Add package.json sort plugin ([832b432](https://github.com/shun-shobon/configs/commit/832b432aa9b01ebaa03cdeaf160c6e64bd7474bc))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to ^8.56.0 ([#247](https://github.com/shun-shobon/configs/issues/247)) ([02e2d0c](https://github.com/shun-shobon/configs/commit/02e2d0cd0b2b54218e8aacea99fc3f04e81552f2))
+* **eslint-config:** Add eslint@8.21.0 to peer deps ([451a1dc](https://github.com/shun-shobon/configs/commit/451a1dc88abb3b71cc0831239660ab117311c0e4))
+* **eslint-config:** Make more strictly typing ([784b889](https://github.com/shun-shobon/configs/commit/784b889a94a47d0f06d5a6624502b9a8f73b6b81))
+* **eslint-config:** Remove `no-use-before-define` ([e157a02](https://github.com/shun-shobon/configs/commit/e157a02d7d652456af2d125f20b51ed386670e46))
+* Support no side effects ([6814afc](https://github.com/shun-shobon/configs/commit/6814afc6b22e668ce9fa1368d693f17138bd7ee8))
+
 ## [0.1.0](https://github.com/shun-shobon/eslint-config/compare/eslint-config-v0.0.1...eslint-config-v0.1.0) (2023-12-14)
 
 

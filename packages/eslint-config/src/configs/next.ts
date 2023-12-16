@@ -18,7 +18,6 @@ export async function next(): Promise<ConfigItem[]> {
 		},
 		{
 			files: [GLOB_SRC],
-			// eslint-disable-next-line typescript/no-unsafe-assignment
 			rules: {
 				// Next.jsの推奨ルールを有効化
 				...renameRules(

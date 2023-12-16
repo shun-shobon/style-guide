@@ -1,3 +1,5 @@
+import type { Rules } from "eslint-define-config";
+
 import { pluginUnicorn } from "../plugins";
 import type { ConfigItem } from "../types";
 
@@ -8,10 +10,9 @@ export function unicorn(): ConfigItem[] {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				unicorn: pluginUnicorn,
 			},
-			// eslint-disable-next-line typescript/no-unsafe-assignment
 			rules: {
 				// eslint-disable-next-line typescript/no-unsafe-member-access
-				...pluginUnicorn.configs.recommended.rules,
+				...(pluginUnicorn.configs.recommended.rules as Rules),
 
 				// Prettierで整形できるルールは無効化
 				"unicorn/empty-brace-spaces": "off",

@@ -4,6 +4,7 @@ import {
 	importSort,
 	javascript,
 	next,
+	node,
 	react,
 	storybook,
 	typescript,
@@ -39,7 +40,7 @@ export async function shun_shobon(
 	}
 
 	// basic configs
-	configQueue.push(javascript(), importSort(), unicorn());
+	configQueue.push(javascript(), importSort(), unicorn(), node());
 
 	if (enableTypescript) {
 		configQueue.push(typescript());

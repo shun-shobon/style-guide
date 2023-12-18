@@ -1,4 +1,4 @@
-import { GLOB_SRC, GLOB_TS, GLOB_TSX } from "../globs";
+import { GLOB_DTS, GLOB_SRC, GLOB_TS, GLOB_TSX } from "../globs";
 import type { ConfigItem } from "../types";
 import { interopDefault, renameRules } from "../utils";
 
@@ -88,6 +88,12 @@ export async function typescript(): Promise<ConfigItem[]> {
 				// eslint-disable-next-line typescript/no-non-null-assertion
 				...pluginTypescript.configs["eslint-recommended"]!.overrides![0]!
 					.rules!,
+			},
+		},
+		{
+			files: [GLOB_DTS],
+			rules: {
+				"import/no-duplicates": "off",
 			},
 		},
 	];

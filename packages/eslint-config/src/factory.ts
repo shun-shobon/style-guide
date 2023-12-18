@@ -1,6 +1,7 @@
 import { isPackageExists } from "local-pkg";
 
 import {
+	imports,
 	importSort,
 	javascript,
 	next,
@@ -40,18 +41,20 @@ export async function shun_shobon(
 	}
 
 	// basic configs
-	configQueue.push(javascript(), importSort(), unicorn(), node());
+	configQueue.push(
+		javascript(),
+		imports(options),
+		importSort(),
+		unicorn(),
+		node(),
+	);
 
 	if (enableTypescript) {
 		configQueue.push(typescript());
 	}
 
 	if (enableReact) {
-		configQueue.push(
-			react({
-				typescript: enableTypescript,
-			}),
-		);
+		configQueue.push(react(options));
 	}
 
 	if (enableNext) {

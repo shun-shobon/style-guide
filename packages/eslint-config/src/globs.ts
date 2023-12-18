@@ -13,6 +13,9 @@ export const GLOB_TS = `**/*.${GLOB_TS_EXT}`;
 export const GLOB_TSX_EXT = "?([cm])tsx";
 export const GLOB_TSX = `**/*.${GLOB_TSX_EXT}`;
 
+export const GLOB_DTS_EXT = "?([cm])d.ts";
+export const GLOB_DTS = `**/*.${GLOB_DTS_EXT}`;
+
 export const GLOB_STORYBOOK_EXT = `@(stories|story).${GLOB_TSX_EXT}`;
 export const GLOB_STORYBOOK = `**/*.${GLOB_STORYBOOK_EXT}`;
 

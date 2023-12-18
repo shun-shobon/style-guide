@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.2.0...eslint-config-v0.3.0) (2023-12-18)
+
+
+### Features
+
+* **eslint-config:** Add import rules ([243cafd](https://github.com/shun-shobon/configs/commit/243cafd3fbe47a2e479a488a6600ffd653b9f86a))
+* **eslint-config:** Add node rules ([36ed769](https://github.com/shun-shobon/configs/commit/36ed76912cbb22498d2c1fd5b6eed2aa18cf8766))
+
 ## [0.2.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.1.0...eslint-config-v0.2.0) (2023-12-16)
 
 

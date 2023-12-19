@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.3.0...eslint-config-v0.3.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-i to ^2.29.1 ([#252](https://github.com/shun-shobon/configs/issues/252)) ([227937a](https://github.com/shun-shobon/configs/commit/227937a250dbc3de34a1bb4d64667e99b7ae58aa))
+* **deps:** update linters to ^6.15.0 ([#254](https://github.com/shun-shobon/configs/issues/254)) ([04ee23e](https://github.com/shun-shobon/configs/commit/04ee23e70b642045ee595c0c1d758b156f27a59b))
+* **eslint-config:** Disable imports rules ([dc34125](https://github.com/shun-shobon/configs/commit/dc34125d6b554171815ea792f117664a8416b2e7))
+
 ## [0.3.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.2.0...eslint-config-v0.3.0) (2023-12-18)
 
 

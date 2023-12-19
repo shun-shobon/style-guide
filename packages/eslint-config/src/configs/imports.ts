@@ -28,6 +28,10 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(pluginImport.configs.recommended.rules as Rules),
 
+				// TypeScriptでエラーが出るので無効化
+				"import/namespace": "off",
+				"import/no-unresolved": "off",
+
 				// type import時に`import type { foo } from "foo"`を強制
 				"import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
 
@@ -39,9 +43,6 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 
 				// default import時に`{ default as foo } from "foo"`と書くのを警告
 				"import/no-named-default": "warn",
-
-				// TypeScriptでエラーが出るので無効化
-				"import/no-unresolved": "off",
 
 				// import文のパスを簡略化する
 				"import/no-useless-path-segments": ["warn", { noUselessIndex: true }],

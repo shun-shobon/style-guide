@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.3.2...eslint-config-v0.4.0) (2023-12-20)
+
+
+### Features
+
+* **eslint-config:** Add astro rules ([3055061](https://github.com/shun-shobon/configs/commit/30550619cc1e0182511a12b07c1aa6cae43b3a15))
+* **eslint-config:** Split jsx-a11y rules ([d7bb201](https://github.com/shun-shobon/configs/commit/d7bb201a71b46ebb117e69db0aab50328947419f))
+
 ## [0.3.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.3.1...eslint-config-v0.3.2) (2023-12-20)
 
 

@@ -40,6 +40,21 @@ export async function astro(
 				// @ts-expect-error: This is valid
 				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(pluginAstro.configs["jsx-a11y-strict"].rules as Rules),
+
+				// 曖昧なリンクのテキストを許可しない
+				"astro/jsx-a11y/anchor-ambiguous-text": "error",
+
+				// インタラクティブな要素にラベルが付いていないことを許可しない
+				"astro/jsx-a11y/control-has-associated-label": "error",
+
+				// html要素にlang属性が付与されていないことを許可しない
+				"astro/jsx-a11y/lang": "error",
+
+				// フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
+				"astro/jsx-a11y/no-aria-hidden-on-focusable": "error",
+
+				// div要素などにrole属性を付与することを許可しない
+				"astro/jsx-a11y/prefer-tag-over-role": "error",
 			},
 		},
 	];

@@ -2,6 +2,7 @@ export * from "./astro";
 export * from "./import-sort";
 export * from "./imports";
 export * from "./javascript";
+export * from "./jsx-a11y";
 export * from "./next";
 export * from "./node";
 export * from "./react";

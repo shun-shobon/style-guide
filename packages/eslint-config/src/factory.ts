@@ -5,6 +5,7 @@ import {
 	imports,
 	importSort,
 	javascript,
+	jsxA11y,
 	next,
 	node,
 	react,
@@ -49,6 +50,7 @@ export async function shun_shobon(
 		importSort(),
 		unicorn(),
 		node(),
+		jsxA11y(),
 	);
 
 	if (enableTypescript) {

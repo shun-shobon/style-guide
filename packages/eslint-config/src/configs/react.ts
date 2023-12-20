@@ -10,13 +10,11 @@ export async function react(
 	const { typescript = true } = options;
 
 	// eslint-disable-next-line typescript/no-unsafe-assignment
-	const [pluginReact, pluginReactHooks, pluginJsxA11y] = await Promise.all([
+	const [pluginReact, pluginReactHooks] = await Promise.all([
 		// @ts-expect-error: This package don't have types
 		interopDefault(import("eslint-plugin-react")),
 		// @ts-expect-error: This package don't have types
 		interopDefault(import("eslint-plugin-react-hooks")),
-		// @ts-expect-error: This package don't have types
-		interopDefault(import("eslint-plugin-jsx-a11y")),
 	]);
 
 	return [
@@ -26,8 +24,6 @@ export async function react(
 				"react": pluginReact,
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				"react-hooks": pluginReactHooks,
-				// eslint-disable-next-line typescript/no-unsafe-assignment
-				"jsx-a11y": pluginJsxA11y,
 			},
 			settings: {
 				react: {
@@ -49,10 +45,6 @@ export async function react(
 				// React Hooksの推奨ルールを有効化
 				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(pluginReactHooks.configs.recommended.rules as Rules),
-
-				// JSX A11yの推奨ルールを有効化
-				// eslint-disable-next-line typescript/no-unsafe-member-access
-				...(pluginJsxA11y.configs.recommended.rules as Rules),
 
 				// その他必要なものを有効化
 
@@ -76,15 +68,6 @@ export async function react(
 
 				// コンポーネント内でコンポーネントを定義するのを許可しない
 				"react/no-unstable-nested-components": "error",
-
-				// 曖昧なリンクのテキストを許可しない
-				"jsx-a11y/anchor-ambiguous-text": "error",
-
-				// インタラクティブな要素にラベルが付いていないことを許可しない
-				"jsx-a11y/control-has-associated-label": "error",
-
-				// フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
-				"jsx-a11y/no-aria-hidden-on-focusable": "error",
 
 				...(typescript
 					? {

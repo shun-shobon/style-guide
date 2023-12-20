@@ -1,6 +1,7 @@
 import { isPackageExists } from "local-pkg";
 
 import {
+	astro,
 	imports,
 	importSort,
 	javascript,
@@ -23,6 +24,7 @@ export async function shun_shobon(
 		typescript: enableTypescript = isPackageExists("typescript"),
 		react: enableReact = isPackageExists("react"),
 		next: enableNext = isPackageExists("next"),
+		astro: enableAstro = isPackageExists("astro"),
 		storybook: enableStorybook = isPackageExists("storybook"),
 	} = options;
 
@@ -59,6 +61,10 @@ export async function shun_shobon(
 
 	if (enableNext) {
 		configQueue.push(next());
+	}
+
+	if (enableAstro) {
+		configQueue.push(astro(options));
 	}
 
 	if (enableStorybook) {

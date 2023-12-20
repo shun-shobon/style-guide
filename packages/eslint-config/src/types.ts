@@ -45,6 +45,13 @@ export interface OptionsConfig {
 	next?: boolean;
 
 	/**
+	 * Enable Astro support.
+	 *
+	 * @default auto-detect based on the dependencies
+	 */
+	astro?: boolean;
+
+	/**
 	 * Enable Storybook support.
 	 *
 	 * @default auto-detect based on the dependencies

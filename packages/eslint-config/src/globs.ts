@@ -20,3 +20,6 @@ export const GLOB_STORYBOOK_EXT = `@(stories|story).${GLOB_TSX_EXT}`;
 export const GLOB_STORYBOOK = `**/*.${GLOB_STORYBOOK_EXT}`;
 
 export const GLOB_STORYBOOK_CONFIG = `**/.storybook/main.${GLOB_SRC_EXT}`;
+
+export const GLOB_ASTRO_EXT = "astro";
+export const GLOB_ASTRO = `**/*.${GLOB_ASTRO_EXT}`;

@@ -1,3 +1,4 @@
+export * from "./astro";
 export * from "./import-sort";
 export * from "./imports";
 export * from "./javascript";

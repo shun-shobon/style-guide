@@ -1,6 +1,13 @@
 import { isPackageExists } from "local-pkg";
 
-import { base, ignores, jsdoc, packageJson, tailwindcss } from "./configs";
+import {
+	astro,
+	base,
+	ignores,
+	jsdoc,
+	packageJson,
+	tailwindcss,
+} from "./configs";
 import type { Config, OptionsConfig } from "./types";
 import { mergeConfig } from "./utils";
 
@@ -10,6 +17,7 @@ export function shun_shobon(
 ): Config {
 	const {
 		tailwindcss: enableTailwindcss = isPackageExists("tailwindcss"),
+		astro: enableAstro = isPackageExists("astro"),
 		ignoreFiles = [],
 	} = options;
 
@@ -20,6 +28,10 @@ export function shun_shobon(
 
 	if (enableTailwindcss) {
 		configs.push(tailwindcss());
+	}
+
+	if (enableAstro) {
+		configs.push(astro());
 	}
 
 	return mergeConfig(...configs, userConfig);

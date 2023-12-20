@@ -24,6 +24,13 @@ export interface OptionsConfig {
 	tailwindcss?: boolean;
 
 	/**
+	 * Enable Astro support.
+	 *
+	 * @default auto-detect based on the dependencies
+	 */
+	astro?: boolean;
+
+	/**
 	 * Ignore files.
 	 */
 	ignoreFiles?: string[];

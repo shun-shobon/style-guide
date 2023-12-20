@@ -4,7 +4,6 @@
 		"packages/eslint-config": {},
 		"packages/prettier-config": {}
 	},
-	"last-release-sha": "ba47b21a9a244241f3b83644aea9629cfea7460d",
 	"release-type": "node",
 	"bump-minor-pre-major": true,
 	"plugins": ["node-workspace"]

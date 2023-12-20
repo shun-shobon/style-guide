@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.1.0...prettier-config-v0.2.0) (2023-12-20)
+
+
+### Features
+
+* **prettier-config:** Add astro support ([c19f7cc](https://github.com/shun-shobon/configs/commit/c19f7cc3d6196e44e3b4985f0051ca96424307eb))
+
 ## [0.1.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.0.1...prettier-config-v0.1.0) (2023-12-16)
 
 

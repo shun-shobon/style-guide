@@ -87,8 +87,8 @@ importers:
         specifier: ^0.6.15
         version: 0.6.15(eslint@8.55.0)(typescript@5.3.3)
       eslint-plugin-unicorn:
-        specifier: ^50.0.0
-        version: 50.0.0(eslint@8.55.0)
+        specifier: ^50.0.1
+        version: 50.0.1(eslint@8.55.0)
       globals:
         specifier: ^13.24.0
         version: 13.24.0
@@ -1768,8 +1768,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-unicorn@50.0.0(eslint@8.55.0):
-    resolution: {integrity: sha512-S830OrmnYzJFMXf2AsPVZE3BlLedAED0a3QNpB+o97eXvJTAdWqc5e+R8ozm1jh8nMV37HykU/h9HMwjZ7Fzbg==}
+  /eslint-plugin-unicorn@50.0.1(eslint@8.55.0):
+    resolution: {integrity: sha512-KxenCZxqSYW0GWHH18okDlOQcpezcitm5aOSz6EnobyJ6BIByiPDviQRjJIUAjG/tMN11958MxaQ+qCoU6lfDA==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: '>=8.56.0'

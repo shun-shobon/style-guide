@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.0...eslint-config-v0.4.1) (2023-12-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v50 ([#259](https://github.com/shun-shobon/configs/issues/259)) ([a3a95f4](https://github.com/shun-shobon/configs/commit/a3a95f46f6d60b4dacf0442060168b578196c86c))
+
 ## [0.4.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.3.2...eslint-config-v0.4.0) (2023-12-20)
 
 

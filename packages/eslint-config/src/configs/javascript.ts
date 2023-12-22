@@ -34,6 +34,9 @@ export function javascript(): ConfigItem[] {
 				// コンストラクタの戻り値を許可しない
 				"no-constructor-return": "error",
 
+				// 位置調整のための空白混在を許可
+				"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+
 				// Symbol/BigIntでnewしない
 				"no-new-native-nonconstructor": "error",
 

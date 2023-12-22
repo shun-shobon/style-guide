@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.2...eslint-config-v0.4.3) (2023-12-22)
+
+
+### Bug Fixes
+
+* **eslint-config:** Allow smart-tab ([a354d28](https://github.com/shun-shobon/configs/commit/a354d28e78e528e98f0373d5838ff8df588b9eb7))
+
 ## [0.4.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.1...eslint-config-v0.4.2) (2023-12-21)
 
 

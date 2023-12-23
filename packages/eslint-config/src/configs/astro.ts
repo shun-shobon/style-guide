@@ -52,9 +52,6 @@ export async function astro(
 
 				// フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
 				"astro/jsx-a11y/no-aria-hidden-on-focusable": "error",
-
-				// div要素などにrole属性を付与することを許可しない
-				"astro/jsx-a11y/prefer-tag-over-role": "error",
 			},
 		},
 	];

@@ -93,7 +93,11 @@ export async function typescript(): Promise<ConfigItem[]> {
 		{
 			files: [GLOB_DTS],
 			rules: {
+				// `import`の重複を許可
 				"import/no-duplicates": "off",
+
+				// `///`での参照を許可
+				"typescript/triple-slash-reference": "off",
 			},
 		},
 	];

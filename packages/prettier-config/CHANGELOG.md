@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/shun-shobon/configs/compare/prettier-config-v0.2.0...prettier-config-v0.2.1) (2023-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-jsdoc to ^1.3.0 ([#264](https://github.com/shun-shobon/configs/issues/264)) ([fb5b8a3](https://github.com/shun-shobon/configs/commit/fb5b8a304eda4fe5e5442b2022cde943920d87b2))
+
 ## [0.2.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.1.0...prettier-config-v0.2.0) (2023-12-20)
 
 

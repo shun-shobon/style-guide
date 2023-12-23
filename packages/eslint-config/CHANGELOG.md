@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.3...eslint-config-v0.4.4) (2023-12-23)
+
+
+### Bug Fixes
+
+* **eslint-config:** Fix files to apply jsx-a11y ([43657bf](https://github.com/shun-shobon/configs/commit/43657bff137e4629c12d1340548d7a5d891928df))
+* **eslint-config:** Remove `jsx-a11y/prefer-tag-over-role` ([1c4ca2d](https://github.com/shun-shobon/configs/commit/1c4ca2d8c3d8c5479e0bf10be27a8fa990785d2e))
+
 ## [0.4.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.2...eslint-config-v0.4.3) (2023-12-22)
 
 

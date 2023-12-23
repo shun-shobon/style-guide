@@ -1,6 +1,7 @@
 import type { Rules } from "eslint-define-config";
 
 import { GLOB_JSX, GLOB_TSX } from "../globs";
+import { pluginJsxA11y } from "../plugins";
 import type { ConfigItem, OptionsHasTypeScript } from "../types";
 import { interopDefault } from "../utils";
 
@@ -46,6 +47,10 @@ export async function react(
 				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(pluginReactHooks.configs.recommended.rules as Rules),
 
+				// JSX A11yの厳格なルールを有効化
+				// eslint-disable-next-line typescript/no-unsafe-member-access
+				...(pluginJsxA11y.configs.strict.rules as Rules),
+
 				// その他必要なものを有効化
 
 				// `onClick`などのイベントハンドラーの命名規則をチェック
@@ -81,6 +86,18 @@ export async function react(
 							"react/no-unknown-property": "off",
 						}
 					: {}),
+
+				// 曖昧なリンクのテキストを許可しない
+				"jsx-a11y/anchor-ambiguous-text": "error",
+
+				// インタラクティブな要素にラベルが付いていないことを許可しない
+				"jsx-a11y/control-has-associated-label": "error",
+
+				// html要素にlang属性が付与されていないことを許可しない
+				"jsx-a11y/lang": "error",
+
+				// フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
+				"jsx-a11y/no-aria-hidden-on-focusable": "error",
 			},
 		},
 	];

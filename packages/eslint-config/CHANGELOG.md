@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.5](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.4...eslint-config-v0.4.5) (2023-12-23)
+
+
+### Bug Fixes
+
+* **eslint-config:** Allow `triple-slash-reference` in .d.ts ([5953ca5](https://github.com/shun-shobon/configs/commit/5953ca531bf2bb067e3a88a8da34f6f7ee9cba02))
+
 ## [0.4.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.3...eslint-config-v0.4.4) (2023-12-23)
 
 

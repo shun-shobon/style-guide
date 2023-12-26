@@ -1,6 +1,6 @@
 {
 	"name": "@shun-shobon/eslint-config",
-	"version": "0.4.5",
+	"version": "0.4.6",
 	"type": "module",
 	"description": "shun-shobon's ESLint config",
 	"repository": {

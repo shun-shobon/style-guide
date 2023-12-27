@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.7](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.6...eslint-config-v0.4.7) (2023-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-define-config to ^2.1.0 ([#271](https://github.com/shun-shobon/configs/issues/271)) ([7d51dc0](https://github.com/shun-shobon/configs/commit/7d51dc00b1654a4a2a5fab08fcd5519e10dd2639))
+
 ## [0.4.6](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.5...eslint-config-v0.4.6) (2023-12-26)
 
 

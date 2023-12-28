@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.8](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.7...eslint-config-v0.4.8) (2023-12-28)
+
+
+### Bug Fixes
+
+* **eslint-config:** Fix parser setting for plugin-import ([70f0c6c](https://github.com/shun-shobon/configs/commit/70f0c6cca3674655ba06f17274c7bf589b074b6e))
+
 ## [0.4.7](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.6...eslint-config-v0.4.7) (2023-12-27)
 
 

@@ -13,8 +13,10 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 				import: pluginImport,
 			},
 			settings: {
+				// https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-1419518561
 				"import/parsers": {
-					"@typescript-eslint/parser": [".ts", ".tsx"],
+					"espree": [".js", ".cjs", ".mjs", ".jsx"],
+					"@typescript-eslint/parser": [".ts", ".mts", ".cts", ".tsx"],
 				},
 				"import/extensions": [
 					".js",

@@ -1,5 +1,6 @@
 import type { Rules } from "eslint-define-config";
 
+import { GLOB_TS, GLOB_TSX } from "../globs";
 import { pluginImport } from "../plugins";
 import type { ConfigItem, OptionsHasTypeScript } from "../types";
 
@@ -53,5 +54,16 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 				"import/no-self-import": "error",
 			},
 		},
+		...(typescript
+			? [
+					{
+						files: [GLOB_TS, GLOB_TSX],
+						rules: {
+							// TypeScriptの型チェックでエラーが出るので無効化
+							"import/named": "off",
+						},
+					} satisfies ConfigItem,
+				]
+			: []),
 	];
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.9](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.8...eslint-config-v0.4.9) (2023-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-n to ^16.6.0 ([#278](https://github.com/shun-shobon/configs/issues/278)) ([cda9e38](https://github.com/shun-shobon/configs/commit/cda9e38cdafd2ca4a89c4de2a76f4e7015f2873d))
+
 ## [0.4.8](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.7...eslint-config-v0.4.8) (2023-12-28)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.10](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.9...eslint-config-v0.4.10) (2024-01-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-n to ^16.6.1 ([#285](https://github.com/shun-shobon/configs/issues/285)) ([f717f85](https://github.com/shun-shobon/configs/commit/f717f85b31d2201a01525ab1555ce016f305fae9))
+* **deps:** update linters to ^6.17.0 ([#283](https://github.com/shun-shobon/configs/issues/283)) ([d99bbda](https://github.com/shun-shobon/configs/commit/d99bbda56863e40be048e4addf2cf1f46f1c97b0))
+
 ## [0.4.9](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.8...eslint-config-v0.4.9) (2023-12-29)
 
 

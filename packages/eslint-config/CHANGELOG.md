@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.11](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.10...eslint-config-v0.4.11) (2024-01-05)
+
+
+### Bug Fixes
+
+* Disable no-unused-vars when TypeScript is enabled on Astro ([5f213e7](https://github.com/shun-shobon/configs/commit/5f213e76f43dafa3c8a22738c0bcda244ec7175e))
+
 ## [0.4.10](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.9...eslint-config-v0.4.10) (2024-01-02)
 
 

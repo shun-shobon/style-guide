@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/shun-shobon/configs/compare/prettier-config-v0.2.3...prettier-config-v0.2.4) (2024-01-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-tailwindcss to ^0.5.11 ([#289](https://github.com/shun-shobon/configs/issues/289)) ([200bf99](https://github.com/shun-shobon/configs/commit/200bf99f6b290064dc842778004ffb1ecfc20759))
+
 ## [0.2.3](https://github.com/shun-shobon/configs/compare/prettier-config-v0.2.2...prettier-config-v0.2.3) (2023-12-28)
 
 

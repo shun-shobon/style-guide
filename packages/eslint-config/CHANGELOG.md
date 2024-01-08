@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.12...eslint-config-v0.5.0) (2024-01-08)
+
+
+### Features
+
+* Add support for additional component extensions ([1e105a5](https://github.com/shun-shobon/configs/commit/1e105a5bdcde8bb29a35fdf805297f5176de5e0f))
+
+
+### Bug Fixes
+
+* Add missing globals in Astro ([0cc89ce](https://github.com/shun-shobon/configs/commit/0cc89ce24b037e9131d0adc86c159e5345c9f178))
+* Change default typescript flag in react options ([5f6ae95](https://github.com/shun-shobon/configs/commit/5f6ae9521c6d0a9800fcb9076cbe34a7780e68c8))
+
 ## [0.4.12](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.11...eslint-config-v0.4.12) (2024-01-07)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.5.0...eslint-config-v0.5.1) (2024-01-08)
+
+
+### Bug Fixes
+
+* Move parser setting for TypeScript ([fb43138](https://github.com/shun-shobon/configs/commit/fb43138d1e877975453e11c50c1b4eef4345da67))
+
 ## [0.5.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.4.12...eslint-config-v0.5.0) (2024-01-08)
 
 

@@ -12,7 +12,7 @@ export interface ConfigItem extends Omit<FlatESLintConfig, "plugins"> {
 	plugins?: Record<string, any>;
 }
 
-export interface OptionsConfig {
+export interface OptionsConfig extends OptionsComponentExts {
 	/**
 	 * Enable .gitignore support.
 	 *
@@ -26,35 +26,35 @@ export interface OptionsConfig {
 	/**
 	 * Enable TypeScript support.
 	 *
-	 * @default auto-detect based on the dependencies
+	 * @defaultValue it will be auto-detected based on the dependencies.
 	 */
 	typescript?: boolean;
 
 	/**
 	 * Enable React support.
 	 *
-	 * @default auto-detect based on the dependencies
+	 * @defaultValue it will be auto-detected based on the dependencies.
 	 */
 	react?: boolean;
 
 	/**
 	 * Enable Next.js support.
 	 *
-	 * @default auto-detect based on the dependencies
+	 * @defaultValue it will be auto-detected based on the dependencies.
 	 */
 	next?: boolean;
 
 	/**
 	 * Enable Astro support.
 	 *
-	 * @default auto-detect based on the dependencies
+	 * @defaultValue it will be auto-detected based on the dependencies.
 	 */
 	astro?: boolean;
 
 	/**
 	 * Enable Storybook support.
 	 *
-	 * @default auto-detect based on the dependencies
+	 * @defaultValue it will be auto-detected based on the dependencies.
 	 */
 	storybook?: boolean;
 }
@@ -64,4 +64,21 @@ export interface OptionsHasTypeScript {
 	 * Enable TypeScript support.
 	 */
 	typescript?: boolean;
+}
+
+export interface OptionsComponentExts {
+	/**
+	 * Additional extensions for component files.
+	 *
+	 * @example Astro and Svelte
+	 *
+	 * ```ts
+	 * {
+	 * 	"componentExts": ["astro", "svelte"]
+	 * }
+	 * ```
+	 *
+	 * @defaultValue The default is `[]`, but it will be auto-detected based on the dependencies.
+	 */
+	componentExts?: string[];
 }

@@ -1,8 +1,12 @@
 import { GLOB_DTS, GLOB_SRC, GLOB_TS, GLOB_TSX } from "../globs";
-import type { ConfigItem } from "../types";
+import type { ConfigItem, OptionsComponentExts } from "../types";
 import { interopDefault, renameRules } from "../utils";
 
-export async function typescript(): Promise<ConfigItem[]> {
+export async function typescript(
+	options: OptionsComponentExts = {},
+): Promise<ConfigItem[]> {
+	const { componentExts = [] } = options;
+
 	const [pluginTypescript, parserTypescript] = await Promise.all([
 		interopDefault(import("@typescript-eslint/eslint-plugin")),
 		interopDefault(import("@typescript-eslint/parser")),
@@ -15,7 +19,7 @@ export async function typescript(): Promise<ConfigItem[]> {
 			},
 		},
 		{
-			files: [GLOB_SRC],
+			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
 			languageOptions: {
 				parser: parserTypescript,
 				parserOptions: {
@@ -82,7 +86,7 @@ export async function typescript(): Promise<ConfigItem[]> {
 			},
 		},
 		{
-			files: [GLOB_TS, GLOB_TSX],
+			files: [GLOB_TS, GLOB_TSX, ...componentExts.map((ext) => `**/*.${ext}`)],
 			rules: {
 				// ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
 				// eslint-disable-next-line typescript/no-non-null-assertion

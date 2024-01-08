@@ -27,6 +27,7 @@ export async function shun_shobon(
 		next: enableNext = isPackageExists("next"),
 		astro: enableAstro = isPackageExists("astro"),
 		storybook: enableStorybook = isPackageExists("storybook"),
+		componentExts = [],
 	} = options;
 
 	const configQueue: Awaitable<ConfigItem[]>[] = [];
@@ -43,10 +44,16 @@ export async function shun_shobon(
 		);
 	}
 
+	if (enableAstro) {
+		componentExts.push("astro");
+	}
+
 	// basic configs
 	configQueue.push(
 		javascript(),
-		imports(options),
+		imports({
+			typescript: enableTypescript,
+		}),
 		importSort(),
 		unicorn(),
 		node(),
@@ -54,11 +61,19 @@ export async function shun_shobon(
 	);
 
 	if (enableTypescript) {
-		configQueue.push(typescript());
+		configQueue.push(
+			typescript({
+				componentExts,
+			}),
+		);
 	}
 
 	if (enableReact) {
-		configQueue.push(react(options));
+		configQueue.push(
+			react({
+				typescript: enableTypescript,
+			}),
+		);
 	}
 
 	if (enableNext) {
@@ -66,7 +81,11 @@ export async function shun_shobon(
 	}
 
 	if (enableAstro) {
-		configQueue.push(astro(options));
+		configQueue.push(
+			astro({
+				typescript: enableTypescript,
+			}),
+		);
 	}
 
 	if (enableStorybook) {

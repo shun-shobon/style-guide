@@ -12,7 +12,9 @@ export interface ConfigItem extends Omit<FlatESLintConfig, "plugins"> {
 	plugins?: Record<string, any>;
 }
 
-export interface OptionsConfig extends OptionsComponentExts {
+export interface OptionsConfig
+	extends OptionsComponentExts,
+		OptionsDisableTypeCheckedFiles {
 	/**
 	 * Enable .gitignore support.
 	 *
@@ -81,4 +83,13 @@ export interface OptionsComponentExts {
 	 * @defaultValue The default is `[]`, but it will be auto-detected based on the dependencies.
 	 */
 	componentExts?: string[];
+}
+
+export interface OptionsDisableTypeCheckedFiles {
+	/**
+	 * Glob patterns of files to disable type checking.
+	 *
+	 * @defaultValue `[]`
+	 */
+	disableTypeCheckedFiles?: string[];
 }

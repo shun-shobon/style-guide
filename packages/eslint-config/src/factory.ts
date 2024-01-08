@@ -2,6 +2,7 @@ import { isPackageExists } from "local-pkg";
 
 import {
 	astro,
+	disableTypeChecked,
 	imports,
 	importSort,
 	javascript,
@@ -28,6 +29,7 @@ export async function shun_shobon(
 		astro: enableAstro = isPackageExists("astro"),
 		storybook: enableStorybook = isPackageExists("storybook"),
 		componentExts = [],
+		disableTypeCheckedFiles = [],
 	} = options;
 
 	const configQueue: Awaitable<ConfigItem[]>[] = [];
@@ -91,6 +93,8 @@ export async function shun_shobon(
 	if (enableStorybook) {
 		configQueue.push(storybook());
 	}
+
+	configQueue.push(disableTypeChecked({ disableTypeCheckedFiles }));
 
 	const configs = await Promise.all(configQueue).then((configs) =>
 		configs.flat(),

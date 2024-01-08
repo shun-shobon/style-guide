@@ -1,4 +1,5 @@
 export * from "./astro";
+export * from "./disable-type-checked";
 export * from "./import-sort";
 export * from "./imports";
 export * from "./javascript";

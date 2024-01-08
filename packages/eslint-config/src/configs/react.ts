@@ -8,7 +8,7 @@ import { interopDefault } from "../utils";
 export async function react(
 	options: OptionsHasTypeScript = {},
 ): Promise<ConfigItem[]> {
-	const { typescript = true } = options;
+	const { typescript = false } = options;
 
 	// eslint-disable-next-line typescript/no-unsafe-assignment
 	const [pluginReact, pluginReactHooks] = await Promise.all([

@@ -19,7 +19,7 @@ export async function typescript(
 			},
 		},
 		{
-			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
+			files: [GLOB_SRC],
 			languageOptions: {
 				parser: parserTypescript,
 				parserOptions: {
@@ -27,6 +27,9 @@ export async function typescript(
 					EXPERIMENTAL_useProjectService: true,
 				},
 			},
+		},
+		{
+			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
 			rules: {
 				// 厳密なルール + 型チェックのルールを有効化
 				...renameRules(

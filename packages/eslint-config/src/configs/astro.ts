@@ -31,6 +31,10 @@ export async function astro(
 						: undefined,
 					extraFileExtensions: [".astro"],
 				},
+				globals: {
+					Astro: "readonly",
+					Fragment: "readonly",
+				},
 			},
 			rules: {
 				// Astroの推奨ルールを有効化

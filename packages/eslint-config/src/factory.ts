@@ -48,6 +48,7 @@ export async function shun_shobon(
 
 	if (enableAstro) {
 		componentExts.push("astro");
+		disableTypeCheckedFiles.push("**/*.astro");
 	}
 
 	// basic configs

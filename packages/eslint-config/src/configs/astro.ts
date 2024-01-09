@@ -31,6 +31,8 @@ export async function astro(
 						: undefined,
 					extraFileExtensions: [".astro"],
 				},
+				processor:
+					pluginAstro.processors[typescript ? "client-side-ts" : ".astro"],
 				globals: {
 					Astro: "readonly",
 					Fragment: "readonly",
@@ -56,13 +58,6 @@ export async function astro(
 
 				// フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
 				"astro/jsx-a11y/no-aria-hidden-on-focusable": "error",
-
-				// TypeScriptでチェックできるルールは無効化
-				...(typescript
-					? {
-							"no-unused-vars": "off",
-						}
-					: {}),
 			},
 		},
 	];

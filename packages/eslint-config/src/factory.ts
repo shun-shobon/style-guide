@@ -14,6 +14,7 @@ import {
 	typescript,
 	unicorn,
 } from "./configs";
+import { GLOB_ASTRO, GLOB_ASTRO_EXT, GLOB_JS, GLOB_JSX } from "./globs";
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { interopDefault } from "./utils";
 
@@ -48,8 +49,8 @@ export async function shun_shobon(
 
 	// Preprocess
 	if (enableAstro) {
-		componentExts.push("astro");
-		disableTypeCheckedFiles.push("**/*.astro");
+		componentExts.push(GLOB_ASTRO_EXT);
+		disableTypeCheckedFiles.push(GLOB_ASTRO);
 	}
 
 	// Process
@@ -70,7 +71,7 @@ export async function shun_shobon(
 				componentExts,
 			}),
 		);
-		disableTypeCheckedFiles.push("**/*.js", "**/*.mjs", "**/*.cjs");
+		disableTypeCheckedFiles.push(GLOB_JS, GLOB_JSX);
 	}
 	if (enableReact) {
 		configQueue.push(

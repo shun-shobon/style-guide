@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.0...eslint-config-v0.6.1) (2024-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-n to ^16.6.2 ([#298](https://github.com/shun-shobon/configs/issues/298)) ([21f1342](https://github.com/shun-shobon/configs/commit/21f1342f3587f339a02101211cc1052514d6d2e9))
+* Fix Astro processor in ESLint config ([70a8574](https://github.com/shun-shobon/configs/commit/70a8574668b50356426a74b3e4e7739e2528a5b6))
+
 ## [0.6.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.5.1...eslint-config-v0.6.0) (2024-01-09)
 
 

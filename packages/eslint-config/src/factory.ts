@@ -46,11 +46,13 @@ export async function shun_shobon(
 		);
 	}
 
+	// Preprocess
 	if (enableAstro) {
 		componentExts.push("astro");
 		disableTypeCheckedFiles.push("**/*.astro");
 	}
 
+	// Process
 	// basic configs
 	configQueue.push(
 		javascript(),
@@ -62,15 +64,14 @@ export async function shun_shobon(
 		node(),
 		jsxA11y(),
 	);
-
 	if (enableTypescript) {
 		configQueue.push(
 			typescript({
 				componentExts,
 			}),
 		);
+		disableTypeCheckedFiles.push("**/*.js", "**/*.mjs", "**/*.cjs");
 	}
-
 	if (enableReact) {
 		configQueue.push(
 			react({
@@ -78,11 +79,9 @@ export async function shun_shobon(
 			}),
 		);
 	}
-
 	if (enableNext) {
 		configQueue.push(next());
 	}
-
 	if (enableAstro) {
 		configQueue.push(
 			astro({
@@ -90,12 +89,14 @@ export async function shun_shobon(
 			}),
 		);
 	}
-
 	if (enableStorybook) {
 		configQueue.push(storybook());
 	}
 
-	configQueue.push(disableTypeChecked({ disableTypeCheckedFiles }));
+	// Postprocess
+	if (enableTypescript) {
+		configQueue.push(disableTypeChecked({ disableTypeCheckedFiles }));
+	}
 
 	const configs = await Promise.all(configQueue).then((configs) =>
 		configs.flat(),

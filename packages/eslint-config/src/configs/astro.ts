@@ -31,13 +31,13 @@ export async function astro(
 						: undefined,
 					extraFileExtensions: [".astro"],
 				},
-				processor:
-					pluginAstro.processors[typescript ? "client-side-ts" : ".astro"],
 				globals: {
 					Astro: "readonly",
 					Fragment: "readonly",
 				},
 			},
+			processor:
+				pluginAstro.processors[typescript ? "client-side-ts" : "astro"],
 			rules: {
 				// Astroの推奨ルールを有効化
 				...(pluginAstro.configs.recommended.rules as unknown as Rules),

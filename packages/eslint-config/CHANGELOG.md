@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.6.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.5.1...eslint-config-v0.6.0) (2024-01-09)
+
+
+### Features
+
+* Add disable-type-checked rules ([01c180b](https://github.com/shun-shobon/configs/commit/01c180bfe1d88f0b39e591a3e53b08dca2ec57a1))
+
+
+### Bug Fixes
+
+* **deps:** update linters to ^6.18.1 ([#296](https://github.com/shun-shobon/configs/issues/296)) ([6920b97](https://github.com/shun-shobon/configs/commit/6920b97344f9665dd1309e6fedb9d9198da9af70))
+* Disable type-checking to Astro ([d333a17](https://github.com/shun-shobon/configs/commit/d333a174a058dd996701943c5d56a260bfab73a2))
+* Disable type-checking to JavaScript ([769dadd](https://github.com/shun-shobon/configs/commit/769dadd4d1d49cd6c459aa17df69fc07f3269e22))
+
 ## [0.5.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.5.0...eslint-config-v0.5.1) (2024-01-08)
 
 

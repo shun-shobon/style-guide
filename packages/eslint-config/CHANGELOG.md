@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.1...eslint-config-v0.6.2) (2024-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro-eslint-parser to ^0.16.1 ([#303](https://github.com/shun-shobon/configs/issues/303)) ([65dea05](https://github.com/shun-shobon/configs/commit/65dea05a6b6546508953dc8e9da90e4598f19c25))
+
 ## [0.6.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.0...eslint-config-v0.6.1) (2024-01-09)
 
 

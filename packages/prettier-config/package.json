@@ -42,7 +42,7 @@
 		"prettier-plugin-tailwindcss": "^0.5.11"
 	},
 	"devDependencies": {
-		"@types/node": "^20.11.2",
+		"@types/node": "^20.11.3",
 		"prettier": "^3.2.2"
 	},
 	"sideEffects": false

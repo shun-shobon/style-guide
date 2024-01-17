@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.5](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.4...eslint-config-v0.6.5) (2024-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-astro to ^0.31.2 ([#317](https://github.com/shun-shobon/configs/issues/317)) ([9134b85](https://github.com/shun-shobon/configs/commit/9134b85e65b8260fba854991dae59b9927f502fb))
+* **deps:** update dependency eslint-plugin-astro to ^0.31.3 ([#320](https://github.com/shun-shobon/configs/issues/320)) ([ecc48bb](https://github.com/shun-shobon/configs/commit/ecc48bb1ae992122702311af3a0a32338ea201b5))
+
 ## [0.6.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.3...eslint-config-v0.6.4) (2024-01-16)
 
 

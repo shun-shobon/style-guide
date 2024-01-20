@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.6](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.5...eslint-config-v0.6.6) (2024-01-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/eslint-plugin-next to ^14.1.0 ([#325](https://github.com/shun-shobon/configs/issues/325)) ([7e4b4a7](https://github.com/shun-shobon/configs/commit/7e4b4a7b0997acc1189dd9e9938be964f6767464))
+* **deps:** update dependency astro-eslint-parser to ^0.16.2 ([#326](https://github.com/shun-shobon/configs/issues/326)) ([16f7198](https://github.com/shun-shobon/configs/commit/16f7198a4b2240bfcb4bf8294b30233d1142667e))
+
 ## [0.6.5](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.4...eslint-config-v0.6.5) (2024-01-17)
 
 

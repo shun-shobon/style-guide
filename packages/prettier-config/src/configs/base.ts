@@ -7,5 +7,14 @@ export function base(): Config {
 
 		// This is the default, but VSCode's Prettier plugin doesn't respect it.
 		trailingComma: "all",
+
+		overrides: [
+			{
+				files: ["tsconfig.json", "jsconfig.json"],
+				options: {
+					parser: "jsonc",
+				},
+			},
+		],
 	};
 }

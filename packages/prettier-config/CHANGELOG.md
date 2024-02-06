@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.2.5...prettier-config-v0.3.0) (2024-02-06)
+
+
+### Features
+
+* **prettier:** Use jsonc parser to ts/jsconfig.json ([63047b9](https://github.com/shun-shobon/configs/commit/63047b9d68b55e0d7235139117d96d8dfaa713c7))
+
+
+### Bug Fixes
+
+* **deps:** update linters ([#359](https://github.com/shun-shobon/configs/issues/359)) ([3bcc8ff](https://github.com/shun-shobon/configs/commit/3bcc8ffad481042ced4698993396a5d6ede79305))
+
 ## [0.2.5](https://github.com/shun-shobon/configs/compare/prettier-config-v0.2.4...prettier-config-v0.2.5) (2024-01-19)
 
 

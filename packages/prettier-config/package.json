@@ -1,6 +1,6 @@
 {
 	"name": "@shun-shobon/prettier-config",
-	"version": "0.2.5",
+	"version": "0.3.0",
 	"type": "module",
 	"description": "shun-shobon's Prettier config",
 	"repository": {

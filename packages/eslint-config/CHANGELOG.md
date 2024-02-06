@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.9](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.8...eslint-config-v0.6.9) (2024-02-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency astro-eslint-parser to ^0.16.3 ([#350](https://github.com/shun-shobon/configs/issues/350)) ([e68ca05](https://github.com/shun-shobon/configs/commit/e68ca0520543fd342b7f613d5c8ca9b783982a42))
+* **deps:** update dependency eslint-plugin-astro to ^0.31.4 ([#351](https://github.com/shun-shobon/configs/issues/351)) ([08146ad](https://github.com/shun-shobon/configs/commit/08146ade63e7f31319fe7655467cc1dfd74523a5))
+* **deps:** update dependency eslint-plugin-unicorn to v51 ([#361](https://github.com/shun-shobon/configs/issues/361)) ([48fd02d](https://github.com/shun-shobon/configs/commit/48fd02d7fe6e5715def93e4f2a44537f7d7b420d))
+* **deps:** update linters ([#359](https://github.com/shun-shobon/configs/issues/359)) ([3bcc8ff](https://github.com/shun-shobon/configs/commit/3bcc8ffad481042ced4698993396a5d6ede79305))
+
 ## [0.6.8](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.7...eslint-config-v0.6.8) (2024-01-29)
 
 

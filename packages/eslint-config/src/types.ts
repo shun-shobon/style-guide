@@ -16,11 +16,18 @@ export interface OptionsConfig
 	extends OptionsComponentExts,
 		OptionsDisableTypeCheckedFiles {
 	/**
+	 * Ignore files.
+	 *
+	 * @defaultValue some common ignore files
+	 */
+	ignores?: string[];
+
+	/**
 	 * Enable .gitignore support.
 	 *
 	 * Passing an object to configure the options.
 	 *
-	 * @default true
+	 * @defaultValue `true`
 	 * @see https://github.com/antfu/eslint-config-flat-gitignore
 	 */
 	gitignore?: boolean | FlatGitignoreOptions;

@@ -24,6 +24,7 @@ export async function shun_shobon(
 ): Promise<ConfigItem[]> {
 	const {
 		gitignore: enableGitignore = true,
+		ignores: userIgnores = [],
 		typescript: enableTypescript = isPackageExists("typescript"),
 		react: enableReact = isPackageExists("react"),
 		next: enableNext = isPackageExists("next"),
@@ -98,6 +99,13 @@ export async function shun_shobon(
 	if (enableTypescript) {
 		configQueue.push(disableTypeChecked({ disableTypeCheckedFiles }));
 	}
+
+	const ignores = [...userIgnores, "**/.yarn/**"];
+	configQueue.push([
+		{
+			ignores,
+		},
+	]);
 
 	const configs = await Promise.all(configQueue).then((configs) =>
 		configs.flat(),

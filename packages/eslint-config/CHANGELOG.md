@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.7.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.9...eslint-config-v0.7.0) (2024-02-08)
+
+
+### Features
+
+* **eslint:** Add ignore option ([20c97b6](https://github.com/shun-shobon/configs/commit/20c97b642e320e8e272ddfff267719990a64a8d5))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to ^51.0.1 ([#362](https://github.com/shun-shobon/configs/issues/362)) ([45d9b48](https://github.com/shun-shobon/configs/commit/45d9b48a752c98cc5e54c84d1d3fb66b9fb7d50f))
+
 ## [0.6.9](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.8...eslint-config-v0.6.9) (2024-02-06)
 
 

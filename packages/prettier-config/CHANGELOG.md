@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/shun-shobon/configs/compare/prettier-config-v0.3.0...prettier-config-v0.3.1) (2024-02-08)
+
+
+### Bug Fixes
+
+* **prettier:** Disable yarn files ([899f883](https://github.com/shun-shobon/configs/commit/899f88330c8802bda33c49bd4a4ebb62e9670a12))
+
 ## [0.3.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.2.5...prettier-config-v0.3.0) (2024-02-06)
 
 

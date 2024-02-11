@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.7.1...eslint-config-v0.7.2) (2024-02-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-flat-gitignore to ^0.1.3 ([#370](https://github.com/shun-shobon/configs/issues/370)) ([72db397](https://github.com/shun-shobon/configs/commit/72db39789bcffd179cc67ebcb7e0684b0a11a685))
+
 ## [0.7.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.7.0...eslint-config-v0.7.1) (2024-02-11)
 
 

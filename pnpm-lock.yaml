@@ -90,8 +90,8 @@ importers:
         specifier: ^51.0.1
         version: 51.0.1(eslint@8.56.0)
       globals:
-        specifier: ^13.24.0
-        version: 13.24.0
+        specifier: ^14.0.0
+        version: 14.0.0
       local-pkg:
         specifier: ^0.5.0
         version: 0.5.0
@@ -2109,6 +2109,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
+
+  /globals@14.0.0:
+    resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
+    dev: false
 
   /globalthis@1.0.3:
     resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}

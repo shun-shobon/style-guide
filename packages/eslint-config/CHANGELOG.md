@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.7.0...eslint-config-v0.7.1) (2024-02-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-simple-import-sort to v12 ([#366](https://github.com/shun-shobon/configs/issues/366)) ([aa18cdd](https://github.com/shun-shobon/configs/commit/aa18cdda31ea2e85fc92f927a6fdad4ff0fe48d9))
+* **deps:** update dependency globals to v14 ([#368](https://github.com/shun-shobon/configs/issues/368)) ([4c31519](https://github.com/shun-shobon/configs/commit/4c31519cf39d11d8e42e4c2d76dfe1920f29bb3e))
+
 ## [0.7.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.6.9...eslint-config-v0.7.0) (2024-02-08)
 
 

@@ -4,7 +4,7 @@
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
 	"license": "MIT",
 	"private": true,
-	"packageManager": "pnpm@8.15.1",
+	"packageManager": "pnpm@8.15.2",
 	"type": "module",
 	"scripts": {
 		"build": "turbo run build",

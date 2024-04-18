@@ -1,27 +1,28 @@
 import { GLOB_DTS, GLOB_SRC, GLOB_TS, GLOB_TSX } from "../globs";
 import type { ConfigItem, OptionsComponentExts } from "../types";
-import { interopDefault, renameRules } from "../utils";
+import { renameRules } from "../utils";
 
 export async function typescript(
 	options: OptionsComponentExts = {},
 ): Promise<ConfigItem[]> {
 	const { componentExts = [] } = options;
 
-	const [pluginTypescript, parserTypescript] = await Promise.all([
-		interopDefault(import("@typescript-eslint/eslint-plugin")),
-		interopDefault(import("@typescript-eslint/parser")),
-	]);
+	const {
+		plugin: pluginTypeScript,
+		parser: parserTypeScript,
+		configs: configsTypeScript,
+	} = await import("typescript-eslint");
 
 	return [
 		{
 			plugins: {
-				typescript: pluginTypescript,
+				typescript: pluginTypeScript,
 			},
 		},
 		{
 			files: [GLOB_SRC],
 			languageOptions: {
-				parser: parserTypescript,
+				parser: parserTypeScript,
 				parserOptions: {
 					sourceType: "module",
 					EXPERIMENTAL_useProjectService: true,
@@ -34,7 +35,7 @@ export async function typescript(
 				// 厳密なルール + 型チェックのルールを有効化
 				...renameRules(
 					// eslint-disable-next-line typescript/no-non-null-assertion
-					pluginTypescript.configs["strict-type-checked"]!.rules!,
+					configsTypeScript.strictTypeChecked.at(-1)!.rules!,
 					"@typescript-eslint/",
 					"typescript/",
 				),
@@ -42,7 +43,7 @@ export async function typescript(
 				// コーディング規約 + 型チェックのルールを有効化
 				...renameRules(
 					// eslint-disable-next-line typescript/no-non-null-assertion
-					pluginTypescript.configs["stylistic-type-checked"]!.rules!,
+					configsTypeScript.stylisticTypeChecked.at(-1)!.rules!,
 					"@typescript-eslint/",
 					"typescript/",
 				),
@@ -93,8 +94,7 @@ export async function typescript(
 			rules: {
 				// ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
 				// eslint-disable-next-line typescript/no-non-null-assertion
-				...pluginTypescript.configs["eslint-recommended"]!.overrides![0]!
-					.rules!,
+				...configsTypeScript.eslintRecommended.rules,
 			},
 		},
 		{

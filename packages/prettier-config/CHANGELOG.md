@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.3.1...prettier-config-v0.4.0) (2024-04-18)
+
+
+### Features
+
+* Upgrade eslint-ts to v7 ([#447](https://github.com/shun-shobon/configs/issues/447)) ([179c4d2](https://github.com/shun-shobon/configs/commit/179c4d2592bd3dbeca9282be998cd39f29372755))
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-tailwindcss to ^0.5.12 ([#398](https://github.com/shun-shobon/configs/issues/398)) ([46b189f](https://github.com/shun-shobon/configs/commit/46b189f62e7520842ee2b6654a6d27f78fd69f75))
+* **deps:** update dependency prettier-plugin-tailwindcss to ^0.5.13 ([#419](https://github.com/shun-shobon/configs/issues/419)) ([e07db2e](https://github.com/shun-shobon/configs/commit/e07db2ef976547ac091f8d800668102a625d9058))
+* **deps:** update dependency prettier-plugin-tailwindcss to ^0.5.14 ([#444](https://github.com/shun-shobon/configs/issues/444)) ([28eafbe](https://github.com/shun-shobon/configs/commit/28eafbea99159b3469b22306b85e3ea5a97ebe8a))
+
 ## [0.3.1](https://github.com/shun-shobon/configs/compare/prettier-config-v0.3.0...prettier-config-v0.3.1) (2024-02-08)
 
 

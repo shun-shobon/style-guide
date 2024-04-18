@@ -4,10 +4,10 @@ import { interopDefault } from "../utils";
 
 export async function storybook(): Promise<ConfigItem[]> {
 	// eslint-disable-next-line typescript/no-unsafe-assignment
-	const [pluginStorybook] = await Promise.all([
+	const [pluginStorybook] = await interopDefault(
 		// @ts-expect-error: This package don't have types
-		interopDefault(import("eslint-plugin-storybook")),
-	]);
+		import("eslint-plugin-storybook"),
+	);
 
 	return [
 		{

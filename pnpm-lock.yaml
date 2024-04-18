@@ -81,8 +81,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(eslint@8.57.0)(typescript@5.4.5)
       eslint-plugin-unicorn:
-        specifier: ^51.0.1
-        version: 51.0.1(eslint@8.57.0)
+        specifier: ^52.0.0
+        version: 52.0.0(eslint@8.57.0)
       globals:
         specifier: ^15.0.0
         version: 15.0.0
@@ -712,8 +712,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001609:
-    resolution: {integrity: sha512-JFPQs34lHKx1B5t1EpQpWH4c+29zIyn/haGsbpfq3suuV9v56enjFt23zqijxGTMwy1p/4H2tjnQMY+p1WoAyA==}
+  caniuse-lite@1.0.30001611:
+    resolution: {integrity: sha512-19NuN1/3PjA3QI8Eki55N8my4LzfkMCRLgCVfrl/slbSAchQfV0+GwjPrK3rq37As4UCLlM/DHajbKkAqbv92Q==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -762,8 +762,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  core-js-compat@3.36.1:
-    resolution: {integrity: sha512-Dk997v9ZCt3X/npqzyGdTlq6t7lDBhZwGvV94PKzDArjp7BTRm7WlDAXYd/OWdeFHO8OChQYRJNJvUCqCbrtKA==}
+  core-js-compat@3.37.0:
+    resolution: {integrity: sha512-vYq4L+T8aS5UuFg4UwDhc7YNRWVeVZwltad9C/jV3R2LgVOpS9BDr7l/WL6BN0dbV3k1XejPTHqqEzJgsa0frA==}
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -842,8 +842,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.4.736:
-    resolution: {integrity: sha512-Rer6wc3ynLelKNM4lOCg7/zPQj8tPOCB2hzD32PX9wd3hgRRi9MxEbmkFCokzcEhRVMiOVLjnL9ig9cefJ+6+Q==}
+  electron-to-chromium@1.4.740:
+    resolution: {integrity: sha512-Yvg5i+iyv7Xm18BRdVPVm8lc7kgxM3r6iwqCH2zB7QZy1kZRNmd0Zqm0zcD9XoFREE5/5rwIuIAOT+/mzGcnZg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1007,8 +1007,8 @@ packages:
     peerDependencies:
       eslint: '>=6'
 
-  eslint-plugin-unicorn@51.0.1:
-    resolution: {integrity: sha512-MuR/+9VuB0fydoI0nIn2RDA5WISRn4AsJyNSaNKLVwie9/ONvQhxOBbkfSICBPnzKrB77Fh6CZZXjgTt/4Latw==}
+  eslint-plugin-unicorn@52.0.0:
+    resolution: {integrity: sha512-1Yzm7/m+0R4djH0tjDjfVei/ju2w3AzUGjG6q8JnuNIL5xIwsflyCooW5sfBvQp2pMYQFSWWCFONsjCax1EHng==}
     engines: {node: '>=16'}
     peerDependencies:
       eslint: '>=8.56.0'
@@ -2891,8 +2891,8 @@ snapshots:
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001609
-      electron-to-chromium: 1.4.736
+      caniuse-lite: 1.0.30001611
+      electron-to-chromium: 1.4.740
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
 
@@ -2915,7 +2915,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  caniuse-lite@1.0.30001609: {}
+  caniuse-lite@1.0.30001611: {}
 
   chalk@2.4.2:
     dependencies:
@@ -2966,7 +2966,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  core-js-compat@3.36.1:
+  core-js-compat@3.37.0:
     dependencies:
       browserslist: 4.23.0
 
@@ -3044,7 +3044,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.4.736: {}
+  electron-to-chromium@1.4.740: {}
 
   emoji-regex@8.0.0: {}
 
@@ -3345,14 +3345,14 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-unicorn@51.0.1(eslint@8.57.0):
+  eslint-plugin-unicorn@52.0.0(eslint@8.57.0):
     dependencies:
       '@babel/helper-validator-identifier': 7.22.20
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@eslint/eslintrc': 2.1.4
       ci-info: 4.0.0
       clean-regexp: 1.0.0
-      core-js-compat: 3.36.1
+      core-js-compat: 3.37.0
       eslint: 8.57.0
       esquery: 1.5.0
       indent-string: 4.0.0

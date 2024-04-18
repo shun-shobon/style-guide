@@ -6,9 +6,9 @@ export async function disableTypeChecked(
 ): Promise<ConfigItem[]> {
 	const { disableTypeCheckedFiles = [] } = options;
 
-	const [pluginTypescript] = await Promise.all([
-		interopDefault(import("@typescript-eslint/eslint-plugin")),
-	]);
+	const pluginTypescript = await interopDefault(
+		import("@typescript-eslint/eslint-plugin"),
+	);
 
 	return [
 		{

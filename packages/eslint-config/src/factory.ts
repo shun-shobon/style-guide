@@ -14,6 +14,7 @@ import {
 	typescript,
 	unicorn,
 } from "./configs";
+import { qwik } from "./configs/qwik";
 import { GLOB_ASTRO, GLOB_ASTRO_EXT, GLOB_JS, GLOB_JSX } from "./globs";
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { interopDefault } from "./utils";
@@ -28,6 +29,7 @@ export async function shun_shobon(
 		typescript: enableTypescript = isPackageExists("typescript"),
 		react: enableReact = isPackageExists("react"),
 		next: enableNext = isPackageExists("next"),
+		qwik: enableQwik = isPackageExists("@builder.io/qwik"),
 		astro: enableAstro = isPackageExists("astro"),
 		storybook: enableStorybook = isPackageExists("storybook"),
 		componentExts = [],
@@ -83,6 +85,9 @@ export async function shun_shobon(
 	}
 	if (enableNext) {
 		configQueue.push(next());
+	}
+	if (enableQwik) {
+		configQueue.push(qwik());
 	}
 	if (enableAstro) {
 		configQueue.push(

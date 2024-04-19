@@ -54,6 +54,13 @@ export interface OptionsConfig
 	next?: boolean;
 
 	/**
+	 * Enable Qwik support.
+	 *
+	 * @defaultValue it will be auto-detected based on the dependencies.
+	 */
+	qwik?: boolean;
+
+	/**
 	 * Enable Astro support.
 	 *
 	 * @defaultValue it will be auto-detected based on the dependencies.

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.0...eslint-config-v0.9.1) (2024-04-19)
+
+
+### Bug Fixes
+
+* Add option to enable qwik ([ecd78e4](https://github.com/shun-shobon/configs/commit/ecd78e43143bef0f622b74ea029a101ba058c5e2))
+
 ## [0.9.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.8.0...eslint-config-v0.9.0) (2024-04-19)
 
 

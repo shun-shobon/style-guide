@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.8.0...eslint-config-v0.9.0) (2024-04-19)
+
+
+### Features
+
+* Add qwik plugin ([fc271ed](https://github.com/shun-shobon/configs/commit/fc271ed6e816b8ccd5a8073388efc8d5ce23a9a8))
+
 ## [0.8.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.7.2...eslint-config-v0.8.0) (2024-04-18)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.1...eslint-config-v0.9.2) (2024-04-21)
+
+
+### Bug Fixes
+
+* Fix next.js config ([16fc7a5](https://github.com/shun-shobon/configs/commit/16fc7a591eb93c8f99570511c684e32560474b10))
+
 ## [0.9.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.0...eslint-config-v0.9.1) (2024-04-19)
 
 

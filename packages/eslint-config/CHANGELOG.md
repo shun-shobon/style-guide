@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.2...eslint-config-v0.9.3) (2024-04-21)
+
+
+### Bug Fixes
+
+* Fix disableTypeChecked config ([535daf9](https://github.com/shun-shobon/configs/commit/535daf99d0aa5baea32047dc5717caf30bde0ee9))
+* Fix storybook config ([9180bf3](https://github.com/shun-shobon/configs/commit/9180bf3f8cf4c44a5dddb95789702ae899b0c168))
+
 ## [0.9.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.1...eslint-config-v0.9.2) (2024-04-21)
 
 

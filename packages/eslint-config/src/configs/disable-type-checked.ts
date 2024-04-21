@@ -6,8 +6,8 @@ export async function disableTypeChecked(
 ): Promise<ConfigItem[]> {
 	const { disableTypeCheckedFiles = [] } = options;
 
-	const pluginTypescript = await interopDefault(
-		import("@typescript-eslint/eslint-plugin"),
+	const { configs: configsTypeScript } = await interopDefault(
+		import("typescript-eslint"),
 	);
 
 	return [
@@ -23,7 +23,7 @@ export async function disableTypeChecked(
 			rules: {
 				...renameRules(
 					// eslint-disable-next-line typescript/no-non-null-assertion
-					pluginTypescript.configs["disable-type-checked"]!.rules!,
+					configsTypeScript.disableTypeChecked.rules!,
 					"@typescript-eslint/",
 					"typescript/",
 				),

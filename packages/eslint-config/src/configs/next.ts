@@ -5,7 +5,7 @@ import { interopDefault, renameRules } from "../utils";
 export async function next(): Promise<ConfigItem[]> {
 	// @ts-expect-error: This package don't have types
 	// eslint-disable-next-line typescript/no-unsafe-assignment
-	const [pluginNext] = await interopDefault(import("@next/eslint-plugin-next"));
+	const pluginNext = await interopDefault(import("@next/eslint-plugin-next"));
 
 	return [
 		{

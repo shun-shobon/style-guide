@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.3...eslint-config-v0.9.4) (2024-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript-eslint to ^7.7.1 ([#456](https://github.com/shun-shobon/configs/issues/456)) ([9dbb8af](https://github.com/shun-shobon/configs/commit/9dbb8af6a92633eec56b9f00ebbab954ec230ad9))
+
 ## [0.9.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.2...eslint-config-v0.9.3) (2024-04-21)
 
 

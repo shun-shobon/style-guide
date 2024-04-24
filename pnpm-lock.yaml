@@ -66,8 +66,8 @@ importers:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.57.0)
       eslint-plugin-n:
-        specifier: ^17.3.0
-        version: 17.3.0(eslint@8.57.0)
+        specifier: ^17.3.1
+        version: 17.3.1(eslint@8.57.0)
       eslint-plugin-qwik:
         specifier: ^1.5.2
         version: 1.5.2(eslint@8.57.0)
@@ -989,8 +989,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
 
-  eslint-plugin-n@17.3.0:
-    resolution: {integrity: sha512-BvjwT22+zLsmSTq6Ea4FNK7O2XFrkahDKZSfE6Qo3CEy7cLgVkM1iDsHK9BU69oRmY1aQ4IoyCmfWLN+P52J9A==}
+  eslint-plugin-n@17.3.1:
+    resolution: {integrity: sha512-25+HTtKe1F8U/M4ERmdzbz/xkm/gaY0OYC8Fcv1z/WvpLJ8Xfh9LzJ13JV5uj4QyCUD8kOPJrNjn/3y+tc57Vw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -3307,7 +3307,7 @@ snapshots:
       object.entries: 1.1.8
       object.fromentries: 2.0.8
 
-  eslint-plugin-n@17.3.0(eslint@8.57.0):
+  eslint-plugin-n@17.3.1(eslint@8.57.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       enhanced-resolve: 5.16.0

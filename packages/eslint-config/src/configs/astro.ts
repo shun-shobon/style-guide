@@ -40,12 +40,12 @@ export async function astro(
 				pluginAstro.processors[typescript ? "client-side-ts" : "astro"],
 			rules: {
 				// Astroの推奨ルールを有効化
-				...(pluginAstro.configs.recommended.rules as unknown as Rules),
+				// eslint-disable-next-line typescript/no-non-null-assertion, typescript/no-unsafe-member-access, typescript/no-unsafe-call
+				...(pluginAstro.configs.recommended.at(-1)!.rules as Rules),
 
 				// Astroのjsx-a11yの拡張ルール(strict)を有効化
-				// @ts-expect-error: This is valid
-				// eslint-disable-next-line typescript/no-unsafe-member-access
-				...(pluginAstro.configs["jsx-a11y-strict"].rules as Rules),
+				// eslint-disable-next-line typescript/no-non-null-assertion, typescript/no-unsafe-member-access, typescript/no-unsafe-call
+				...(pluginAstro.configs["jsx-a11y-strict"].at(-1)!.rules as Rules),
 
 				// 曖昧なリンクのテキストを許可しない
 				"astro/jsx-a11y/anchor-ambiguous-text": "error",

@@ -20,7 +20,6 @@ export function node(): ConfigItem[] {
 				"node/no-unpublished-bin": "error",
 				"node/no-sync": "error",
 				"node/process-exit-as-throw": "error",
-				"node/shebang": "error",
 
 				"node/prefer-global/console": "error",
 				"node/prefer-global/text-decoder": "error",

@@ -35,9 +35,6 @@ export function javascript(): ConfigItem[] {
 				// コンストラクタの戻り値を許可しない
 				"no-constructor-return": "error",
 
-				// 位置調整のための空白混在を許可
-				"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-
 				// Symbol/BigIntでnewしない
 				"no-new-native-nonconstructor": "error",
 
@@ -110,7 +107,6 @@ export function javascript(): ConfigItem[] {
 
 				// `Function`/`Object`/`String`/`Number`/`Boolean`のコンストラクタを許可しない
 				"no-new-func": "error",
-				"no-new-object": "error",
 				"no-new-wrappers": "error",
 
 				// 関数の引数を再代入することを許可しない

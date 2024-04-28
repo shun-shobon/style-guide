@@ -4,9 +4,9 @@
 	"type": "module",
 	"description": "shun-shobon's ESLint config",
 	"repository": {
+		"directory": "packages/eslint-config",
 		"type": "git",
-		"url": "https://github.com/shun-shobon/eslint-config.git",
-		"directory": "packages/eslint-config"
+		"url": "https://github.com/shun-shobon/eslint-config.git"
 	},
 	"homepage": "https://github.com/shun-shobon/eslint-config/packages/eslint-config#readme",
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech)",
@@ -28,6 +28,7 @@
 		"build": "tsup-node src/index.ts",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
+		"inspect": "pnpm run build && eslint-config-inspector",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix ."
 	},
@@ -56,6 +57,7 @@
 		"typescript-eslint": "^7.7.1"
 	},
 	"devDependencies": {
+		"@eslint/config-inspector": "^0.4.7",
 		"@types/eslint__js": "^8.42.3"
 	},
 	"sideEffects": false

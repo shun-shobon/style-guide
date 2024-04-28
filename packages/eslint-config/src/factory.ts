@@ -2,6 +2,7 @@ import { isPackageExists } from "local-pkg";
 
 import {
 	astro,
+	base,
 	disableTypeChecked,
 	imports,
 	importSort,
@@ -9,12 +10,12 @@ import {
 	jsxA11y,
 	next,
 	node,
+	qwik,
 	react,
 	storybook,
 	typescript,
 	unicorn,
 } from "./configs";
-import { qwik } from "./configs/qwik";
 import { GLOB_ASTRO, GLOB_ASTRO_EXT, GLOB_JS, GLOB_JSX } from "./globs";
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { interopDefault } from "./utils";
@@ -59,6 +60,7 @@ export async function shun_shobon(
 	// Process
 	// basic configs
 	configQueue.push(
+		base(),
 		javascript(),
 		imports({
 			typescript: enableTypescript,

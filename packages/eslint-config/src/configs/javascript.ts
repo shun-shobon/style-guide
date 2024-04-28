@@ -50,6 +50,11 @@ export function javascript(): ConfigItem[] {
 				// ループの条件式の変数をループ内で変更していない場合に警告
 				"no-unmodified-loop-condition": "warn",
 
+				// 条件式が常にtrue/falseになる場合を警告
+				// ただし、ループ内の条件式は除外
+				// TODO [eslint@>=9]: `checkLoops: "none"`に変更する
+				"no-constant-condition": ["error", { checkLoops: false }],
+
 				// 1回しかループしないループを警告
 				"no-unreachable-loop": "warn",
 

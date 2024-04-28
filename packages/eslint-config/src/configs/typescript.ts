@@ -87,6 +87,15 @@ export async function typescript(
 				// 一貫性のためと、awaitが無くなったときにasyncを外すのは面倒なため
 				// また、スタックトレースが読みやすくなる
 				"typescript/return-await": ["warn", "always"],
+
+				"typescript/no-unnecessary-condition": [
+					"warn",
+					{ allowConstantLoopConditions: true },
+				],
+
+				// null assertion `!` を許可
+				// 意外とnull assertionを使いたい場面があるため
+				"typescript/non-null-assertion": "off",
 			},
 		},
 		{

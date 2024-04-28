@@ -6,7 +6,6 @@ export function node(): ConfigItem[] {
 		{
 			name: "shun-shobon/node/setup",
 			plugins: {
-				// eslint-disable-next-line typescript/no-unsafe-assignment
 				node: pluginNode,
 			},
 		},

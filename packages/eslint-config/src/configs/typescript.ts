@@ -102,7 +102,6 @@ export async function typescript(
 			files: [GLOB_TS, GLOB_TSX, ...componentExts.map((ext) => `**/*.${ext}`)],
 			rules: {
 				// ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
-				// eslint-disable-next-line typescript/no-non-null-assertion
 				...configsTypeScript.eslintRecommended.rules,
 			},
 		},

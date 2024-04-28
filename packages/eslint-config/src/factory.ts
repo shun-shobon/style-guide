@@ -43,9 +43,14 @@ export async function shun_shobon(
 		configQueue.push(
 			interopDefault(import("eslint-config-flat-gitignore")).then(
 				(gitignore) => [
-					gitignore(
-						typeof enableGitignore !== "boolean" ? enableGitignore : undefined,
-					),
+					{
+						name: "shun-shobon/gitignore/setup",
+						...gitignore(
+							typeof enableGitignore !== "boolean"
+								? enableGitignore
+								: undefined,
+						),
+					},
 				],
 			),
 		);

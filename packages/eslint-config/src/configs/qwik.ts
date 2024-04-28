@@ -11,12 +11,14 @@ export async function qwik(): Promise<ConfigItem[]> {
 
 	return [
 		{
+			name: "shun-shobon/qwik/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				qwik: pluginQwik,
 			},
 		},
 		{
+			name: "shun-shobon/qwik/rules",
 			files: [GLOB_JSX, GLOB_TSX],
 			rules: {
 				// qwikの推奨ルールを有効化

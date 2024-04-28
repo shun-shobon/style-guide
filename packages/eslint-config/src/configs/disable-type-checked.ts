@@ -12,6 +12,7 @@ export async function disableTypeChecked(
 
 	return [
 		{
+			name: "shun-shobon/disableTypeChecked/rules",
 			files: disableTypeCheckedFiles,
 			languageOptions: {
 				parserOptions: {

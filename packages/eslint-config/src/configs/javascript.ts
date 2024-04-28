@@ -6,6 +6,7 @@ import type { ConfigItem } from "../types";
 export function javascript(): ConfigItem[] {
 	return [
 		{
+			name: "shun-shobon/javascript/rules",
 			languageOptions: {
 				ecmaVersion: "latest",
 				sourceType: "module",

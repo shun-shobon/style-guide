@@ -9,6 +9,7 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 
 	return [
 		{
+			name: "shun-shobon/imports/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				import: pluginImport,
@@ -27,6 +28,7 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 			},
 		},
 		{
+			name: "shun-shobon/imports/rules",
 			rules: {
 				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(pluginImport.configs.recommended.rules as Rules),
@@ -57,6 +59,7 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 		...(typescript
 			? [
 					{
+						name: "shun-shobon/imports/disables/typescript",
 						files: [GLOB_TS, GLOB_TSX],
 						rules: {
 							// TypeScriptの型チェックでエラーが出るので無効化

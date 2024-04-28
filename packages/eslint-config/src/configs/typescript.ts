@@ -15,12 +15,14 @@ export async function typescript(
 
 	return [
 		{
+			name: "shun-shobon/typescript/setup",
 			plugins: {
 				typescript: pluginTypeScript,
 			},
 		},
 		{
-			files: [GLOB_SRC],
+			name: "shun-shobon/typescript/rules",
+			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
 			languageOptions: {
 				parser: parserTypeScript,
 				parserOptions: {
@@ -28,9 +30,6 @@ export async function typescript(
 					EXPERIMENTAL_useProjectService: true,
 				},
 			},
-		},
-		{
-			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
 			rules: {
 				// 厳密なルール + 型チェックのルールを有効化
 				...renameRules(
@@ -99,6 +98,7 @@ export async function typescript(
 			},
 		},
 		{
+			name: "shun-shobon/typescript/disables/eslint-recommended",
 			files: [GLOB_TS, GLOB_TSX, ...componentExts.map((ext) => `**/*.${ext}`)],
 			rules: {
 				// ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
@@ -107,6 +107,7 @@ export async function typescript(
 			},
 		},
 		{
+			name: "shun-shobon/typescript/disables/dts",
 			files: [GLOB_DTS],
 			rules: {
 				// `import`の重複を許可

@@ -5,6 +5,10 @@ export type Awaitable<T> = T | Promise<T>;
 
 export interface ConfigItem extends Omit<FlatESLintConfig, "plugins"> {
 	/**
+	 * For inspector.
+	 */
+	name?: string;
+	/**
 	 * Relax plugins type limitation, as most of the plugins did not have correct
 	 * type info yet.
 	 */

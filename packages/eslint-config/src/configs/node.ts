@@ -4,10 +4,14 @@ import type { ConfigItem } from "../types";
 export function node(): ConfigItem[] {
 	return [
 		{
+			name: "shun-shobon/node/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				node: pluginNode,
 			},
+		},
+		{
+			name: "shun-shobon/node/rules",
 			rules: {
 				"node/no-deprecated-api": "error",
 				"node/no-exports-assign": "error",

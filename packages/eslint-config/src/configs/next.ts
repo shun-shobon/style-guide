@@ -9,12 +9,14 @@ export async function next(): Promise<ConfigItem[]> {
 
 	return [
 		{
+			name: "shun-shobon/next/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				next: pluginNext,
 			},
 		},
 		{
+			name: "shun-shobon/next/rules",
 			files: [GLOB_SRC],
 			rules: {
 				// Next.jsの推奨ルールを有効化

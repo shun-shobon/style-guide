@@ -11,12 +11,14 @@ export async function storybook(): Promise<ConfigItem[]> {
 
 	return [
 		{
+			name: "shun-shobon/storybook/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				storybook: pluginStorybook,
 			},
 		},
 		{
+			name: "shun-shobon/storybook/rules",
 			files: [GLOB_STORYBOOK],
 			rules: {
 				// Storybookの推奨ルールから拝借
@@ -34,6 +36,7 @@ export async function storybook(): Promise<ConfigItem[]> {
 		},
 		// Storybookの設定ファイルへのルール
 		{
+			name: "shun-shobon/storybook/config-rules",
 			files: [GLOB_STORYBOOK_CONFIG],
 			rules: {
 				"storybook/no-uninstalled-addons": "error",

@@ -20,6 +20,7 @@ export async function react(
 
 	return [
 		{
+			name: "shun-shobon/react/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				"react": pluginReact,
@@ -33,6 +34,7 @@ export async function react(
 			},
 		},
 		{
+			name: "shun-shobon/react/rules",
 			files: [GLOB_JSX, GLOB_TSX],
 			rules: {
 				// reactの推奨ルールを有効化

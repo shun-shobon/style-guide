@@ -16,11 +16,13 @@ export async function astro(
 
 	return [
 		{
+			name: "shun-shobon/astro/plugins",
 			plugins: {
 				astro: pluginAstro,
 			},
 		},
 		{
+			name: "shun-shobon/astro/rules",
 			files: [GLOB_ASTRO],
 			languageOptions: {
 				parser: parserAstro,

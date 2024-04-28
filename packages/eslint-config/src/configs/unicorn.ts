@@ -6,10 +6,14 @@ import type { ConfigItem } from "../types";
 export function unicorn(): ConfigItem[] {
 	return [
 		{
+			name: "shun-shobon/unicorn/setup",
 			plugins: {
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				unicorn: pluginUnicorn,
 			},
+		},
+		{
+			name: "shun-shobon/unicorn/rules",
 			rules: {
 				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(pluginUnicorn.configs.recommended.rules as Rules),

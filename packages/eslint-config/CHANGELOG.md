@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.10.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.4...eslint-config-v0.10.0) (2024-04-28)
+
+
+### Features
+
+* Add base config ([854d748](https://github.com/shun-shobon/configs/commit/854d74868776ac072cb409965f61ffbb18246a8c))
+* Add names for inspector ([b2781df](https://github.com/shun-shobon/configs/commit/b2781df903b0c43f60dbdb8dc32a6869828a96c9))
+* Allow constant condition in loop ([8c86443](https://github.com/shun-shobon/configs/commit/8c864430f7a2e4b85dd5e29a0cb812ada31affec))
+
+
+### Bug Fixes
+
+* Apply lint ([2380ff5](https://github.com/shun-shobon/configs/commit/2380ff552dc71b0bb28aca1310d4e4ec2581e0b8))
+* **deps:** update dependency @next/eslint-plugin-next to ^14.2.3 ([#462](https://github.com/shun-shobon/configs/issues/462)) ([04e1e19](https://github.com/shun-shobon/configs/commit/04e1e19b5bccc0fce1baf4427a169c9825323460))
+* **deps:** update dependency astro-eslint-parser to v1 ([#465](https://github.com/shun-shobon/configs/issues/465)) ([7e559c5](https://github.com/shun-shobon/configs/commit/7e559c52597507b056032fa76eef7d85e7bee82c))
+* **deps:** update dependency eslint-plugin-astro to ^1.0.3 ([01fa794](https://github.com/shun-shobon/configs/commit/01fa79408e63208d469bc9fadea371d3cf6ad939))
+* **deps:** update dependency eslint-plugin-n to ^17.3.0 ([#458](https://github.com/shun-shobon/configs/issues/458)) ([3a083ba](https://github.com/shun-shobon/configs/commit/3a083ba954d5908b2b1f8d399a39c63e45756756))
+* **deps:** update dependency eslint-plugin-n to ^17.3.1 ([#461](https://github.com/shun-shobon/configs/issues/461)) ([c55b095](https://github.com/shun-shobon/configs/commit/c55b0957a48d213effdaf64953938d4fe4b9f430))
+* **deps:** update dependency eslint-plugin-react-hooks to ^4.6.1 ([#464](https://github.com/shun-shobon/configs/issues/464)) ([d067701](https://github.com/shun-shobon/configs/commit/d06770178c656ef3d0d234bb507cc53ab9312e84))
+* **deps:** update dependency eslint-plugin-react-hooks to ^4.6.2 ([#466](https://github.com/shun-shobon/configs/issues/466)) ([ebfa358](https://github.com/shun-shobon/configs/commit/ebfa358d18e78384683ff331b7f56b3e065c126f))
+* **deps:** update dependency globals to ^15.1.0 ([#467](https://github.com/shun-shobon/configs/issues/467)) ([b89c3f5](https://github.com/shun-shobon/configs/commit/b89c3f59c20a6effcfe8f2217c0692649c847d97))
+* Fix gitginore config ([dbfd5c9](https://github.com/shun-shobon/configs/commit/dbfd5c9b64311cd605da4882c0b0703e422efa32))
+* Fix types ([19a2e0f](https://github.com/shun-shobon/configs/commit/19a2e0f726c4b5da026fa4d395f6a7d812d71dd1))
+* Remove deprecated rules ([796005f](https://github.com/shun-shobon/configs/commit/796005f45dff3c6f5e404937688dc649ea2b55c8))
+
 ## [0.9.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.9.3...eslint-config-v0.9.4) (2024-04-22)
 
 

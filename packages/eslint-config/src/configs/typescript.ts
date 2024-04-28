@@ -94,7 +94,7 @@ export async function typescript(
 
 				// null assertion `!` を許可
 				// 意外とnull assertionを使いたい場面があるため
-				"typescript/non-null-assertion": "off",
+				"typescript/no-non-null-assertion": "off",
 			},
 		},
 		{

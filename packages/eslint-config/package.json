@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@eslint/js": "^8.57.0",
 		"@next/eslint-plugin-next": "^14.2.3",
-		"astro-eslint-parser": "^1.0.1",
+		"astro-eslint-parser": "^1.0.2",
 		"eslint-config-flat-gitignore": "^0.1.5",
 		"eslint-define-config": "^2.1.0",
 		"eslint-import-resolver-typescript": "^3.6.1",

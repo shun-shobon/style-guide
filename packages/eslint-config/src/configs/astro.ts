@@ -42,11 +42,9 @@ export async function astro(
 				pluginAstro.processors[typescript ? "client-side-ts" : "astro"],
 			rules: {
 				// Astroの推奨ルールを有効化
-				// eslint-disable-next-line typescript/no-non-null-assertion
 				...(pluginAstro.configs.recommended.at(-1)!.rules as Rules),
 
 				// Astroのjsx-a11yの拡張ルール(strict)を有効化
-				// eslint-disable-next-line typescript/no-non-null-assertion
 				...(pluginAstro.configs["jsx-a11y-strict"].at(-1)!.rules as Rules),
 
 				// 曖昧なリンクのテキストを許可しない

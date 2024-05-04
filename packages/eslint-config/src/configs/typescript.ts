@@ -33,7 +33,6 @@ export async function typescript(
 			rules: {
 				// 厳密なルール + 型チェックのルールを有効化
 				...renameRules(
-					// eslint-disable-next-line typescript/no-non-null-assertion
 					configsTypeScript.strictTypeChecked.at(-1)!.rules!,
 					"@typescript-eslint/",
 					"typescript/",
@@ -41,7 +40,6 @@ export async function typescript(
 
 				// コーディング規約 + 型チェックのルールを有効化
 				...renameRules(
-					// eslint-disable-next-line typescript/no-non-null-assertion
 					configsTypeScript.stylisticTypeChecked.at(-1)!.rules!,
 					"@typescript-eslint/",
 					"typescript/",
@@ -93,7 +91,6 @@ export async function typescript(
 				],
 
 				// null assertion `!` を許可
-				// 意外とnull assertionを使いたい場面があるため
 				"typescript/no-non-null-assertion": "off",
 			},
 		},

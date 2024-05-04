@@ -23,7 +23,6 @@ export async function disableTypeChecked(
 			},
 			rules: {
 				...renameRules(
-					// eslint-disable-next-line typescript/no-non-null-assertion
 					configsTypeScript.disableTypeChecked.rules!,
 					"@typescript-eslint/",
 					"typescript/",

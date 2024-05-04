@@ -30,6 +30,7 @@
 		"format:check": "prettier --check .",
 		"inspect": "pnpm run build && eslint-config-inspector",
 		"lint": "eslint .",
+		"lint:ci": "eslint --max-warnings 0 .",
 		"lint:fix": "eslint --fix ."
 	},
 	"peerDependencies": {

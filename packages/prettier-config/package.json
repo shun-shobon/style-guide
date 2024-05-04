@@ -4,9 +4,9 @@
 	"type": "module",
 	"description": "shun-shobon's Prettier config",
 	"repository": {
+		"directory": "packages/prettier-config",
 		"type": "git",
-		"url": "https://github.com/shun-shobon/configs.git",
-		"directory": "packages/prettier-config"
+		"url": "https://github.com/shun-shobon/configs.git"
 	},
 	"homepage": "https://github.com/shun-shobon/configs/packages/prettier-config#readme",
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech)",
@@ -29,6 +29,7 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"lint": "eslint .",
+		"lint:ci": "eslint --max-warnings 0 .",
 		"lint:fix": "eslint --fix ."
 	},
 	"peerDependencies": {

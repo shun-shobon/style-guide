@@ -32,7 +32,7 @@ jobs:
           node-version-file: .tool-versions
 
       - name: Run | Lint
-        run: pnpm run lint
+        run: pnpm run lint:ci
 
   format:
     runs-on: ubuntu-latest

@@ -9,6 +9,7 @@ export * from "./next";
 export * from "./node";
 export * from "./qwik";
 export * from "./react";
+export * from "./regexp";
 export * from "./storybook";
 export * from "./typescript";
 export * from "./unicorn";

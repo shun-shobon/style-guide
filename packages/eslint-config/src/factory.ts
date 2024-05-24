@@ -12,6 +12,7 @@ import {
 	node,
 	qwik,
 	react,
+	regexp,
 	storybook,
 	typescript,
 	unicorn,
@@ -67,6 +68,7 @@ export async function shun_shobon(
 		imports(),
 		importSort(),
 		unicorn(),
+		regexp(),
 		node(),
 		jsxA11y(),
 	);

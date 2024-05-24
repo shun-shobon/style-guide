@@ -1,13 +1,28 @@
 import { pluginImport } from "../plugins";
-import type { ConfigItem } from "../types";
+import type { ConfigItem, OptionsHasTypeScript } from "../types";
 import { renameRules } from "../utils";
 
-export function imports(): ConfigItem[] {
+export function imports(options: OptionsHasTypeScript): ConfigItem[] {
+	const { typescript = false } = options;
+
 	return [
 		{
 			name: "shun-shobon/imports/setup",
 			plugins: {
 				import: pluginImport,
+			},
+			settings: {
+				"import-x/parsers": {
+					espree: [".js", ".cjs", ".mjs", ".jsx"],
+					...(typescript
+						? { "@typescript-eslint/parser": [".ts", ".mts", ".cts", ".tsx"] }
+						: {}),
+				},
+				"import-x/extensions": [
+					".js",
+					".jsx",
+					...(typescript ? [".ts", ".tsx", ".d.ts"] : []),
+				],
 			},
 		},
 		{

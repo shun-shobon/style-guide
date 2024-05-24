@@ -65,7 +65,7 @@ export async function shun_shobon(
 	configQueue.push(
 		base(),
 		javascript(),
-		imports(),
+		imports({ typescript: enableTypescript }),
 		importSort(),
 		unicorn(),
 		regexp(),

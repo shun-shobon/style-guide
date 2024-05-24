@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/shun-shobon/configs/compare/prettier-config-v0.4.0...prettier-config-v0.4.1) (2024-05-24)
+
+
+### Bug Fixes
+
+* Fix prettier plugins order ([2c7b0f5](https://github.com/shun-shobon/configs/commit/2c7b0f5c95f67ae9c0371e73502ace46a90e1486))
+
 ## [0.4.0](https://github.com/shun-shobon/configs/compare/prettier-config-v0.3.1...prettier-config-v0.4.0) (2024-04-18)
 
 

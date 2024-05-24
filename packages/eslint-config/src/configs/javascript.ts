@@ -50,8 +50,7 @@ export function javascript(): ConfigItem[] {
 
 				// 条件式が常にtrue/falseになる場合を警告
 				// ただし、ループ内の条件式は除外
-				// @ts-expect-error: v9からオプションの型が変わっている
-				"no-constant-condition": ["error", { checkLoops: "none" }],
+				"no-constant-condition": ["error", { checkLoops: false }],
 
 				// 1回しかループしないループを警告
 				"no-unreachable-loop": "warn",

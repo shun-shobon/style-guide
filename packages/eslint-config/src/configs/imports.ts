@@ -30,10 +30,6 @@ export function imports(): ConfigItem[] {
 				// import文を一番上に書くのを強制
 				"import/first": "error",
 
-				// 匿名でのdefault exportを禁止
-				// 関数呼び出しでの匿名default exportはデフォルトで許可される
-				"import/no-anonymous-default-export": "error",
-
 				// 同じパスからのimportをまとめる
 				"import/no-duplicates": "warn",
 

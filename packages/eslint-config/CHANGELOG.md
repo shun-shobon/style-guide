@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.1...eslint-config-v0.12.2) (2024-05-24)
+
+
+### Bug Fixes
+
+* Fix option ([32d69b9](https://github.com/shun-shobon/configs/commit/32d69b94aa8e14fdc904a7ed5bf6ee29e84ec3be))
+* revert "feat!: Upgrade to v9" ([7c89ce9](https://github.com/shun-shobon/configs/commit/7c89ce9d42d1c4db5a49ce4193bcc6fd0b127dfa))
+
 ## [0.12.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.0...eslint-config-v0.12.1) (2024-05-24)
 
 

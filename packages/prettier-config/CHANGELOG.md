@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/shun-shobon/configs/compare/prettier-config-v0.4.1...prettier-config-v0.4.2) (2024-05-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-astro to v0.14.0 ([#504](https://github.com/shun-shobon/configs/issues/504)) ([449bf87](https://github.com/shun-shobon/configs/commit/449bf87dcb297fb7c780800f4aa422c84753140e))
+
 ## [0.4.1](https://github.com/shun-shobon/configs/compare/prettier-config-v0.4.0...prettier-config-v0.4.1) (2024-05-24)
 
 

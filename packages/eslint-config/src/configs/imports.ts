@@ -1,39 +1,26 @@
-import type { Rules } from "eslint-define-config";
-
-import { GLOB_TS, GLOB_TSX } from "../globs";
 import { pluginImport } from "../plugins";
-import type { ConfigItem, OptionsHasTypeScript } from "../types";
+import type { ConfigItem } from "../types";
+import { renameRules } from "../utils";
 
-export function imports(options: OptionsHasTypeScript): ConfigItem[] {
-	const { typescript = false } = options;
-
+export function imports(): ConfigItem[] {
 	return [
 		{
 			name: "shun-shobon/imports/setup",
 			plugins: {
-				// eslint-disable-next-line typescript/no-unsafe-assignment
 				import: pluginImport,
-			},
-			settings: {
-				// https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-1419518561
-				"import/parsers": {
-					"espree": [".js", ".cjs", ".mjs", ".jsx"],
-					"@typescript-eslint/parser": [".ts", ".mts", ".cts", ".tsx"],
-				},
-				"import/extensions": [
-					".js",
-					".jsx",
-					...(typescript ? [".ts", ".tsx", ".d.ts"] : []),
-				],
 			},
 		},
 		{
 			name: "shun-shobon/imports/rules",
 			rules: {
-				// eslint-disable-next-line typescript/no-unsafe-member-access
-				...(pluginImport.configs.recommended.rules as Rules),
+				...renameRules(
+					pluginImport.configs.recommended.rules,
+					"import-x/",
+					"import/",
+				),
 
-				// TypeScriptでエラーが出るので無効化
+				// import先のモジュールが存在するかチェックしない
+				// TSの型チェックで十分なため
 				"import/namespace": "off",
 				"import/no-unresolved": "off",
 
@@ -42,6 +29,10 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 
 				// import文を一番上に書くのを強制
 				"import/first": "error",
+
+				// 匿名でのdefault exportを禁止
+				// 関数呼び出しでの匿名default exportはデフォルトで許可される
+				"import/no-anonymous-default-export": "error",
 
 				// 同じパスからのimportをまとめる
 				"import/no-duplicates": "warn",
@@ -56,17 +47,5 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 				"import/no-self-import": "error",
 			},
 		},
-		...(typescript
-			? [
-					{
-						name: "shun-shobon/imports/disables/typescript",
-						files: [GLOB_TS, GLOB_TSX],
-						rules: {
-							// TypeScriptの型チェックでエラーが出るので無効化
-							"import/named": "off",
-						},
-					} satisfies ConfigItem,
-				]
-			: []),
 	];
 }

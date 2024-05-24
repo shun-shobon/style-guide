@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.0...eslint-config-v0.12.1) (2024-05-24)
+
+
+### Bug Fixes
+
+* Fix rule options ([e9105fa](https://github.com/shun-shobon/configs/commit/e9105fa427e281c729467f52ab238bca4e0deace))
+
 ## [0.12.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.11.0...eslint-config-v0.12.0) (2024-05-24)
 
 

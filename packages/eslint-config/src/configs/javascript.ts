@@ -71,9 +71,6 @@ export function javascript(): ConfigItem[] {
 				// 競合が発生する可能性のある値の代入を許可しない
 				"require-atomic-updates": "error",
 
-				// 循環的複雑度を15以上を警告
-				"complexity": ["warn", 15],
-
 				// switch文のデフォルトケースを最後にする
 				"default-case-last": "error",
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.12.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.2...eslint-config-v0.12.3) (2024-05-24)
+
+
+### Bug Fixes
+
+* Fix factory args ([3056c1c](https://github.com/shun-shobon/configs/commit/3056c1cb07efaa1359e89e9691503764c518f693))
+* Fix import error ([b6c090d](https://github.com/shun-shobon/configs/commit/b6c090de1c999ab6279a72e8117a4967a1ad21f9))
+
 ## [0.12.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.1...eslint-config-v0.12.2) (2024-05-24)
 
 

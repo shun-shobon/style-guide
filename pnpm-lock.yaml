@@ -100,8 +100,8 @@ importers:
         version: 7.11.0(eslint@8.57.0)(typescript@5.4.5)
     devDependencies:
       '@eslint/config-inspector':
-        specifier: 0.4.9
-        version: 0.4.9(eslint@8.57.0)
+        specifier: 0.4.10
+        version: 0.4.10(eslint@8.57.0)
       '@types/eslint__js':
         specifier: 8.42.3
         version: 8.42.3
@@ -441,8 +441,8 @@ packages:
     resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
-  '@eslint/config-inspector@0.4.9':
-    resolution: {integrity: sha512-0cJkUN7C8owdUN/gmz34gOwVgFXe5Ewf1+SeJxv2FBUdsnnVGHsPQpOuHVG6daZRTjthDodGdRDmplHnqdiFQg==}
+  '@eslint/config-inspector@0.4.10':
+    resolution: {integrity: sha512-qDstzmL4SDh7X0W4LZhZG4NfX1vesBySnB/S2IfsCVGTlZbprRL7G+ULpE0PYDNY8nVX3TYM7f9wlfsfrh8+ZQ==}
     hasBin: true
     peerDependencies:
       eslint: ^8.50.0 || ^9.0.0
@@ -2884,7 +2884,7 @@ snapshots:
 
   '@eslint-community/regexpp@4.10.0': {}
 
-  '@eslint/config-inspector@0.4.9(eslint@8.57.0)':
+  '@eslint/config-inspector@0.4.10(eslint@8.57.0)':
     dependencies:
       bundle-require: 4.1.0(esbuild@0.21.4)
       cac: 6.7.14

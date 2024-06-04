@@ -6,6 +6,7 @@ export function importSort(): ConfigItem[] {
 		{
 			name: "shun-shobon/importSort/setup",
 			plugins: {
+				// eslint-disable-next-line typescript/no-unsafe-assignment
 				"import-sort": pluginImportSort,
 			},
 		},

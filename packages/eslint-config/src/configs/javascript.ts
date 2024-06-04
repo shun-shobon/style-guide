@@ -1,3 +1,4 @@
+import type { Rules } from "eslint-define-config";
 import globals from "globals";
 
 import { configJs } from "../plugins";
@@ -24,7 +25,8 @@ export function javascript(): ConfigItem[] {
 				},
 			},
 			rules: {
-				...configJs.configs.recommended.rules,
+				// eslint-disable-next-line typescript/no-unsafe-member-access
+				...(configJs.configs.recommended.rules as Rules),
 
 				// Arrayの関数に`return`を忘れないようにする
 				"array-callback-return": "error",

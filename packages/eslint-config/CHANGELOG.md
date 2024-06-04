@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.12.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.3...eslint-config-v0.12.4) (2024-06-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import-x to v0.5.1 ([#506](https://github.com/shun-shobon/configs/issues/506)) ([b5df850](https://github.com/shun-shobon/configs/commit/b5df8503afce0f2918b6c02f45cbe4d1969d9969))
+* **deps:** update dependency eslint-plugin-react to v7.34.2 ([#511](https://github.com/shun-shobon/configs/issues/511)) ([2823425](https://github.com/shun-shobon/configs/commit/282342553521abd14689600967f71a4019ea421d))
+* **deps:** update dependency typescript-eslint to v7.11.0 ([#510](https://github.com/shun-shobon/configs/issues/510)) ([1264693](https://github.com/shun-shobon/configs/commit/1264693f895c753b721af62e65ca2b0568c5145f))
+* **deps:** update dependency typescript-eslint to v7.12.0 ([#524](https://github.com/shun-shobon/configs/issues/524)) ([659633c](https://github.com/shun-shobon/configs/commit/659633c1a62c8726c2c158c391a5fdea547858cb))
+
 ## [0.12.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.2...eslint-config-v0.12.3) (2024-05-24)
 
 

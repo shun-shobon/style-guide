@@ -38,6 +38,7 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 				// TSの型チェックで十分なため
 				"import/namespace": "off",
 				"import/no-unresolved": "off",
+				"import/named": "off",
 
 				// type import時に`import type { foo } from "foo"`を強制
 				"import/consistent-type-specifier-style": ["warn", "prefer-top-level"],

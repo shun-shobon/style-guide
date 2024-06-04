@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.5](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.4...eslint-config-v0.12.5) (2024-06-04)
+
+
+### Bug Fixes
+
+* Disable import/named ([8ec04ed](https://github.com/shun-shobon/configs/commit/8ec04ed99d667c8dca89e00ef93c771ef6c305e7))
+
 ## [0.12.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.3...eslint-config-v0.12.4) (2024-06-04)
 
 

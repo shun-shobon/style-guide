@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.13.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.5...eslint-config-v0.13.0) (2024-06-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade v9
+
+### Features
+
+* Upgrade v9 ([3f6ee3b](https://github.com/shun-shobon/configs/commit/3f6ee3b6b4bfdd39cdc86545948b77ed3d5e8eb7))
+
 ## [0.12.5](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.4...eslint-config-v0.12.5) (2024-06-04)
 
 

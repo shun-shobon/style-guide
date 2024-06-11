@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.13.1](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.0...eslint-config-v0.13.1) (2024-06-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-n to v17.8.1 ([#534](https://github.com/shun-shobon/configs/issues/534)) ([b33c92c](https://github.com/shun-shobon/configs/commit/b33c92c6d75ca1e9b3caa68feda523eb5038809c))
+* **deps:** update dependency eslint-plugin-qwik to v1.5.6 ([#537](https://github.com/shun-shobon/configs/issues/537)) ([5f17a0c](https://github.com/shun-shobon/configs/commit/5f17a0cf9e9fa3c50062e4a8616b106c26ad5496))
+* **deps:** update dependency globals to v15.4.0 ([#535](https://github.com/shun-shobon/configs/issues/535)) ([ef7c6ed](https://github.com/shun-shobon/configs/commit/ef7c6ed64ee0b2646f648d2835eb6c979bcac3d4))
+* **deps:** update dependency typescript-eslint to v7.13.0 ([#540](https://github.com/shun-shobon/configs/issues/540)) ([e7a8b73](https://github.com/shun-shobon/configs/commit/e7a8b73771b4093586481194013f0f751dbb4d73))
+* **deps:** update linters ([#531](https://github.com/shun-shobon/configs/issues/531)) ([40f89ea](https://github.com/shun-shobon/configs/commit/40f89ea6f142b5450a7db336d9cbe8fb79329684))
+
 ## [0.13.0](https://github.com/shun-shobon/configs/compare/eslint-config-v0.12.5...eslint-config-v0.13.0) (2024-06-04)
 
 

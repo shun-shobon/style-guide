@@ -21,6 +21,7 @@ import { GLOB_ASTRO, GLOB_ASTRO_EXT, GLOB_JS, GLOB_JSX } from "./globs";
 import type { Awaitable, ConfigItem, OptionsConfig } from "./types";
 import { interopDefault } from "./utils";
 
+// eslint-disable-next-line complexity
 export async function shun_shobon(
 	options: OptionsConfig = {},
 	...userConfigs: ConfigItem[]

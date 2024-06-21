@@ -59,7 +59,7 @@
 		"typescript-eslint": "7.13.1"
 	},
 	"devDependencies": {
-		"@eslint/config-inspector": "0.4.11"
+		"@eslint/config-inspector": "0.4.12"
 	},
 	"sideEffects": false
 }

@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.13.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.2...eslint-config-v0.13.3) (2024-06-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import-x to v0.5.2 ([#572](https://github.com/shun-shobon/configs/issues/572)) ([834ae11](https://github.com/shun-shobon/configs/commit/834ae112cb29f74e9c0d1e7fb1a9d49adb12f4ca))
+* **deps:** update dependency eslint-plugin-jsx-a11y to v6.9.0 ([#564](https://github.com/shun-shobon/configs/issues/564)) ([ea53136](https://github.com/shun-shobon/configs/commit/ea53136e596b5062150b22c8f76996cc9cb5621a))
+* **deps:** update dependency eslint-plugin-n to v17.9.0 ([#548](https://github.com/shun-shobon/configs/issues/548)) ([ea6f683](https://github.com/shun-shobon/configs/commit/ea6f683626ae94168aef85cf10637a39283e6c87))
+* **deps:** update dependency eslint-plugin-react to v7.34.3 ([#562](https://github.com/shun-shobon/configs/issues/562)) ([9a4eefd](https://github.com/shun-shobon/configs/commit/9a4eefd3178f2898a0b0f161682572ee9e1fe282))
+* **deps:** update dependency eslint-plugin-unicorn to v54 ([#550](https://github.com/shun-shobon/configs/issues/550)) ([497b46b](https://github.com/shun-shobon/configs/commit/497b46b878866db76dd0c22c048b54423de7459f))
+* **deps:** update dependency globals to v15.5.0 ([#553](https://github.com/shun-shobon/configs/issues/553)) ([5a7f8c0](https://github.com/shun-shobon/configs/commit/5a7f8c0f77f27d2833c2e59ec410921dadeb79f3))
+* **deps:** update dependency globals to v15.6.0 ([#555](https://github.com/shun-shobon/configs/issues/555)) ([b11d37b](https://github.com/shun-shobon/configs/commit/b11d37bb67fd8af84cdc08c96f88c0287e2a415b))
+* **deps:** update dependency typescript-eslint to v7.13.1 ([#558](https://github.com/shun-shobon/configs/issues/558)) ([c3109f5](https://github.com/shun-shobon/configs/commit/c3109f5d3b136fad17ad74227636474a74bc74cd))
+* **deps:** update linters to v9.5.0 ([#552](https://github.com/shun-shobon/configs/issues/552)) ([6d0b27e](https://github.com/shun-shobon/configs/commit/6d0b27ef5bdaef9773efc9c9caf604992037d8ad))
+* Relax template strings expression type limitation ([a3429ae](https://github.com/shun-shobon/configs/commit/a3429ae3e3bc7ced3a13c213d338fa87592d55f8))
+
 ## [0.13.2](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.1...eslint-config-v0.13.2) (2024-06-12)
 
 

@@ -1,4 +1,4 @@
 {
-	"packages/eslint-config": "0.13.2",
-	"packages/prettier-config": "0.4.5"
+	"packages/eslint-config": "0.13.3",
+	"packages/prettier-config": "0.4.6"
 }

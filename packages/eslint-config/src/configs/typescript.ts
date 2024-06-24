@@ -92,6 +92,19 @@ export async function typescript(
 
 				// null assertion `!` を許可
 				"typescript/no-non-null-assertion": "off",
+
+				// template stringへの変数埋め込みの制限をstrictよりも緩和
+				"typescript/restrict-template-expressions": [
+					"error",
+					{
+						allowAny: true,
+						allowBoolean: false,
+						allowNullish: false,
+						allowNumber: true,
+						allowRegExp: false,
+						allowNever: false,
+					},
+				],
 			},
 		},
 		{

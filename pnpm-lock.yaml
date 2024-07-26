@@ -66,8 +66,8 @@ importers:
         specifier: 6.9.0
         version: 6.9.0(eslint@9.7.0)
       eslint-plugin-n:
-        specifier: 17.9.0
-        version: 17.9.0(eslint@9.7.0)
+        specifier: 17.10.0
+        version: 17.10.0(eslint@9.7.0)
       eslint-plugin-qwik:
         specifier: 1.7.1
         version: 1.7.1(eslint@9.7.0)
@@ -1236,8 +1236,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
 
-  eslint-plugin-n@17.9.0:
-    resolution: {integrity: sha512-CPSaXDXdrT4nsrOrO4mT4VB6FMUkoySRkHWuuJJHVqsIEjIeZgMY1H7AzSwPbDScikBmLN82KeM1u7ixV7PzGg==}
+  eslint-plugin-n@17.10.0:
+    resolution: {integrity: sha512-NmrSdEid+ch9SBVuqbsK5CUiEZGtMK32KSI+arWahZbFF0nvX1oEJrWiFOWmhkWFKW9Hqor0g3qPh4AvkvWwlA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -3907,7 +3907,7 @@ snapshots:
       safe-regex-test: 1.0.3
       string.prototype.includes: 2.0.0
 
-  eslint-plugin-n@17.9.0(eslint@9.7.0):
+  eslint-plugin-n@17.10.0(eslint@9.7.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.7.0)
       enhanced-resolve: 5.17.0

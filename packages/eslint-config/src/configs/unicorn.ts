@@ -46,6 +46,9 @@ export function unicorn(): ConfigItem[] {
 				// nullも使う場合があるので無効化
 				"unicorn/no-null": "off",
 
+				// undefinedを使いたい場合があるので無効化
+				"unicorn/no-useless-undefined": "off",
+
 				// CommonJSを使う場合もあるため無効化
 				"unicorn/prefer-module": "off",
 

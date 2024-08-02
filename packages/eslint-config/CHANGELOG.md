@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.13.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.3...eslint-config-v0.13.4) (2024-08-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @next/eslint-plugin-next to v14.2.5 ([#598](https://github.com/shun-shobon/configs/issues/598)) ([a8f3642](https://github.com/shun-shobon/configs/commit/a8f3642a2e3c2c92284a9ffedd609aa137404794))
+* **deps:** update dependency eslint-config-flat-gitignore to v0.1.6 ([#591](https://github.com/shun-shobon/configs/issues/591)) ([f905871](https://github.com/shun-shobon/configs/commit/f905871b5a737bc5e8dbf5e8f7770c00aa428b75))
+* **deps:** update dependency eslint-config-flat-gitignore to v0.1.7 ([#597](https://github.com/shun-shobon/configs/issues/597)) ([ab9d290](https://github.com/shun-shobon/configs/commit/ab9d2902a10ff5c4f022d24e1c1d07f7bc89e53c))
+* **deps:** update dependency eslint-config-flat-gitignore to v0.1.8 ([#607](https://github.com/shun-shobon/configs/issues/607)) ([cadcf70](https://github.com/shun-shobon/configs/commit/cadcf70172ed8b24231567739ce45f27628b3c47))
+* **deps:** update dependency eslint-plugin-astro to v1.2.3 ([#595](https://github.com/shun-shobon/configs/issues/595)) ([d580a59](https://github.com/shun-shobon/configs/commit/d580a59107a55ece3462aee4794aede088b9344b))
+* **deps:** update dependency eslint-plugin-import-x to v0.5.3 ([#585](https://github.com/shun-shobon/configs/issues/585)) ([d95b393](https://github.com/shun-shobon/configs/commit/d95b393df32ea93dd2385468375c3dd46d8bd4e7))
+* **deps:** update dependency eslint-plugin-n to v17.10.0 ([#625](https://github.com/shun-shobon/configs/issues/625)) ([fe21f72](https://github.com/shun-shobon/configs/commit/fe21f7291d5a4ce151954e8593fe7bc1464fdd36))
+* **deps:** update dependency eslint-plugin-n to v17.10.1 ([#626](https://github.com/shun-shobon/configs/issues/626)) ([ad92e74](https://github.com/shun-shobon/configs/commit/ad92e74915fb751f8ba2339b5f23b23c62497531))
+* **deps:** update dependency eslint-plugin-qwik to v1.7.0 ([#596](https://github.com/shun-shobon/configs/issues/596)) ([b3ada68](https://github.com/shun-shobon/configs/commit/b3ada682725c1bfa05a87eec36c4efe9c00253f3))
+* **deps:** update dependency eslint-plugin-qwik to v1.7.1 ([#601](https://github.com/shun-shobon/configs/issues/601)) ([d7c3b1c](https://github.com/shun-shobon/configs/commit/d7c3b1c8e8eeedf5eeddb185a75e3fd43cbb83d2))
+* **deps:** update dependency eslint-plugin-qwik to v1.7.2 ([#631](https://github.com/shun-shobon/configs/issues/631)) ([49259e2](https://github.com/shun-shobon/configs/commit/49259e2a93b72c2911f14522bb10770ef2e6e5fa))
+* **deps:** update dependency eslint-plugin-qwik to v1.7.3 ([#633](https://github.com/shun-shobon/configs/issues/633)) ([1c5c39f](https://github.com/shun-shobon/configs/commit/1c5c39f957709150f85faea42d30448833d3324c))
+* **deps:** update dependency eslint-plugin-react to v7.34.4 ([#604](https://github.com/shun-shobon/configs/issues/604)) ([a46ae21](https://github.com/shun-shobon/configs/commit/a46ae21cb58d00d5bef78b7a426a64e255f6791c))
+* **deps:** update dependency eslint-plugin-react to v7.35.0 ([#616](https://github.com/shun-shobon/configs/issues/616)) ([9937c3e](https://github.com/shun-shobon/configs/commit/9937c3e62fa743684c642f3967ee1daedbef4575))
+* **deps:** update dependency eslint-plugin-simple-import-sort to v12.1.1 ([#587](https://github.com/shun-shobon/configs/issues/587)) ([2b209c0](https://github.com/shun-shobon/configs/commit/2b209c0bb38b8f4e08c9ce897a16c30a20187289))
+* **deps:** update dependency globals to v15.7.0 ([#581](https://github.com/shun-shobon/configs/issues/581)) ([16a2bde](https://github.com/shun-shobon/configs/commit/16a2bde1c23efd5fcdc6d90169a587ca86088cc1))
+* **deps:** update dependency globals to v15.8.0 ([#586](https://github.com/shun-shobon/configs/issues/586)) ([488aa66](https://github.com/shun-shobon/configs/commit/488aa66d3875213c85e61099e5223c5fd0b5ec7b))
+* **deps:** update dependency globals to v15.9.0 ([#637](https://github.com/shun-shobon/configs/issues/637)) ([7febc88](https://github.com/shun-shobon/configs/commit/7febc884658c10753f2e2c1f258e7547144de1d9))
+* **deps:** update dependency typescript-eslint to v7.14.0 ([#573](https://github.com/shun-shobon/configs/issues/573)) ([073070b](https://github.com/shun-shobon/configs/commit/073070b2e420c9dfee490a3e8d7eeeb112191543))
+* **deps:** update dependency typescript-eslint to v7.14.1 ([#575](https://github.com/shun-shobon/configs/issues/575)) ([8e93d68](https://github.com/shun-shobon/configs/commit/8e93d6827a169ceb62d5bf76eb7a851bbbb47ae1))
+* **deps:** update dependency typescript-eslint to v7.15.0 ([#583](https://github.com/shun-shobon/configs/issues/583)) ([708e551](https://github.com/shun-shobon/configs/commit/708e5513c56912e01b30f3af120d6e4b85ef3a88))
+* **deps:** update dependency typescript-eslint to v7.16.0 ([#594](https://github.com/shun-shobon/configs/issues/594)) ([720d2a2](https://github.com/shun-shobon/configs/commit/720d2a2804f6586e3e118f64f3f9713a978acf82))
+* **deps:** update dependency typescript-eslint to v7.16.1 ([#606](https://github.com/shun-shobon/configs/issues/606)) ([a9ace6b](https://github.com/shun-shobon/configs/commit/a9ace6b91f86aacd728d99a98acbc89b37c0cebd))
+* **deps:** update dependency typescript-eslint to v7.17.0 ([#621](https://github.com/shun-shobon/configs/issues/621)) ([356db3d](https://github.com/shun-shobon/configs/commit/356db3d8dd809fa43f2b03489efc1807682b10d3))
+* **deps:** update dependency typescript-eslint to v7.18.0 ([#632](https://github.com/shun-shobon/configs/issues/632)) ([a48b585](https://github.com/shun-shobon/configs/commit/a48b5853d870da8961f2df48488b144eb1616c34))
+* **deps:** update linters ([#580](https://github.com/shun-shobon/configs/issues/580)) ([4ed7f14](https://github.com/shun-shobon/configs/commit/4ed7f14e659f3bfc7aaa8e14bbc512482c59424d))
+* **deps:** update linters to v9.7.0 ([#602](https://github.com/shun-shobon/configs/issues/602)) ([7613c98](https://github.com/shun-shobon/configs/commit/7613c987a06cf53df5ada5452ac27e5d9e152c2a))
+* **deps:** update linters to v9.8.0 ([#627](https://github.com/shun-shobon/configs/issues/627)) ([c17dc69](https://github.com/shun-shobon/configs/commit/c17dc69ef28e166ea66b1ca1ed0db18b14d509f8))
+
 ## [0.13.3](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.2...eslint-config-v0.13.3) (2024-06-24)
 
 

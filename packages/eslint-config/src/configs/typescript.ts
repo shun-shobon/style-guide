@@ -26,8 +26,7 @@ export async function typescript(
 			languageOptions: {
 				parser: parserTypeScript,
 				parserOptions: {
-					sourceType: "module",
-					EXPERIMENTAL_useProjectService: true,
+					projectService: true,
 				},
 			},
 			rules: {

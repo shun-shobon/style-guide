@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.5](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.4...eslint-config-v0.13.5) (2024-08-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript-eslint to v8 ([#635](https://github.com/shun-shobon/configs/issues/635)) ([b562fde](https://github.com/shun-shobon/configs/commit/b562fde852ba4718ae482ff174458df73cb993e0))
+* disable `unicorn/no-useless-undefined` ([1a4f068](https://github.com/shun-shobon/configs/commit/1a4f068f7188e435c994ce8ee82690d3f520e087))
+
 ## [0.13.4](https://github.com/shun-shobon/configs/compare/eslint-config-v0.13.3...eslint-config-v0.13.4) (2024-08-02)
 
 

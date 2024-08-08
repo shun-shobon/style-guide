@@ -69,8 +69,8 @@ importers:
         specifier: 17.10.2
         version: 17.10.2(eslint@9.8.0)
       eslint-plugin-qwik:
-        specifier: 1.7.3
-        version: 1.7.3(eslint@9.8.0)
+        specifier: 1.8.0
+        version: 1.8.0(eslint@9.8.0)
       eslint-plugin-react:
         specifier: 7.35.0
         version: 7.35.0(eslint@9.8.0)
@@ -1241,8 +1241,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-qwik@1.7.3:
-    resolution: {integrity: sha512-1PGlVFmRfo/rlFQ/ZdzFdrtK3DdxEdmeVos0W8eJqIEDh7KkhjdIP6XIStf/SEYZ8KVcvEHgeDMv+vQm5QVcGA==}
+  eslint-plugin-qwik@1.8.0:
+    resolution: {integrity: sha512-WcyWSnmPbi4OX3nNxsKROu3F6MhP19CHAOVmGihWEJihbA6WWW6X8RB1jNROLqVg75RIZRH6kg3KzfdwesfW/g==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     peerDependencies:
       eslint: ^8.57.0
@@ -3917,7 +3917,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-qwik@1.7.3(eslint@9.8.0):
+  eslint-plugin-qwik@1.8.0(eslint@9.8.0):
     dependencies:
       eslint: 9.8.0
       jsx-ast-utils: 3.3.5

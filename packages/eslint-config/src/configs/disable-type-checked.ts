@@ -16,9 +16,7 @@ export async function disableTypeChecked(
 			files: disableTypeCheckedFiles,
 			languageOptions: {
 				parserOptions: {
-					program: null,
-					project: null,
-					EXPERIMENTAL_useProjectService: false,
+					projectService: false,
 				},
 			},
 			rules: {

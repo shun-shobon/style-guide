@@ -1,27 +1,15 @@
 {
-	"name": "configs",
+	"name": "@shun-shobon/style-guide",
+	"version": "0.1.0",
 	"type": "module",
-	"description": "shun-shobon's shareable configs for ESLint.",
+	"description": "shun-shobon's engineering style guide",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shun-shobon/eslint-config.git"
+	},
+	"homepage": "https://github.com/shun-shobon/style-guide#readme",
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
 	"license": "MIT",
-	"private": true,
 	"packageManager": "pnpm@9.13.0",
-	"scripts": {
-		"build": "turbo run build",
-		"format": "turbo run format",
-		"format:check": "turbo run format:check",
-		"lint": "turbo run lint",
-		"lint:ci": "turbo run lint:ci",
-		"lint:fix": "turbo run lint:fix"
-	},
-	"devDependencies": {
-		"@shun-shobon/eslint-config": "workspace:*",
-		"@shun-shobon/prettier-config": "workspace:*",
-		"eslint": "9.9.1",
-		"npm-run-all2": "7.0.1",
-		"prettier": "3.3.3",
-		"tsup": "8.3.5",
-		"turbo": "2.2.3",
-		"typescript": "5.6.3"
-	}
+	"scripts": {}
 }

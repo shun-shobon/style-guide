@@ -4,5 +4,5 @@
 	"initialVersions": {
 		"@shun-shobon/style-guide": "0.1.0"
 	},
-	"changesets": ["fluffy-falcons-argue"]
+	"changesets": ["eleven-pears-rule", "fluffy-falcons-argue"]
 }

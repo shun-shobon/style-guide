@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 0.1.1-next.1
+
+### Patch Changes
+
+- ebe4070: パッケージのアクセス権限を設定
+
 ## 0.1.1-next.0
 
 ### Patch Changes

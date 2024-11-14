@@ -11,6 +11,21 @@
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
 	"license": "MIT",
 	"packageManager": "pnpm@9.13.0",
+	"exports": {
+		"./eslint": {
+			"import": "./dist/eslint/index.js",
+			"require": "./dist/eslint/index.cjs"
+		},
+		"./prettier": {
+			"import": "./dist/prettier/index.js",
+			"require": "./dist/prettier/index.cjs"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
 	"scripts": {
 		"build": "tsup-node",
 		"format": "prettier --write .",

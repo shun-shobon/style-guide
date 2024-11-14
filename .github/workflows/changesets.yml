@@ -5,10 +5,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   changesets:
     runs-on: ubuntu-latest
@@ -17,6 +13,13 @@ jobs:
     steps:
       - name: Setup | Checkout
         uses: actions/checkout@v4
+
+      - name: Setup | GitHub App
+        id: token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Setup | Node.js
         uses: shun-shobon/actions/setup-node@master
@@ -30,7 +33,7 @@ jobs:
         uses: changesets/action@v1
         id: changesets
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.token.outputs.token }}
 
   release:
     needs: changesets

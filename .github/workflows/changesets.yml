@@ -15,9 +15,6 @@ jobs:
     outputs:
       published: ${{ steps.changesets.outputs.hasChangesets == 'false' }}
     steps:
-      - name: Setup | Checkout
-        uses: actions/checkout@v4
-
       - name: Setup | GitHub App
         id: token
         uses: tibdex/github-app-token@v2
@@ -25,10 +22,21 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
+      - name: Setup | Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ steps.token.outputs.token }}
+
       - name: Setup | Node.js
         uses: shun-shobon/actions/setup-node@master
         with:
           node-version-file: .tool-versions
+
+      - name: Setup | Setup Git User
+        run: |
+          git config --global user.name "shun-shobon-bot[bot]"
+          git config --global user.email "129155891+shun-shobon-bot[bot]@users.noreply.github.com"
 
       - name: Run | Build
         run: pnpm run build
@@ -36,6 +44,10 @@ jobs:
       - name: Run | Changesets
         uses: changesets/action@v1
         id: changesets
+        with:
+          setupGitUser: false
+          title: "chore(release): publish"
+          commit: "chore(release): publish"
         env:
           GITHUB_TOKEN: ${{ steps.token.outputs.token }}
 

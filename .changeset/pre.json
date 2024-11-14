@@ -1,8 +1,0 @@
-{
-	"mode": "exit",
-	"tag": "next",
-	"initialVersions": {
-		"@shun-shobon/style-guide": "0.1.0"
-	},
-	"changesets": ["eleven-pears-rule", "fluffy-falcons-argue"]
-}

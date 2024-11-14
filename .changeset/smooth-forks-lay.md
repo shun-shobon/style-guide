@@ -2,4 +2,4 @@
 "@shun-shobon/style-guide": minor
 ---
 
-リリース
+初期リリース

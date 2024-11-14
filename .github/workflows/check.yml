@@ -31,8 +31,11 @@ jobs:
         with:
           node-version-file: .tool-versions
 
+      - name: Run | Build
+        run: pnpm run build
+
       - name: Run | Lint
-        run: pnpm run lint:ci
+        run: pnpm run lint
 
   format:
     runs-on: ubuntu-latest
@@ -44,6 +47,9 @@ jobs:
         uses: shun-shobon/actions/setup-node@master
         with:
           node-version-file: .tool-versions
+
+      - name: Run | Build
+        run: pnpm run build
 
       - name: Run | Format
         run: pnpm run format:check

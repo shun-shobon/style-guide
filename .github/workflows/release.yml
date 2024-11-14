@@ -38,6 +38,6 @@ jobs:
         run: pnpm build
 
       - name: Publish | ${{ matrix.name }}
-        run: pnpm publish -r --access public
+        run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ matrix.name == 'npm' && secrets.NPM_TOKEN || secrets.GITHUB_TOKEN }}

@@ -46,7 +46,8 @@ jobs:
           setupGitUser: false
           title: "chore(release): publish"
           commit: "chore(release): publish"
-          publish: pnpm publish --access public
+          version: pnpm version-package
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ steps.token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

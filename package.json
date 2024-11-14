@@ -31,7 +31,9 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"lint": "eslint",
-		"lint:fix": "eslint --fix"
+		"lint:fix": "eslint --fix",
+		"release": "pnpm build && changesets publish",
+		"version-package": "changesets version && pnpm format"
 	},
 	"peerDependencies": {
 		"eslint": "^9.0.0",

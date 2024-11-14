@@ -5,6 +5,7 @@
     "@shun-shobon/style-guide": "0.0.0"
   },
   "changesets": [
-    "smooth-forks-lay"
+    "smooth-forks-lay",
+    "young-snails-tap"
   ]
 }

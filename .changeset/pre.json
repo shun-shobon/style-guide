@@ -1,10 +1,8 @@
 {
-  "mode": "pre",
-  "tag": "next",
-  "initialVersions": {
-    "@shun-shobon/style-guide": "0.1.0"
-  },
-  "changesets": [
-    "fluffy-falcons-argue"
-  ]
+	"mode": "pre",
+	"tag": "next",
+	"initialVersions": {
+		"@shun-shobon/style-guide": "0.1.0"
+	},
+	"changesets": ["fluffy-falcons-argue"]
 }

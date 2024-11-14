@@ -1,12 +1,4 @@
-import * as path from "node:path";
+// eslint-disable-next-line import/no-useless-path-segments
+import { shun_shobon } from "./dist/eslint/index.js";
 
-import { shun_shobon } from "@shun-shobon/eslint-config";
-
-const __filename = new URL(import.meta.url).pathname;
-const __dirname = path.dirname(__filename);
-
-export default shun_shobon({
-	gitignore: {
-		files: [path.join(__dirname, ".gitignore")],
-	},
-});
+export default shun_shobon();

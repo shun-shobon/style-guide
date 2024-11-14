@@ -12,7 +12,6 @@ export async function react(
 
 	// eslint-disable-next-line typescript/no-unsafe-assignment
 	const [pluginReact, pluginReactHooks] = await Promise.all([
-		// @ts-expect-error: This package don't have types
 		interopDefault(import("eslint-plugin-react")),
 		// @ts-expect-error: This package don't have types
 		interopDefault(import("eslint-plugin-react-hooks")),
@@ -22,7 +21,6 @@ export async function react(
 		{
 			name: "shun-shobon/react/setup",
 			plugins: {
-				// eslint-disable-next-line typescript/no-unsafe-assignment
 				"react": pluginReact,
 				// eslint-disable-next-line typescript/no-unsafe-assignment
 				"react-hooks": pluginReactHooks,
@@ -38,12 +36,12 @@ export async function react(
 			files: [GLOB_JSX, GLOB_TSX],
 			rules: {
 				// reactの推奨ルールを有効化
-				// eslint-disable-next-line typescript/no-unsafe-member-access
-				...(pluginReact.configs.recommended.rules as Rules),
+
+				...(pluginReact.configs.recommended.rules as unknown as Rules),
 
 				// React v17以降のJSX Runtimeを使う場合の不要なルールを無効化
-				// eslint-disable-next-line typescript/no-unsafe-member-access
-				...(pluginReact.configs["jsx-runtime"].rules as Rules),
+
+				...(pluginReact.configs["jsx-runtime"].rules as unknown as Rules),
 
 				// React Hooksの推奨ルールを有効化
 				// eslint-disable-next-line typescript/no-unsafe-member-access

@@ -25,7 +25,6 @@ export function javascript(): ConfigItem[] {
 				},
 			},
 			rules: {
-				// eslint-disable-next-line typescript/no-unsafe-member-access
 				...(configJs.configs.recommended.rules as Rules),
 
 				// Arrayの関数に`return`を忘れないようにする

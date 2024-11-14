@@ -2,5 +2,5 @@
 import { shun_shobon } from "./dist/prettier/index.js";
 
 export default shun_shobon({
-	ignoreFiles: ["CHANGELOG.md"],
+	ignoreFiles: ["CHANGELOG.md", ".changeset/*.json"],
 });

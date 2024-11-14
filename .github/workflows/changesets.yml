@@ -1,0 +1,35 @@
+name: Changesets
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  changesets:
+    runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.changesets.outputs.hasChangesets == 'false' }}
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup | Node.js
+        uses: shun-shobon/actions/setup-node@master
+        with:
+          node-version-file: .tool-versions
+
+      - name: Run | Changesets
+        uses: changesets/action@v1
+        id: changesets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  release:
+    needs: changesets
+    if: ${{ needs.changesets.outputs.published == 'true' }}
+    permissions:
+      contents: read
+      packages: write
+    uses: ./.github/workflows/release.yml
+    secrets: inherit

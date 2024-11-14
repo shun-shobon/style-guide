@@ -3,7 +3,6 @@ import type { ConfigItem } from "../types";
 import { interopDefault } from "../utils";
 
 export async function storybook(): Promise<ConfigItem[]> {
-	// eslint-disable-next-line typescript/no-unsafe-assignment
 	const pluginStorybook = await interopDefault(
 		import("eslint-plugin-storybook"),
 	);
@@ -12,7 +11,6 @@ export async function storybook(): Promise<ConfigItem[]> {
 		{
 			name: "shun-shobon/storybook/setup",
 			plugins: {
-				// eslint-disable-next-line typescript/no-unsafe-assignment
 				storybook: pluginStorybook,
 			},
 		},

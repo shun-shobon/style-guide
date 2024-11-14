@@ -1,5 +1,10 @@
 # @shun-shobon/style-guide
 
+## 0.1.1-next.0
+### Patch Changes
+
+- fd02bf8: リリースCDの修正
+
 ## 0.1.0
 ### Minor Changes
 

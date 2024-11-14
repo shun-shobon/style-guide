@@ -4,5 +4,7 @@
   "initialVersions": {
     "@shun-shobon/style-guide": "0.1.0"
   },
-  "changesets": []
+  "changesets": [
+    "fluffy-falcons-argue"
+  ]
 }

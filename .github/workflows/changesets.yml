@@ -19,6 +19,9 @@ jobs:
         with:
           node-version-file: .tool-versions
 
+      - name: Run | Build
+        run: pnpm run build
+
       - name: Run | Changesets
         uses: changesets/action@v1
         id: changesets

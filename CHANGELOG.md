@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 0.1.2
+
+### Patch Changes
+
+- faa14de: Update dependency `eslint-plugin-regexp` to `v2.7.0`
+
 ## 0.1.1
 
 ### Patch Changes

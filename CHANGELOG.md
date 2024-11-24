@@ -1,5 +1,19 @@
 # @shun-shobon/style-guide
 
+## 0.1.2
+
+### Patch Changes
+
+- 49654fe: Update dependency `eslint-plugin-storybook` to `0.11.1`
+- 49654fe: Update dependency `eslint-plugin-import-x` to `4.4.3`
+- 49654fe: Update dependency `eslint-plugin-n` to `17.13.2`
+- 49654fe: Update dependency `prettier-plugin-tailwindcss` to `0.6.9`
+- 49654fe: Update dependency `typescript-eslint` to `8.15.0`
+- faa14de: Update dependency `eslint-plugin-regexp` to `v2.7.0`
+- 49654fe: Update dependency `eslint` to `9.15.0`
+- 49654fe: Update dependency `eslint-plugin-unicorn` to `56.0.1`
+- 49654fe: Update dependency `eslint-plugin-n` to `17.14.0`
+
 ## 0.1.1
 
 ### Patch Changes

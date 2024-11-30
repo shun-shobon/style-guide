@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 0.1.3
+
+### Patch Changes
+
+- d667483: Update depedencies
+
 ## 0.1.2
 
 ### Patch Changes

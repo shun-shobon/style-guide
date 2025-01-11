@@ -1,10 +1,10 @@
 import type { Options as BaseOptions } from "prettier";
-import type { JsdocOptions } from "prettier-plugin-jsdoc";
+import type { Options as JsdocOptions } from "prettier-plugin-jsdoc";
 import type { PluginOptions as TailwindcssOptions } from "prettier-plugin-tailwindcss";
 
 export interface Options
 	extends BaseOptions,
-		Partial<JsdocOptions>,
+		JsdocOptions,
 		TailwindcssOptions {}
 
 export interface Config extends Options {

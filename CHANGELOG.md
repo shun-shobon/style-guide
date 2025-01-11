@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 0.2.0
+
+### Minor Changes
+
+- a1ebb65: Update dependencies
+
 ## 0.1.3
 
 ### Patch Changes

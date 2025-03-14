@@ -10,7 +10,7 @@
 	"homepage": "https://github.com/shun-shobon/style-guide#readme",
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
 	"license": "MIT",
-	"packageManager": "pnpm@9.15.7",
+	"packageManager": "pnpm@9.15.9",
 	"exports": {
 		"./eslint": {
 			"import": "./dist/eslint/index.js",

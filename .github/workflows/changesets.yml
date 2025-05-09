@@ -38,7 +38,7 @@ jobs:
         run: pnpm run build
 
       - name: Run | Changesets
-        uses: changesets/action@06245a4e0a36c064a573d4150030f5ec548e4fcc # v1.4.10
+        uses: changesets/action@001cd79f0a536e733315164543a727bdf2d70aff # v1.5.1
         id: changesets
         with:
           setupGitUser: false

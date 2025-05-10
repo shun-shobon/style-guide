@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 0.4.1
+
+### Patch Changes
+
+- 1c28e44: Update depedencies
+
 ## 0.4.0
 
 ### Minor Changes

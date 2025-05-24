@@ -42,8 +42,8 @@ importers:
         specifier: 17.18.0
         version: 17.18.0(eslint@9.27.0)
       eslint-plugin-qwik:
-        specifier: 1.13.0
-        version: 1.13.0(eslint@9.27.0)(typescript@5.8.3)
+        specifier: 1.14.0
+        version: 1.14.0(eslint@9.27.0)(typescript@5.8.3)
       eslint-plugin-react:
         specifier: 7.37.5
         version: 7.37.5(eslint@9.27.0)
@@ -1162,9 +1162,11 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-qwik@1.13.0:
-    resolution: {integrity: sha512-7qF4Sq36KY0a8ktCzZac8Q2BBzjAqLb7Stcjwxh4hwO/AD2CcQIl3ZXGvRM57w9siYlmyegUfvxZBCcuvm/4gA==}
+  eslint-plugin-qwik@1.14.0:
+    resolution: {integrity: sha512-fPGQz46SQONkz7tmM0ZicJO1z24QxMVfHrNsoFe9lkyYgc0UKx0OJVmAb7Bh+S9WH4idNBvSjF6lgEfSRc+WCA==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
 
   eslint-plugin-react-hooks@5.2.0:
     resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
@@ -3663,12 +3665,12 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.7.2
 
-  eslint-plugin-qwik@1.13.0(eslint@9.27.0)(typescript@5.8.3):
+  eslint-plugin-qwik@1.14.0(eslint@9.27.0)(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/utils': 8.32.1(eslint@9.27.0)(typescript@5.8.3)
+      eslint: 9.27.0
       jsx-ast-utils: 3.3.5
     transitivePeerDependencies:
-      - eslint
       - supports-color
       - typescript
 

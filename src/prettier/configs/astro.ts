@@ -1,9 +1,8 @@
 import type { Config } from "../types";
-import { require } from "../utils";
 
 export function astro(): Config {
 	return {
-		plugins: [require.resolve("prettier-plugin-astro")],
+		plugins: [import.meta.resolve("prettier-plugin-astro")],
 
 		overrides: [
 			{

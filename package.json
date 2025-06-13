@@ -13,12 +13,10 @@
 	"packageManager": "pnpm@10.12.1",
 	"exports": {
 		"./eslint": {
-			"import": "./dist/eslint/index.js",
-			"require": "./dist/eslint/index.cjs"
+			"import": "./dist/eslint/index.js"
 		},
 		"./prettier": {
-			"import": "./dist/prettier/index.js",
-			"require": "./dist/prettier/index.cjs"
+			"import": "./dist/prettier/index.js"
 		}
 	},
 	"files": [

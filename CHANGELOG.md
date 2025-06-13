@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.0.0
+
+### Major Changes
+
+- ad4a1a9: Support ESM only
+
 ## 0.4.2
 
 ### Patch Changes

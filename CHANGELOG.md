@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 0.4.2
+
+### Patch Changes
+
+- 6152530: Update dependencies
+
 ## 0.4.1
 
 ### Patch Changes

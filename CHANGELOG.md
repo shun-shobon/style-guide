@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.0.1
+
+### Patch Changes
+
+- dc78f8a: Fix prettier plugin resolution
+
 ## 1.0.0
 
 ### Major Changes

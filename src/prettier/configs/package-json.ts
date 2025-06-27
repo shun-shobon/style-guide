@@ -1,7 +1,8 @@
 import type { Config } from "../types";
+import { resolve } from "../utils";
 
 export function packageJson(): Config {
 	return {
-		plugins: [import.meta.resolve("prettier-plugin-pkg")],
+		plugins: [resolve("prettier-plugin-pkg")],
 	};
 }

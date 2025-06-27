@@ -1,8 +1,9 @@
 import type { Config } from "../types";
+import { resolve } from "../utils";
 
 export function tailwindcss(): Config {
 	return {
-		plugins: [import.meta.resolve("prettier-plugin-tailwindcss")],
+		plugins: [resolve("prettier-plugin-tailwindcss")],
 
 		tailwindFunctions: ["twMerge", "clsx"],
 	};

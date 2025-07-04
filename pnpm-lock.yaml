@@ -72,14 +72,14 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       prettier-plugin-jsdoc:
-        specifier: 1.3.2
-        version: 1.3.2(prettier@3.5.3)
+        specifier: 1.3.3
+        version: 1.3.3(prettier@3.5.3)
       prettier-plugin-pkg:
         specifier: 0.21.1
         version: 0.21.1(prettier@3.5.3)
       prettier-plugin-tailwindcss:
         specifier: 0.6.13
-        version: 0.6.13(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.3.2(prettier@3.5.3))(prettier@3.5.3)
+        version: 0.6.13(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.3.3(prettier@3.5.3))(prettier@3.5.3)
       typescript-eslint:
         specifier: 8.34.1
         version: 8.34.1(eslint@9.29.0)(typescript@5.8.3)
@@ -2200,8 +2200,8 @@ packages:
     resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
-  prettier-plugin-jsdoc@1.3.2:
-    resolution: {integrity: sha512-LNi9eq0TjyZn/PUNf/SYQxxUvGg5FLK4alEbi3i/S+2JbMyTu790c/puFueXzx09KP44oWCJ+TaHRyM/a0rKJQ==}
+  prettier-plugin-jsdoc@1.3.3:
+    resolution: {integrity: sha512-YIxejcbPYK4N58jHGiXjYvrCzBMyvV2AEMSoF5LvqqeMEI0nsmww57I6NGnpVc0AU9ncFCTEBoYHN/xuBf80YA==}
     engines: {node: '>=14.13.1 || >=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
@@ -5112,7 +5112,7 @@ snapshots:
       prettier: 3.5.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-jsdoc@1.3.2(prettier@3.5.3):
+  prettier-plugin-jsdoc@1.3.3(prettier@3.5.3):
     dependencies:
       binary-searching: 2.0.5
       comment-parser: 1.4.1
@@ -5125,12 +5125,12 @@ snapshots:
     dependencies:
       prettier: 3.5.3
 
-  prettier-plugin-tailwindcss@0.6.13(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.3.2(prettier@3.5.3))(prettier@3.5.3):
+  prettier-plugin-tailwindcss@0.6.13(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.3.3(prettier@3.5.3))(prettier@3.5.3):
     dependencies:
       prettier: 3.5.3
     optionalDependencies:
       prettier-plugin-astro: 0.14.1
-      prettier-plugin-jsdoc: 1.3.2(prettier@3.5.3)
+      prettier-plugin-jsdoc: 1.3.3(prettier@3.5.3)
 
   prettier@2.8.8: {}
 

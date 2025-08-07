@@ -1,8 +1,6 @@
-import type { Rules } from "eslint-define-config";
-
 import { GLOB_JSX, GLOB_TSX } from "../globs";
 import { pluginJsxA11y } from "../plugins";
-import type { ConfigItem, OptionsHasTypeScript } from "../types";
+import type { ConfigItem, OptionsHasTypeScript, Rules } from "../types";
 import { interopDefault } from "../utils";
 
 export async function react(
@@ -34,15 +32,13 @@ export async function react(
 			files: [GLOB_JSX, GLOB_TSX],
 			rules: {
 				// reactの推奨ルールを有効化
-
-				...(pluginReact.configs.recommended.rules as unknown as Rules),
+				...(pluginReact.configs.recommended.rules as Rules),
 
 				// React v17以降のJSX Runtimeを使う場合の不要なルールを無効化
-
-				...(pluginReact.configs["jsx-runtime"].rules as unknown as Rules),
+				...(pluginReact.configs["jsx-runtime"].rules as Rules),
 
 				// React Hooksの推奨ルールを有効化
-				...(pluginReactHooks.configs.recommended.rules as unknown as Rules),
+				...(pluginReactHooks.configs.recommended.rules as Rules),
 
 				// JSX A11yの厳格なルールを有効化
 				// eslint-disable-next-line typescript/no-unsafe-member-access

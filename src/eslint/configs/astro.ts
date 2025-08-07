@@ -1,7 +1,5 @@
-import type { Rules } from "eslint-define-config";
-
 import { GLOB_ASTRO } from "../globs";
-import type { ConfigItem, OptionsHasTypeScript } from "../types";
+import type { ConfigItem, OptionsHasTypeScript, Rules } from "../types";
 import { interopDefault } from "../utils";
 
 export async function astro(
@@ -27,7 +25,6 @@ export async function astro(
 			languageOptions: {
 				parser: parserAstro,
 				parserOptions: {
-					// @ts-expect-error: This is valid
 					parser: typescript
 						? await interopDefault(import("@typescript-eslint/parser"))
 						: undefined,
@@ -43,11 +40,9 @@ export async function astro(
 				pluginAstro.processors[typescript ? "client-side-ts" : "astro"],
 			rules: {
 				// Astroの推奨ルールを有効化
-
 				...(pluginAstro.configs.recommended.at(-1)!.rules as Rules),
 
 				// Astroのjsx-a11yの拡張ルール(strict)を有効化
-
 				...(pluginAstro.configs["jsx-a11y-strict"].at(-1)!.rules as Rules),
 
 				// 曖昧なリンクのテキストを許可しない

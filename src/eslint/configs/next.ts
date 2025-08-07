@@ -1,4 +1,3 @@
-import type { Rules } from "eslint-define-config";
 import { GLOB_SRC } from "../globs";
 import type { ConfigItem } from "../types";
 import { interopDefault, renameRules } from "../utils";
@@ -10,7 +9,6 @@ export async function next(): Promise<ConfigItem[]> {
 		{
 			name: "shun-shobon/next/setup",
 			plugins: {
-				// eslint-disable-next-line typescript/no-unsafe-assignment
 				next: pluginNext,
 			},
 		},
@@ -20,14 +18,14 @@ export async function next(): Promise<ConfigItem[]> {
 			rules: {
 				// Next.jsの推奨ルールを有効化
 				...renameRules(
-					pluginNext.configs.recommended.rules as unknown as Rules,
+					pluginNext.configs.recommended.rules,
 					"@next/next/",
 					"next/",
 				),
 
 				// Next.jsの更に厳格なルールを有効化
 				...renameRules(
-					pluginNext.configs["core-web-vitals"].rules as unknown as Rules,
+					pluginNext.configs["core-web-vitals"].rules,
 					"@next/next/",
 					"next/",
 				),

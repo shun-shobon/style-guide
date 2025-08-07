@@ -1,7 +1,5 @@
-import type { Rules } from "eslint-define-config";
-
 import { GLOB_JSX, GLOB_TSX } from "../globs";
-import type { ConfigItem } from "../types";
+import type { ConfigItem, Rules } from "../types";
 import { interopDefault } from "../utils";
 
 export async function qwik(): Promise<ConfigItem[]> {

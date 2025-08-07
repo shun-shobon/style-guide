@@ -1,4 +1,3 @@
-import type { Rules } from "eslint-define-config";
 import globals from "globals";
 
 import { configJs } from "../plugins";
@@ -25,7 +24,7 @@ export function javascript(): ConfigItem[] {
 				},
 			},
 			rules: {
-				...(configJs.configs.recommended.rules as Rules),
+				...configJs.configs.recommended.rules,
 
 				// Arrayの関数に`return`を忘れないようにする
 				"array-callback-return": "error",

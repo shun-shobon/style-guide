@@ -1,4 +1,4 @@
-import type { Awaitable, ConfigItem } from "./types";
+import type { Awaitable, Rules } from "./types";
 
 export async function interopDefault<T>(
 	module: Awaitable<T>,
@@ -10,10 +10,11 @@ export async function interopDefault<T>(
 }
 
 export function renameRules(
-	rules: Required<ConfigItem>["rules"],
+	// eslint-disable-next-line typescript/no-explicit-any
+	rules: Record<string, any>,
 	from: string,
 	to: string,
-): ConfigItem["rules"] {
+): Rules {
 	return Object.fromEntries(
 		Object.entries(rules).map(([key, value]) => [
 			key.startsWith(from) ? `${to}${key.slice(from.length)}` : key,

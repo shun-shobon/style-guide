@@ -1,5 +1,5 @@
 import { GLOB_DTS, GLOB_SRC, GLOB_TS, GLOB_TSX } from "../globs";
-import type { ConfigItem, OptionsComponentExts } from "../types";
+import type { ConfigItem, OptionsComponentExts, Rules } from "../types";
 import { renameRules } from "../utils";
 
 export async function typescript(
@@ -24,9 +24,12 @@ export async function typescript(
 			name: "shun-shobon/typescript/rules",
 			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
 			languageOptions: {
+				// @ts-expect-error: This is valid
 				parser: parserTypeScript,
 				parserOptions: {
-					projectService: true,
+					projectService: {
+						allowDefaultProject: ["./*.js"],
+					},
 				},
 			},
 			rules: {
@@ -111,7 +114,7 @@ export async function typescript(
 			files: [GLOB_TS, GLOB_TSX, ...componentExts.map((ext) => `**/*.${ext}`)],
 			rules: {
 				// ESLintの推奨ルールからTypeScriptで検証可能なものを無効化
-				...configsTypeScript.eslintRecommended.rules,
+				...(configsTypeScript.eslintRecommended.rules as Rules),
 			},
 		},
 		{

@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 1.1.0
+
+### Minor Changes
+
+- d7069f6: add rule types
+
+### Patch Changes
+
+- 71f0727: Update dependencies
+
 ## 1.0.1
 
 ### Patch Changes

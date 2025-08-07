@@ -1,10 +1,9 @@
+import type { Rules } from "eslint-define-config";
 import { GLOB_SRC } from "../globs";
 import type { ConfigItem } from "../types";
 import { interopDefault, renameRules } from "../utils";
 
 export async function next(): Promise<ConfigItem[]> {
-	// @ts-expect-error: This package don't have types
-	// eslint-disable-next-line typescript/no-unsafe-assignment
 	const pluginNext = await interopDefault(import("@next/eslint-plugin-next"));
 
 	return [
@@ -21,16 +20,14 @@ export async function next(): Promise<ConfigItem[]> {
 			rules: {
 				// Next.jsの推奨ルールを有効化
 				...renameRules(
-					// eslint-disable-next-line typescript/no-unsafe-argument, typescript/no-unsafe-member-access
-					pluginNext.configs.recommended.rules,
+					pluginNext.configs.recommended.rules as unknown as Rules,
 					"@next/next/",
 					"next/",
 				),
 
 				// Next.jsの更に厳格なルールを有効化
 				...renameRules(
-					// eslint-disable-next-line typescript/no-unsafe-argument, typescript/no-unsafe-member-access
-					pluginNext.configs["core-web-vitals"].rules,
+					pluginNext.configs["core-web-vitals"].rules as unknown as Rules,
 					"@next/next/",
 					"next/",
 				),

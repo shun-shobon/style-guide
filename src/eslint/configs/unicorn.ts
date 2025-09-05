@@ -1,7 +1,5 @@
-import type { Rules } from "eslint-define-config";
-
 import { pluginUnicorn } from "../plugins";
-import type { ConfigItem } from "../types";
+import type { ConfigItem, Rules } from "../types";
 
 export function unicorn(): ConfigItem[] {
 	return [

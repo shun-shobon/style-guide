@@ -24,7 +24,6 @@ export async function typescript(
 			name: "shun-shobon/typescript/rules",
 			files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
 			languageOptions: {
-				// @ts-expect-error: This is valid
 				parser: parserTypeScript,
 				parserOptions: {
 					projectService: {

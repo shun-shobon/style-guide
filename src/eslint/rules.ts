@@ -3800,7 +3800,6 @@ type QwikPreferClasslist = []|[{
 // ----- qwik/valid-lexical-scope -----
 type QwikValidLexicalScope = []|[{
   allowAny?: boolean
-  [k: string]: unknown | undefined
 }]
 // ----- react/boolean-prop-naming -----
 type ReactBooleanPropNaming = []|[{

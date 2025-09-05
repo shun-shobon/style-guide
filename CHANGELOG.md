@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.1.1
+
+### Patch Changes
+
+- 74b476b: Update dependencies
+
 ## 1.1.0
 
 ### Minor Changes

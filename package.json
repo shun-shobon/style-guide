@@ -31,6 +31,7 @@
 		"lint": "eslint",
 		"lint:fix": "eslint --fix",
 		"release": "pnpm build && changeset publish",
+		"typecheck": "tsc --noEmit",
 		"typegen": "node --experimental-transform-types scripts/typegen.ts",
 		"version-package": "changeset version && pnpm format"
 	},

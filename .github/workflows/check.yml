@@ -54,3 +54,18 @@ jobs:
 
       - name: Run | Format
         run: pnpm run format:check
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Setup | Development environment
+        uses: ./.github/actions/setup
+
+      - name: Run | Build
+        run: pnpm run build
+
+      - name: Run | Typecheck
+        run: pnpm run typecheck

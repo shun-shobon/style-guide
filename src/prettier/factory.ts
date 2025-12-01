@@ -33,7 +33,7 @@ export function shun_shobon(
 		configs.push(astro());
 	}
 
-	// パーサの都合上、Taliwind CSSは一番最後に追加する
+	// パーサの都合上、Tailwind CSSは一番最後に追加する
 	if (enableTailwindcss) {
 		configs.push(tailwindcss());
 	}

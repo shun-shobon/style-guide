@@ -117,6 +117,7 @@ export async function shun_shobon(
 		},
 	]);
 
+	// eslint-disable-next-line typescript/await-thenable
 	const configs = await Promise.all(configQueue).then((configs) =>
 		configs.flat(),
 	);

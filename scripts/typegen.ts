@@ -34,6 +34,6 @@ const plugins = {
 	"unicorn": pluginUnicorn,
 } as unknown as Record<string, ESLint.Plugin>;
 
-const dts = await pluginsToRulesDTS(plugins);
+const dts = await pluginsToRulesDTS(plugins, { includeAugmentation: false });
 
 await fs.writeFile("src/eslint/rules.ts", dts);

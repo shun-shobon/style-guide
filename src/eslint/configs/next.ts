@@ -18,14 +18,14 @@ export async function next(): Promise<ConfigItem[]> {
 			rules: {
 				// Next.jsの推奨ルールを有効化
 				...renameRules(
-					pluginNext.configs.recommended.rules,
+					pluginNext.configs.recommended.rules!,
 					"@next/next/",
 					"next/",
 				),
 
 				// Next.jsの更に厳格なルールを有効化
 				...renameRules(
-					pluginNext.configs["core-web-vitals"].rules,
+					pluginNext.configs["core-web-vitals"].rules!,
 					"@next/next/",
 					"next/",
 				),

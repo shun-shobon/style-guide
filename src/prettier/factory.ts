@@ -21,10 +21,13 @@ export function shun_shobon(
 		ignoreFiles = [],
 	} = options;
 
-	const configs: Config[] = [];
-
 	// basic configs
-	configs.push(base(), packageJson(), jsdoc(), ignores({ ignoreFiles }));
+	const configs: Config[] = [
+		base(),
+		packageJson(),
+		jsdoc(),
+		ignores({ ignoreFiles }),
+	];
 
 	if (enableAstro) {
 		configs.push(astro());

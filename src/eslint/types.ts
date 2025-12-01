@@ -25,8 +25,7 @@ export interface ConfigItem extends Omit<Linter.Config, "plugins" | "rules"> {
 }
 
 export interface OptionsConfig
-	extends OptionsComponentExts,
-		OptionsDisableTypeCheckedFiles {
+	extends OptionsComponentExts, OptionsDisableTypeCheckedFiles {
 	/**
 	 * Ignore files.
 	 *

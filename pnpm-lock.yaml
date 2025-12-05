@@ -78,8 +78,8 @@ importers:
         specifier: 0.21.2
         version: 0.21.2(prettier@3.7.1)
       prettier-plugin-tailwindcss:
-        specifier: 0.7.1
-        version: 0.7.1(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.1))(prettier@3.7.1)
+        specifier: 0.7.2
+        version: 0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.1))(prettier@3.7.1)
       typescript-eslint:
         specifier: 8.48.0
         version: 8.48.0(eslint@9.39.1)(typescript@5.9.3)
@@ -2396,8 +2396,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier-plugin-tailwindcss@0.7.1:
-    resolution: {integrity: sha512-Bzv1LZcuiR1Sk02iJTS1QzlFNp/o5l2p3xkopwOrbPmtMeh3fK9rVW5M3neBQzHq+kGKj/4LGQMTNcTH4NGPtQ==}
+  prettier-plugin-tailwindcss@0.7.2:
+    resolution: {integrity: sha512-LkphyK3Fw+q2HdMOoiEHWf93fNtYJwfamoKPl7UwtjFQdei/iIBoX11G6j706FzN3ymX9mPVi97qIY8328vdnA==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -5430,7 +5430,7 @@ snapshots:
     dependencies:
       prettier: 3.7.1
 
-  prettier-plugin-tailwindcss@0.7.1(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.1))(prettier@3.7.1):
+  prettier-plugin-tailwindcss@0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.1))(prettier@3.7.1):
     dependencies:
       prettier: 3.7.1
     optionalDependencies:

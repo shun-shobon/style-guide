@@ -72,14 +72,14 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       prettier-plugin-jsdoc:
-        specifier: 1.5.0
-        version: 1.5.0(prettier@3.7.3)
+        specifier: 1.7.0
+        version: 1.7.0(prettier-plugin-astro@0.14.1)(prettier@3.7.3)
       prettier-plugin-pkg:
         specifier: 0.21.2
         version: 0.21.2(prettier@3.7.3)
       prettier-plugin-tailwindcss:
         specifier: 0.7.2
-        version: 0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.3))(prettier@3.7.3)
+        version: 0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.7.0(prettier-plugin-astro@0.14.1)(prettier@3.7.3))(prettier@3.7.3)
       typescript-eslint:
         specifier: 8.48.1
         version: 8.48.1(eslint@9.39.1)(typescript@5.9.3)
@@ -2421,8 +2421,8 @@ packages:
     resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
-  prettier-plugin-jsdoc@1.5.0:
-    resolution: {integrity: sha512-Fehp5qkFQhNFcxUilDPEcqHX8AdP6oGyCRLatqRc0gLXv3qOtndTnnUxfHCYc26I4Lc1A4lVozAtWEE8o7ubUA==}
+  prettier-plugin-jsdoc@1.7.0:
+    resolution: {integrity: sha512-tvmMg1y9G7Hy5N2SnLsWsgJWtoSSpfphq+a7dAEoED+siiaBHDowI6N9HzhLA4/SRJhlRdHkDXwCPrXgzbRhng==}
     engines: {node: '>=14.13.1 || >=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
@@ -5505,25 +5505,41 @@ snapshots:
       prettier: 3.7.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-jsdoc@1.5.0(prettier@3.7.3):
+  prettier-plugin-jsdoc@1.7.0(prettier-plugin-astro@0.14.1)(prettier@3.7.3):
     dependencies:
       binary-searching: 2.0.5
       comment-parser: 1.4.1
       mdast-util-from-markdown: 2.0.2
       prettier: 3.7.3
+      prettier-plugin-tailwindcss: 0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.7.0(prettier-plugin-astro@0.14.1)(prettier@3.7.3))(prettier@3.7.3)
     transitivePeerDependencies:
+      - '@ianvs/prettier-plugin-sort-imports'
+      - '@prettier/plugin-hermes'
+      - '@prettier/plugin-oxc'
+      - '@prettier/plugin-pug'
+      - '@shopify/prettier-plugin-liquid'
+      - '@trivago/prettier-plugin-sort-imports'
+      - '@zackad/prettier-plugin-twig'
+      - prettier-plugin-astro
+      - prettier-plugin-css-order
+      - prettier-plugin-marko
+      - prettier-plugin-multiline-arrays
+      - prettier-plugin-organize-attributes
+      - prettier-plugin-organize-imports
+      - prettier-plugin-sort-imports
+      - prettier-plugin-svelte
       - supports-color
 
   prettier-plugin-pkg@0.21.2(prettier@3.7.3):
     dependencies:
       prettier: 3.7.3
 
-  prettier-plugin-tailwindcss@0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.3))(prettier@3.7.3):
+  prettier-plugin-tailwindcss@0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.7.0(prettier-plugin-astro@0.14.1)(prettier@3.7.3))(prettier@3.7.3):
     dependencies:
       prettier: 3.7.3
     optionalDependencies:
       prettier-plugin-astro: 0.14.1
-      prettier-plugin-jsdoc: 1.5.0(prettier@3.7.3)
+      prettier-plugin-jsdoc: 1.7.0(prettier-plugin-astro@0.14.1)(prettier@3.7.3)
 
   prettier@2.8.8: {}
 

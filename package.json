@@ -5,7 +5,7 @@
 	"description": "shun-shobon's engineering style guide",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/shun-shobon/eslint-config.git"
+		"url": "https://github.com/shun-shobon/style-guide.git"
 	},
 	"homepage": "https://github.com/shun-shobon/style-guide#readme",
 	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
@@ -84,7 +84,8 @@
 		"typescript": "5.9.3"
 	},
 	"publishConfig": {
-		"access": "public"
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
 	},
 	"sideEffects": false
 }

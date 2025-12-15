@@ -6,46 +6,37 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
+  id-token: write
 
 jobs:
   changesets:
     runs-on: ubuntu-latest
     steps:
       - name: Setup | GitHub App
-        id: token
-        uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
+        id: app-token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
         with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Setup | Checkout
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-        with:
-          fetch-depth: 0
-          token: ${{ steps.token.outputs.token }}
 
       - name: Setup | Development environment
         uses: ./.github/actions/setup
-
-      - name: Setup | Setup Git User
-        run: |
-          git config --global user.name "shun-shobon-bot[bot]"
-          git config --global user.email "129155891+shun-shobon-bot[bot]@users.noreply.github.com"
 
       - name: Run | Build
         run: pnpm run build
 
       - name: Run | Changesets
         uses: changesets/action@e0145edc7d9d8679003495b11f87bd8ef63c0cba # v1.5.3
-        id: changesets
         with:
-          setupGitUser: false
           title: "chore(release): publish"
           commit: "chore(release): publish"
           version: pnpm version-package
           publish: pnpm release
+          commitMode: github-api
         env:
-          GITHUB_TOKEN: ${{ steps.token.outputs.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}

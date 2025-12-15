@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.2.2
+
+### Patch Changes
+
+- 5e11820: package.jsonの修正
+
 ## 1.2.1
 
 ### Patch Changes

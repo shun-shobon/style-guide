@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.2.1
+
+### Patch Changes
+
+- 2d45b26: ビルドツールをtsupからtsdownへ移行
+
 ## 1.2.0
 
 ### Minor Changes

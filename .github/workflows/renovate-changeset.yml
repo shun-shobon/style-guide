@@ -63,8 +63,8 @@ jobs:
             }
 
             const mergeBase = await exec.getExecOutput("git", ["merge-base", "HEAD", "origin/main"]);
-            const diffOutput = await exec.getExecOutput("git", ["diff", "--name-only", `${mergeBase.stdout}...HEAD`]);
-            const diffFiles = diffOutput.stdout.split("\n");
+            const diffOutput = await exec.getExecOutput("git", ["diff", "--name-only", `${mergeBase.stdout.trim()}...HEAD`]);
+            const diffFiles = diffOutput.stdout.trim().split("\n");
 
             if (diffFiles.find((file) => file.startsWith(".changeset/"))) {
               console.log("Changeset already exists. Skipping changeset creation.");

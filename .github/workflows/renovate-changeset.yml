@@ -1,0 +1,137 @@
+name: Renovate Changeset
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: read
+
+jobs:
+  changeset:
+    if: github.event.pull_request.user.login == 'renovate[bot]' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | GitHub App
+        id: app-token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Setup | Checkout
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+
+      - name: Setup | Development environment
+        uses: ./.github/actions/setup
+
+      - name: Run | Create changeset
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            function extractSemver(versionRange) {
+              if (typeof versionRange !== "string") return null;
+              const match = versionRange.match(/(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)/u);
+              if (!match) return null;
+              return {
+                major: Number(match.groups.major),
+                minor: Number(match.groups.minor),
+                patch: Number(match.groups.patch),
+                raw: `${match.groups.major}.${match.groups.minor}.${match.groups.patch}`,
+              }
+            }
+
+            function bumpKind(oldVersionRange, newVersionRange) {
+              const oldSemver = extractSemver(oldVersionRange);
+              const newSemver = extractSemver(newVersionRange);
+              if (!oldSemver || !newSemver) return null;
+              if (newSemver.major !== oldSemver.major) return newSemver.major > oldSemver.major ? "major" : null;
+              if (newSemver.minor !== oldSemver.minor) return newSemver.minor > oldSemver.minor ? "minor" : null;
+              if (newSemver.patch !== oldSemver.patch) return newSemver.patch > oldSemver.patch ? "patch" : null;
+              return null;
+            }
+
+            function maxBumpKind(kinds) {
+              if (kinds.includes("major")) return "major";
+              if (kinds.includes("minor")) return "minor";
+              if (kinds.includes("patch")) return "patch";
+              return null;
+            }
+
+            const mergeBase = await exec.getExecOutput("git", ["merge-base", "HEAD", "origin/main"]);
+            const diffOutput = await exec.getExecOutput("git", ["diff", "--name-only", mergeBase.stdout]);
+            const diffFiles = diffOutput.stdout.split("\n");
+
+            if (diffFiles.find((file) => file.startsWith(".changeset/"))) {
+              console.log("Changeset already exists. Skipping changeset creation.");
+              return;
+            }
+
+            if (!diffFiles.find((file) => file === "package.json")) {
+              console.log("No package.json changes detected. Skipping changeset creation.");
+              return;
+            }
+
+            const newPackageJson = await fs.readFile("package.json", "utf8");
+            const oldPackageJson = await exec.getExecOutput("git", ["show", "${mergeBase.stdout}:package.json"]);
+
+            const newDependencies = JSON.parse(newPackageJson).dependencies ?? {};
+            const oldDependencies = JSON.parse(oldPackageJson).dependencies ?? {};
+
+            const changed = [];
+            for (const [depName, newRange] of Object.entries(newDependencies)) {
+              const oldRange = oldDependencies[depName];
+              if (!oldRange) continue;
+              if (oldRange === newRange) continue;
+              const kind = bumpKind(oldRange, newRange);
+              if (!kind) continue;
+              changed.push({ depName, oldRange, newRange, kind });
+            }
+
+            if (changed.length === 0) {
+              console.log("No dependency updates in package.json dependencies. Skipping changeset creation.");
+              return;
+            }
+
+            const bump = maxBumpKind(changed.map((c) => c.kind));
+            if (!bump) {
+              console.log("No semver-increasing dependency updates detected. Skipping changeset creation.");
+              return;
+            }
+
+            const packageName = JSON.parse(newPackageJson).name;
+            if (!packageName) {
+              throw new Error("package.json has no name");
+            }
+
+            const prTitle = context.payload.pull_request.title;
+            if (!prTitle) {
+              throw new Error("pull request title is required");
+            }
+
+            const changesetContent = [
+              "---",
+              `"${packageName}": ${bump}`,
+              "---",
+              "",
+              prTitle,
+              "",
+            ].join("\n");
+            const changesetContentBase64 = Buffer.from(changesetContent, "utf8").toString("base64");
+
+            const changesetFilePath = ".changeset/renovate-${context.payload.pull_request.number}.md";
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: context.payload.pull_request.head.repo.owner.name,
+              repo: context.payload.pull_request.head.repo.name,
+              path: changesetFilePath,
+              content: changesetContentBase64,
+              message: "chore: add changeset for dependency updates",
+              branch: context.payload.pull_request.head.ref,
+            });
+
+            console.log("Created changeset file");

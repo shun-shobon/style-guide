@@ -135,3 +135,6 @@ jobs:
             });
 
             console.log("Created changeset file");
+
+            // test: always fail
+            throw new Error("test: always fail");

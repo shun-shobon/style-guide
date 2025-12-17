@@ -49,7 +49,7 @@
 	},
 	"dependencies": {
 		"@eslint/core": "1.0.0",
-		"@eslint/js": "9.39.1",
+		"@eslint/js": "9.39.2",
 		"@next/eslint-plugin-next": "16.0.10",
 		"@typescript-eslint/parser": "8.49.0",
 		"astro-eslint-parser": "1.2.2",
@@ -77,7 +77,7 @@
 	"devDependencies": {
 		"@changesets/cli": "2.29.8",
 		"@types/node": "24.10.4",
-		"eslint": "9.39.1",
+		"eslint": "9.39.2",
 		"eslint-typegen": "2.3.0",
 		"prettier": "3.7.4",
 		"tsdown": "0.17.4",

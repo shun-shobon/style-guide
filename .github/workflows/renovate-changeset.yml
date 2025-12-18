@@ -37,8 +37,6 @@ jobs:
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
-            const fs = require("fs/promises");
-
             function extractSemver(versionRange) {
               if (typeof versionRange !== "string") return null;
               const match = versionRange.match(/(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)/u);
@@ -84,14 +82,14 @@ jobs:
               return;
             }
 
-            const newPackageJson = await fs.readFile("package.json", "utf8");
+            const newPackageJson = await exec.getExecOutput("git", ["show", "HEAD:package.json"]);
             const oldPackageJson = await exec.getExecOutput("git", ["show", `${mergeBase.stdout.trim()}:package.json`]);
 
-            const newDependencies = JSON.parse(newPackageJson).dependencies ?? {};
-            const oldDependencies = JSON.parse(oldPackageJson).dependencies ?? {};
+            console.log("newPackageJson", newPackageJson.stdout);
+            console.log("oldPackageJson", oldPackageJson.stdout);
 
-            console.log("newDependencies", newDependencies);
-            console.log("oldDependencies", oldDependencies);
+            const newDependencies = JSON.parse(newPackageJson.stdout).dependencies ?? {};
+            const oldDependencies = JSON.parse(oldPackageJson.stdout).dependencies ?? {};
 
             const changed = [];
             for (const [depName, newRange] of Object.entries(newDependencies)) {

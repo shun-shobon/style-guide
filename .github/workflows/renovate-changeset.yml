@@ -63,8 +63,10 @@ jobs:
             }
 
             const mergeBase = await exec.getExecOutput("git", ["merge-base", "HEAD", "origin/main"]);
+            console.log("mergeBase", mergeBase.stdout.trim());
             const diffOutput = await exec.getExecOutput("git", ["diff", "--name-only", `${mergeBase.stdout.trim()}...HEAD`]);
             const diffFiles = diffOutput.stdout.trim().split("\n");
+            console.log("diffFiles", diffFiles);
 
             if (diffFiles.find((file) => file.startsWith(".changeset/"))) {
               console.log("Changeset already exists. Skipping changeset creation.");
@@ -82,6 +84,9 @@ jobs:
             const newDependencies = JSON.parse(newPackageJson).dependencies ?? {};
             const oldDependencies = JSON.parse(oldPackageJson).dependencies ?? {};
 
+            console.log("newDependencies", newDependencies);
+            console.log("oldDependencies", oldDependencies);
+
             const changed = [];
             for (const [depName, newRange] of Object.entries(newDependencies)) {
               const oldRange = oldDependencies[depName];
@@ -91,6 +96,7 @@ jobs:
               if (!kind) continue;
               changed.push({ depName, oldRange, newRange, kind });
             }
+            console.log("changed", changed);
 
             if (changed.length === 0) {
               console.log("No dependency updates in package.json dependencies. Skipping changeset creation.");
@@ -98,6 +104,7 @@ jobs:
             }
 
             const bump = maxBumpKind(changed.map((c) => c.kind));
+            console.log("bump", bump);
             if (!bump) {
               console.log("No semver-increasing dependency updates detected. Skipping changeset creation.");
               return;
@@ -121,6 +128,7 @@ jobs:
               prTitle,
               "",
             ].join("\n");
+            console.log("changesetContent", changesetContent);
             const changesetContentBase64 = Buffer.from(changesetContent, "utf8").toString("base64");
 
             const changesetFilePath = ".changeset/renovate-${context.payload.pull_request.number}.md";

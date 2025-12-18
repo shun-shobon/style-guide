@@ -135,7 +135,7 @@ jobs:
             console.log("changesetContent", changesetContent);
             const changesetContentBase64 = Buffer.from(changesetContent, "utf8").toString("base64");
 
-            const changesetFilePath = ".changeset/renovate-${context.payload.pull_request.number}.md";
+            const changesetFilePath = `.changeset/renovate-${context.payload.pull_request.number}.md`;
 
             await github.rest.repos.createOrUpdateFileContents({
               owner: context.payload.pull_request.head.repo.owner.login,

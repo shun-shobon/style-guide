@@ -114,7 +114,7 @@ jobs:
               return;
             }
 
-            const packageName = JSON.parse(newPackageJson).name;
+            const packageName = JSON.parse(newPackageJson.stdout).name;
             if (!packageName) {
               throw new Error("package.json has no name");
             }

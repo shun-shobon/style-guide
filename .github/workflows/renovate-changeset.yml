@@ -85,7 +85,7 @@ jobs:
             }
 
             const newPackageJson = await fs.readFile("package.json", "utf8");
-            const oldPackageJson = await exec.getExecOutput("git", ["show", "${mergeBase.stdout}:package.json"]);
+            const oldPackageJson = await exec.getExecOutput("git", ["show", `${mergeBase.stdout.trim()}:package.json`]);
 
             const newDependencies = JSON.parse(newPackageJson).dependencies ?? {};
             const oldDependencies = JSON.parse(oldPackageJson).dependencies ?? {};

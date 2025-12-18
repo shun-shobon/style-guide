@@ -37,6 +37,8 @@ jobs:
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
+            const fs = require("fs/promises");
+
             function extractSemver(versionRange) {
               if (typeof versionRange !== "string") return null;
               const match = versionRange.match(/(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)/u);

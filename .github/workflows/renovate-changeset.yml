@@ -138,7 +138,7 @@ jobs:
             const changesetFilePath = ".changeset/renovate-${context.payload.pull_request.number}.md";
 
             await github.rest.repos.createOrUpdateFileContents({
-              owner: context.payload.pull_request.head.repo.owner.name,
+              owner: context.payload.pull_request.head.repo.owner.login,
               repo: context.payload.pull_request.head.repo.name,
               path: changesetFilePath,
               content: changesetContentBase64,

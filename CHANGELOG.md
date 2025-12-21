@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 1.4.0
+
+### Minor Changes
+
+- 3731cd5: fix(deps): update dependency eslint-plugin-qwik to v1.18.0
+
+### Patch Changes
+
+- a115a88: pin prettier-plugin-jsdoc
+
 ## 1.3.0
 
 ### Minor Changes

@@ -72,14 +72,14 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       prettier-plugin-jsdoc:
-        specifier: 1.8.0
-        version: 1.8.0(prettier@3.7.4)
+        specifier: 1.5.0
+        version: 1.5.0(prettier@3.7.4)
       prettier-plugin-pkg:
         specifier: 0.21.2
         version: 0.21.2(prettier@3.7.4)
       prettier-plugin-tailwindcss:
         specifier: 0.7.2
-        version: 0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.8.0(prettier@3.7.4))(prettier@3.7.4)
+        version: 0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.4))(prettier@3.7.4)
       typescript-eslint:
         specifier: 8.50.0
         version: 8.50.0(eslint@9.39.2)(typescript@5.9.3)
@@ -2216,8 +2216,8 @@ packages:
     resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
-  prettier-plugin-jsdoc@1.8.0:
-    resolution: {integrity: sha512-byW8EBZ1DSA3CPdDGBXfcdqqhh2eq0+HlIOPTGZ6rf9O2p/AwBmtS0e49ot5ZeOdcszj81FyzbyHr/VS0eYpCg==}
+  prettier-plugin-jsdoc@1.5.0:
+    resolution: {integrity: sha512-Fehp5qkFQhNFcxUilDPEcqHX8AdP6oGyCRLatqRc0gLXv3qOtndTnnUxfHCYc26I4Lc1A4lVozAtWEE8o7ubUA==}
     engines: {node: '>=14.13.1 || >=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
@@ -5199,7 +5199,7 @@ snapshots:
       prettier: 3.7.4
       sass-formatter: 0.7.9
 
-  prettier-plugin-jsdoc@1.8.0(prettier@3.7.4):
+  prettier-plugin-jsdoc@1.5.0(prettier@3.7.4):
     dependencies:
       binary-searching: 2.0.5
       comment-parser: 1.4.1
@@ -5212,12 +5212,12 @@ snapshots:
     dependencies:
       prettier: 3.7.4
 
-  prettier-plugin-tailwindcss@0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.8.0(prettier@3.7.4))(prettier@3.7.4):
+  prettier-plugin-tailwindcss@0.7.2(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.7.4))(prettier@3.7.4):
     dependencies:
       prettier: 3.7.4
     optionalDependencies:
       prettier-plugin-astro: 0.14.1
-      prettier-plugin-jsdoc: 1.8.0(prettier@3.7.4)
+      prettier-plugin-jsdoc: 1.5.0(prettier@3.7.4)
 
   prettier@2.8.8: {}
 

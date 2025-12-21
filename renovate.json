@@ -3,5 +3,12 @@
 	"extends": ["local>shun-shobon/renovate-config"],
 	"gitIgnoredAuthors": [
 		"129155891+shun-shobon-bot[bot]@users.noreply.github.com"
+	],
+	"packageRules": [
+		{
+			"matchManagers": ["npm"],
+			"matchPackageNames": ["prettier-plugin-jsdoc"],
+			"enabled": false
+		}
 	]
 }

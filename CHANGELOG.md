@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.5.0
+
+### Minor Changes
+
+- d9259ad: fix(deps): update dependency @next/eslint-plugin-next to v16.1.0
+
 ## 1.4.0
 
 ### Minor Changes

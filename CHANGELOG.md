@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.5.2
+
+### Patch Changes
+
+- c42a243: fix(deps): update dependency @next/eslint-plugin-next to v16.1.1
+
 ## 1.5.1
 
 ### Patch Changes

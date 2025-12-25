@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 1.5.1
+
+### Patch Changes
+
+- 053293c: fix(deps): update typescript-eslint monorepo to v8.50.1
+
 ## 1.5.0
 
 ### Minor Changes

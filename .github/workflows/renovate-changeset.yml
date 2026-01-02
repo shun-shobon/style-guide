@@ -29,8 +29,8 @@ jobs:
           ref: ${{ github.head_ref }}
           filter: blob:none
 
-      - name: Setup | Development environment
-        uses: ./.github/actions/setup
+      - name: Setup | Node.js
+        uses: ./.github/actions/setup-node
 
       - name: Run | Create changeset
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0

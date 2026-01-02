@@ -19,8 +19,8 @@ jobs:
       - name: Setup | Checkout
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
-      - name: Setup | Development environment
-        uses: ./.github/actions/setup
+      - name: Setup | Node.js
+        uses: ./.github/actions/setup-node
 
       - name: Run | Build
         run: pnpm run build
@@ -31,8 +31,8 @@ jobs:
       - name: Setup | Checkout
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
-      - name: Setup | Development environment
-        uses: ./.github/actions/setup
+      - name: Setup | Node.js
+        uses: ./.github/actions/setup-node
 
       - name: Run | Build
         run: pnpm run build
@@ -46,8 +46,8 @@ jobs:
       - name: Setup | Checkout
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
-      - name: Setup | Development environment
-        uses: ./.github/actions/setup
+      - name: Setup | Node.js
+        uses: ./.github/actions/setup-node
 
       - name: Run | Build
         run: pnpm run build
@@ -61,8 +61,8 @@ jobs:
       - name: Setup | Checkout
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
 
-      - name: Setup | Development environment
-        uses: ./.github/actions/setup
+      - name: Setup | Node.js
+        uses: ./.github/actions/setup-node
 
       - name: Run | Build
         run: pnpm run build

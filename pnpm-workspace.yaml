@@ -9,5 +9,5 @@ saveExact: true
 trustPolicy: no-downgrade
 
 trustPolicyExclude:
-  # eslint-plugin-reactがsemver v6に依存しているが、v6はOIDC認証がされていないためexcludeする
   - semver@6.3.1
+  - ts-api-utils@2.3.0

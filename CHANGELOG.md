@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 1.6.0
+
+### Minor Changes
+
+- 0204113: fix(deps): update typescript-eslint monorepo to v8.51.0
+
+### Patch Changes
+
+- db1a485: fix(deps): update dependency eslint-plugin-storybook to v10.1.11
+
 ## 1.5.2
 
 ### Patch Changes

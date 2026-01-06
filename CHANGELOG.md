@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 2.0.0
+
+### Major Changes
+
+- f360fad: fix(deps): update dependency globals to v17
+
 ## 1.6.0
 
 ### Minor Changes

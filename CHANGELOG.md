@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 2.1.0
+
+### Minor Changes
+
+- 7ec1c9f: fix(deps): update typescript-eslint monorepo to v8.52.0
+
 ## 2.0.0
 
 ### Major Changes

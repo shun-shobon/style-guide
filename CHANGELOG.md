@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 2.1.1
+
+### Patch Changes
+
+- 3d963f5: fix(deps): update dependency @eslint/core to v1.0.1
+
 ## 2.1.0
 
 ### Minor Changes

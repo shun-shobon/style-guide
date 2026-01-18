@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 2.2.1
+
+### Patch Changes
+
+- 9fbb544: fix(deps): update dependency eslint-plugin-n to v17.23.2
+
 ## 2.2.0
 
 ### Minor Changes

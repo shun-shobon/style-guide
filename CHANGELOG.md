@@ -1,5 +1,12 @@
 # @shun-shobon/style-guide
 
+## 2.2.4
+
+### Patch Changes
+
+- a715232: fix(deps): update dependency @next/eslint-plugin-next to v16.1.4
+- d0ff714: fix(deps): update typescript-eslint monorepo to v8.53.1
+
 ## 2.2.3
 
 ### Patch Changes

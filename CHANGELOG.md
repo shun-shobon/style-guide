@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 3.0.0
+
+### Major Changes
+
+- 5ca14bb: fix(deps): update dependency eslint-plugin-regexp to v3
+
+### Minor Changes
+
+- fff037e: fix(deps): update dependency eslint-plugin-storybook to v10.2.0
+
 ## 2.2.4
 
 ### Patch Changes

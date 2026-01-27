@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 3.1.0
+
+### Minor Changes
+
+- b48c322: fix(deps): update dependency globals to v17.1.0
+
 ## 3.0.0
 
 ### Major Changes

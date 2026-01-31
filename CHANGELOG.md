@@ -1,5 +1,17 @@
 # @shun-shobon/style-guide
 
+## 3.3.0
+
+### Minor Changes
+
+- b2fbb70: fix(deps): update dependency globals to v17.2.0
+
+### Patch Changes
+
+- 048d14e: fix(deps): update dependency @next/eslint-plugin-next to v16.1.5
+- d8c3943: fix(deps): update dependency eslint-plugin-storybook to v10.2.1
+- 0b283c4: fix(deps): update dependency @next/eslint-plugin-next to v16.1.6
+
 ## 3.2.0
 
 ### Minor Changes

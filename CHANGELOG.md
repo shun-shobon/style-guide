@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 3.4.0
+
+### Minor Changes
+
+- bf25575: fix(deps): update dependency eslint-plugin-qwik to v1.19.0
+
+### Patch Changes
+
+- bb4b38b: fix(deps): update dependency eslint-plugin-storybook to v10.2.3
+
 ## 3.3.0
 
 ### Minor Changes

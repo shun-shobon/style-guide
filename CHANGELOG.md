@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 3.5.0
+
+### Minor Changes
+
+- 9488dec: fix(deps): update dependency @eslint/core to v1.1.0
+
 ## 3.4.0
 
 ### Minor Changes

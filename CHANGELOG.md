@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 3.6.0
+
+### Minor Changes
+
+- e635fa0: fix(deps): update dependency globals to v17.3.0
+
+### Patch Changes
+
+- 6151ce1: fix(deps): update dependency eslint-plugin-storybook to v10.2.4
+
 ## 3.5.0
 
 ### Minor Changes

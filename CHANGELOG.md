@@ -1,5 +1,12 @@
 # @shun-shobon/style-guide
 
+## 3.6.1
+
+### Patch Changes
+
+- bcc2311: fix(deps): update dependency eslint-plugin-storybook to v10.2.6
+- 14a8dd6: fix(deps): update dependency eslint-plugin-storybook to v10.2.7
+
 ## 3.6.0
 
 ### Minor Changes

@@ -1,5 +1,19 @@
 # @shun-shobon/style-guide
 
+## 4.0.0
+
+### Major Changes
+
+- 0e2a519: fix(deps): update dependency eslint-plugin-unicorn to v63
+
+### Minor Changes
+
+- 24c3902: fix(deps): update typescript-eslint monorepo to v8.55.0
+
+### Patch Changes
+
+- 669f5cf: fix(deps): update dependency eslint-plugin-storybook to v10.2.8
+
 ## 3.6.1
 
 ### Patch Changes

@@ -78,7 +78,7 @@
 		"@changesets/cli": "2.29.8",
 		"@types/node": "24.10.13",
 		"eslint": "9.39.2",
-		"eslint-typegen": "2.3.0",
+		"eslint-typegen": "2.3.1",
 		"prettier": "3.8.1",
 		"tsdown": "0.20.3",
 		"typescript": "5.9.3"

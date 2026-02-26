@@ -1,5 +1,15 @@
 # @shun-shobon/style-guide
 
+## 4.1.0
+
+### Minor Changes
+
+- 8bd283b: fix(deps): update dependency eslint-config-flat-gitignore to v2.2.1
+
+### Patch Changes
+
+- 359820b: fix(deps): update eslint monorepo to v9.39.3
+
 ## 4.0.0
 
 ### Major Changes

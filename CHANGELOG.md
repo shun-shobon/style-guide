@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 5.0.1
+
+### Patch Changes
+
+- c237016: fix(deps): update dependency eslint-plugin-storybook to v10.2.13
+
 ## 5.0.0
 
 ### Major Changes

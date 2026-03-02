@@ -76,7 +76,7 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "2.29.8",
-		"@types/node": "24.10.13",
+		"@types/node": "24.10.15",
 		"eslint": "10.0.2",
 		"eslint-typegen": "2.3.1",
 		"prettier": "3.8.1",

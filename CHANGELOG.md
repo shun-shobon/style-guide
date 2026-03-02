@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 5.0.0
+
+### Major Changes
+
+- f36ec81: fix(deps): update eslint monorepo to v10 (major)
+
 ## 4.1.1
 
 ### Patch Changes

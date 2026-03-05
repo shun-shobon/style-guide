@@ -1,5 +1,11 @@
 # @shun-shobon/style-guide
 
+## 5.1.0
+
+### Minor Changes
+
+- 4407811: fix(deps): update dependency globals to v17.4.0
+
 ## 5.0.1
 
 ### Patch Changes

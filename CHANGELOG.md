@@ -1,5 +1,12 @@
 # @shun-shobon/style-guide
 
+## 5.1.1
+
+### Patch Changes
+
+- 963529a: fix(deps): update dependency eslint-plugin-storybook to v10.2.14
+- 37243ad: fix(deps): update dependency eslint-plugin-qwik to v1.19.1
+
 ## 5.1.0
 
 ### Minor Changes

@@ -37,6 +37,8 @@ jobs:
         with:
           github-token: ${{ steps.app-token.outputs.token }}
           script: |
+            const trackedSections = ["dependencies", "optionalDependencies", "peerDependencies"];
+
             function extractSemver(versionRange) {
               if (typeof versionRange !== "string") return null;
               const match = versionRange.match(/(?<major>\d+)\.(?<minor>\d+)\.(?<patch>\d+)/u);
@@ -66,50 +68,69 @@ jobs:
               return null;
             }
 
+            async function readPackageJsonAt(ref, filePath) {
+              try {
+                const output = await exec.getExecOutput("git", ["show", `${ref}:${filePath}`]);
+                return JSON.parse(output.stdout);
+              } catch {
+                return null;
+              }
+            }
+
             const mergeBase = await exec.getExecOutput("git", ["merge-base", "HEAD", "origin/main"]);
             const diffOutput = await exec.getExecOutput("git", ["diff", "--name-only", `${mergeBase.stdout.trim()}...HEAD`]);
-            const diffFiles = diffOutput.stdout.trim().split("\n");
+            const diffFiles = diffOutput.stdout.trim().split("\n").filter(Boolean);
 
             if (diffFiles.find((file) => file.startsWith(".changeset/"))) {
               console.log("Changeset already exists. Skipping changeset creation.");
               return;
             }
 
-            if (!diffFiles.find((file) => file === "package.json")) {
-              console.log("No package.json changes detected. Skipping changeset creation.");
+            const packageJsonFiles = diffFiles.filter((file) => /^packages\/[^/]+\/package\.json$/u.test(file));
+            if (packageJsonFiles.length === 0) {
+              console.log("No published package.json changes detected. Skipping changeset creation.");
               return;
             }
 
-            const newPackageJson = await exec.getExecOutput("git", ["show", "HEAD:package.json"]);
-            const oldPackageJson = await exec.getExecOutput("git", ["show", `${mergeBase.stdout.trim()}:package.json`]);
+            const releaseEntries = [];
+            for (const packageJsonPath of packageJsonFiles) {
+              const newPackageJson = await readPackageJsonAt("HEAD", packageJsonPath);
+              const oldPackageJson = await readPackageJsonAt(mergeBase.stdout.trim(), packageJsonPath);
 
-            const newDependencies = JSON.parse(newPackageJson.stdout).dependencies ?? {};
-            const oldDependencies = JSON.parse(oldPackageJson.stdout).dependencies ?? {};
+              if (!newPackageJson || !oldPackageJson) {
+                continue;
+              }
 
-            const changed = [];
-            for (const [depName, newRange] of Object.entries(newDependencies)) {
-              const oldRange = oldDependencies[depName];
-              if (!oldRange) continue;
-              if (oldRange === newRange) continue;
-              const kind = bumpKind(oldRange, newRange);
-              if (!kind) continue;
-              changed.push({ depName, oldRange, newRange, kind });
+              const changedKinds = [];
+              for (const section of trackedSections) {
+                const newDependencies = newPackageJson[section] ?? {};
+                const oldDependencies = oldPackageJson[section] ?? {};
+
+                for (const [depName, newRange] of Object.entries(newDependencies)) {
+                  const oldRange = oldDependencies[depName];
+                  if (!oldRange) continue;
+                  if (oldRange === newRange) continue;
+                  const kind = bumpKind(oldRange, newRange);
+                  if (!kind) continue;
+                  changedKinds.push(kind);
+                }
+              }
+
+              const bump = maxBumpKind(changedKinds);
+              if (!bump) {
+                continue;
+              }
+
+              if (!newPackageJson.name) {
+                throw new Error(`${packageJsonPath} has no name`);
+              }
+
+              releaseEntries.push({ name: newPackageJson.name, bump });
             }
 
-            if (changed.length === 0) {
-              console.log("No dependency updates in package.json dependencies. Skipping changeset creation.");
-              return;
-            }
-
-            const bump = maxBumpKind(changed.map((c) => c.kind));
-            if (!bump) {
+            if (releaseEntries.length === 0) {
               console.log("No semver-increasing dependency updates detected. Skipping changeset creation.");
               return;
-            }
-
-            const packageName = JSON.parse(newPackageJson.stdout).name;
-            if (!packageName) {
-              throw new Error("package.json has no name");
             }
 
             const prTitle = context.payload.pull_request.title;
@@ -119,7 +140,9 @@ jobs:
 
             const changesetContent = [
               "---",
-              `"${packageName}": ${bump}`,
+              ...releaseEntries
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map(({ name, bump }) => `"${name}": ${bump}`),
               "---",
               "",
               prTitle,

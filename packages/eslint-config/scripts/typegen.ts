@@ -36,4 +36,4 @@ const plugins = {
 
 const dts = await pluginsToRulesDTS(plugins, { includeAugmentation: false });
 
-await fs.writeFile("src/eslint/rules.ts", dts);
+await fs.writeFile("src/rules.ts", dts);

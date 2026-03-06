@@ -1,6 +1,5 @@
-// eslint-disable-next-line import/no-useless-path-segments
-import { shun_shobon } from "./dist/eslint/index.mjs";
+import { shun_shobon } from "@shun-shobon/eslint-config";
 
 export default shun_shobon({
-	ignores: ["./src/eslint/rules.ts"],
+	ignores: ["./packages/eslint-config/src/rules.ts"],
 });

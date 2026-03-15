@@ -1,0 +1,5 @@
+---
+"@shun-shobon/eslint-config": patch
+---
+
+fix(deps): update dependency eslint-plugin-import-x to v4.16.2

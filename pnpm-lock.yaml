@@ -54,8 +54,8 @@ importers:
         specifier: ^9.0.0 || ^10.0.0
         version: 10.0.3
       eslint-config-flat-gitignore:
-        specifier: 2.2.1
-        version: 2.2.1(eslint@10.0.3)
+        specifier: 2.3.0
+        version: 2.3.0(eslint@10.0.3)
       eslint-import-resolver-typescript:
         specifier: 4.4.4
         version: 4.4.4(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.57.1(eslint@10.0.3)(typescript@5.9.3))(eslint@10.0.3))(eslint@10.0.3)
@@ -1333,8 +1333,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-flat-gitignore@2.2.1:
-    resolution: {integrity: sha512-wA5EqN0era7/7Gt5Botlsfin/UNY0etJSEeBgbUlFLFrBi47rAN//+39fI7fpYcl8RENutlFtvp/zRa/M/pZNg==}
+  eslint-config-flat-gitignore@2.3.0:
+    resolution: {integrity: sha512-bg4ZLGgoARg1naWfsINUUb/52Ksw/K22K+T16D38Y8v+/sGwwIYrGvH/JBjOin+RQtxxC9tzNNiy4shnGtGyyQ==}
     peerDependencies:
       eslint: ^9.5.0 || ^10.0.0
 
@@ -4092,7 +4092,7 @@ snapshots:
       eslint: 10.0.3
       semver: 7.7.4
 
-  eslint-config-flat-gitignore@2.2.1(eslint@10.0.3):
+  eslint-config-flat-gitignore@2.3.0(eslint@10.0.3):
     dependencies:
       '@eslint/compat': 2.0.3(eslint@10.0.3)
       eslint: 10.0.3

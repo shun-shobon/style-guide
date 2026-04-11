@@ -29,7 +29,7 @@
 		"eslint": "^9.0.0 || ^10.0.0"
 	},
 	"dependencies": {
-		"@eslint/core": "1.2.0",
+		"@eslint/core": "1.2.1",
 		"@eslint/js": "10.0.1",
 		"@next/eslint-plugin-next": "16.2.2",
 		"@typescript-eslint/parser": "8.58.0",

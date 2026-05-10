@@ -29,7 +29,7 @@
 		"@types/node": "24.12.2",
 		"eslint": "10.3.0",
 		"prettier": "3.8.3",
-		"tsdown": "0.21.10",
+		"tsdown": "0.22.0",
 		"typescript": "5.9.3"
 	}
 }

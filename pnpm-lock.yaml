@@ -72,8 +72,8 @@ importers:
         specifier: 17.24.0
         version: 17.24.0(eslint@10.3.0)(typescript@5.9.3)
       eslint-plugin-qwik:
-        specifier: 1.19.2
-        version: 1.19.2(eslint@10.3.0)(typescript@5.9.3)
+        specifier: 1.20.0
+        version: 1.20.0(eslint@10.3.0)(typescript@5.9.3)
       eslint-plugin-react:
         specifier: 7.37.5
         version: 7.37.5(eslint@10.3.0)
@@ -1700,8 +1700,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-qwik@1.19.2:
-    resolution: {integrity: sha512-P0Xc/jzRmL9rPR1r3dk2zET1yqgnwLwAgMjTUNYIenPXhqgDWbW7bOapwDYhjDrRpVdnLv6jnomIvFGt47ytTQ==}
+  eslint-plugin-qwik@1.20.0:
+    resolution: {integrity: sha512-6XY7cGK5BDvtjHnIRcDp50dXKlr9+jnQCudxl9VrwRaJPzgKUNpVVSbo5tflTZkCJLj6/svulE5MVSn6zTsHYw==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -4728,9 +4728,9 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  eslint-plugin-qwik@1.19.2(eslint@10.3.0)(typescript@5.9.3):
+  eslint-plugin-qwik@1.20.0(eslint@10.3.0)(typescript@5.9.3):
     dependencies:
-      '@typescript-eslint/utils': 8.59.3(eslint@10.3.0)(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.59.4(eslint@10.3.0)(typescript@5.9.3)
       eslint: 10.3.0
       jsx-ast-utils: 3.3.5
     transitivePeerDependencies:

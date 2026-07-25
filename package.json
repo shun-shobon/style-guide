@@ -23,7 +23,7 @@
 		"version-package": "changeset version && pnpm format"
 	},
 	"devDependencies": {
-		"@changesets/cli": "2.31.0",
+		"@changesets/cli": "2.31.1",
 		"@shun-shobon/eslint-config": "workspace:*",
 		"@shun-shobon/prettier-config": "workspace:*",
 		"@types/node": "24.13.3",

@@ -48,8 +48,8 @@ importers:
         specifier: 8.69.0
         version: 8.69.0(eslint@10.4.1)(typescript@5.9.3)
       astro-eslint-parser:
-        specifier: 1.4.0
-        version: 1.4.0
+        specifier: 3.1.0
+        version: 3.1.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
       eslint:
         specifier: ^9.0.0 || ^10.0.0
         version: 10.4.1
@@ -134,6 +134,71 @@ packages:
     engines: {node: '>= 20'}
     peerDependencies:
       '@types/json-schema': ^7.0.15
+
+  '@astrojs/compiler-binding-darwin-arm64@0.4.0':
+    resolution: {integrity: sha512-ZVUwHundaQyFNjE6uoa0usaC0WOCitDCLS/4mdb4rOiJXwVUuKJBMxI5WMzXLWmamsXtK/Z//ifLXvV5Yeh4Hw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@astrojs/compiler-binding-darwin-x64@0.4.0':
+    resolution: {integrity: sha512-FI6G8AY8u6fR1SI/QRR5yGMwtvZwP34CDmZpZ5HwJGa50UM1VISTLhqkhV4a476pmgd25X1Aur2dqw6hUnrlKA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [darwin]
+
+  '@astrojs/compiler-binding-linux-arm64-gnu@0.4.0':
+    resolution: {integrity: sha512-lB9gLFJK7m82EnjaU8nlRBEfcwGNeHidW3sSjODTUjMNaoewVuUz9fwwdY5M4jiSXIqWLH3yl6TX8FTDKA74Sw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@astrojs/compiler-binding-linux-arm64-musl@0.4.0':
+    resolution: {integrity: sha512-HPbvWqbxFxyaoQJhLxCaSjtYBx9KBo7JGVzEFZCmMl968a2PsSH0UfiODYgYPXofTOIsIH2aoCcrHXML0IA3ig==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@astrojs/compiler-binding-linux-x64-gnu@0.4.0':
+    resolution: {integrity: sha512-tQKolMxoJ/+0AmLWm1PmJ/i+z3i10ZU1bNuVjEDulCf48azEMtUNjTZgHJ5MPtpYRNc7dlETr8QujUfduzoC7Q==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@astrojs/compiler-binding-linux-x64-musl@0.4.0':
+    resolution: {integrity: sha512-5v5YymudsxMHp3NBLCS8BUlu5CRqeLtWD9cKS/4nIhIEHCbpz9okmVV6I0HWqmBAPhWYcDa3vw/vltYPrOQCTA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@astrojs/compiler-binding-wasm32-wasi@0.4.0':
+    resolution: {integrity: sha512-m/phuH3x3PREvv1OnkM44NoPh4MatUadix1fB1u5SvMLCyDTUZykDJbKnWf1cjnYmHdlB8HcjTjl6JrCqAIXcw==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+
+  '@astrojs/compiler-binding-win32-arm64-msvc@0.4.0':
+    resolution: {integrity: sha512-B9zYf3okEY83kM8gydlpH2BHP00w4ifxPqlYlWrgTwuD6wnkrJDCwBlgy1q31cERjCJRXN1lrE2VmkLvFjv/6g==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [win32]
+
+  '@astrojs/compiler-binding-win32-x64-msvc@0.4.0':
+    resolution: {integrity: sha512-zB0Nrv0dGc0zZWPGDRmmETTPhDRqyZjAjk+gWMlVrJX5U89obpB3VUUE1ZiHxOCN5LQojeLK6O8L/dnoHolvNQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [win32]
+
+  '@astrojs/compiler-binding@0.4.0':
+    resolution: {integrity: sha512-x2RjDUuWfwLNtc3mjAdSRInwqh/rqbLar9cm/5FOMbHvmYZB7yfKewzSclAxWjIZsypJDXv1lhaP2WG+P8TK3g==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+
+  '@astrojs/compiler-rs@0.4.0':
+    resolution: {integrity: sha512-koVikeon1kreEy+/JzLQRy3vzHHQVOjycs4degg4vFufKApZOwMZvSSAEztYNhmcQVfNVsVZZI4cEge3cexAbQ==}
+    engines: {node: '>=22.12.0'}
 
   '@astrojs/compiler@2.13.1':
     resolution: {integrity: sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg==}
@@ -393,6 +458,13 @@ packages:
     peerDependencies:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
+
+  '@napi-rs/wasm-runtime@1.2.3':
+    resolution: {integrity: sha512-UMduMbqO5s5zF2NkNacMT/yK5Y5QiKvWr2+50bzIIxFDwVJ2h49b+oyjaCGPhJxd2/gC2x39EHv/gHVuu36x2Q==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=23.5.0}
+    peerDependencies:
+      '@emnapi/core': ^1.7.1 || ^2.0.0-alpha.4
+      '@emnapi/runtime': ^1.7.1 || ^2.0.0-alpha.4
 
   '@next/eslint-plugin-next@16.3.4':
     resolution: {integrity: sha512-szW9y2Aumu4z88YXfTzcFsgUAg2k64uzbtcO5L9f1AKS4w/GUKJcbFllRflROVyNPgJtGOnvNxiyp3v6b+prIA==}
@@ -1108,6 +1180,10 @@ packages:
   astro-eslint-parser@1.4.0:
     resolution: {integrity: sha512-+QDcgc7e+au6EZ0YjMmRRjNoQo5bDMlaR45aWDoFsuxQTCM9qmCHRoiKJPELgckJ8Wmr7vcfpa9eCDHBFh6G4w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  astro-eslint-parser@3.1.0:
+    resolution: {integrity: sha512-lS5qlx401Q1ZUhQ44XQnM4uT2qI6hA0H+vstrd841xGVxunFOs0ut3DWJGYHK1l7mxRxQdDi1j53pfE7/AyGlA==}
+    engines: {node: ^22.22.3 || ^24.16.0 || >=26.3.0}
 
   astrojs-compiler-sync@1.1.1:
     resolution: {integrity: sha512-0mKvB9sDQRIZPsEJadw6OaFbGJ92cJPPR++ICca9XEyiUAZqgVuk25jNmzHPT0KF80rI94trSZrUR5iHFXGGOQ==}
@@ -2769,6 +2845,60 @@ snapshots:
       '@types/json-schema': 7.0.15
       js-yaml: 4.2.0
 
+  '@astrojs/compiler-binding-darwin-arm64@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-darwin-x64@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-linux-arm64-gnu@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-linux-arm64-musl@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-linux-x64-gnu@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-linux-x64-musl@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-wasm32-wasi@0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)':
+    dependencies:
+      '@napi-rs/wasm-runtime': 1.2.3(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+    optional: true
+
+  '@astrojs/compiler-binding-win32-arm64-msvc@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding-win32-x64-msvc@0.4.0':
+    optional: true
+
+  '@astrojs/compiler-binding@0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)':
+    optionalDependencies:
+      '@astrojs/compiler-binding-darwin-arm64': 0.4.0
+      '@astrojs/compiler-binding-darwin-x64': 0.4.0
+      '@astrojs/compiler-binding-linux-arm64-gnu': 0.4.0
+      '@astrojs/compiler-binding-linux-arm64-musl': 0.4.0
+      '@astrojs/compiler-binding-linux-x64-gnu': 0.4.0
+      '@astrojs/compiler-binding-linux-x64-musl': 0.4.0
+      '@astrojs/compiler-binding-wasm32-wasi': 0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
+      '@astrojs/compiler-binding-win32-arm64-msvc': 0.4.0
+      '@astrojs/compiler-binding-win32-x64-msvc': 0.4.0
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+
+  '@astrojs/compiler-rs@0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)':
+    dependencies:
+      '@astrojs/compiler-binding': 0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+
   '@astrojs/compiler@2.13.1': {}
 
   '@astrojs/compiler@3.0.1': {}
@@ -3171,6 +3301,13 @@ snapshots:
       '@tybys/wasm-util': 0.10.3
     optional: true
 
+  '@napi-rs/wasm-runtime@1.2.3(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)':
+    dependencies:
+      '@emnapi/core': 1.11.2
+      '@emnapi/runtime': 1.11.2
+      '@tybys/wasm-util': 0.10.3
+    optional: true
+
   '@next/eslint-plugin-next@16.3.4(eslint@10.4.1)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1)
@@ -3374,7 +3511,7 @@ snapshots:
   '@typescript-eslint/project-service@8.61.0(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.65.0(typescript@5.9.3)
-      '@typescript-eslint/types': 8.65.0
+      '@typescript-eslint/types': 8.69.0
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -3383,7 +3520,7 @@ snapshots:
   '@typescript-eslint/project-service@8.65.0(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.65.0(typescript@5.9.3)
-      '@typescript-eslint/types': 8.65.0
+      '@typescript-eslint/types': 8.69.0
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -3767,8 +3904,8 @@ snapshots:
   astro-eslint-parser@1.4.0:
     dependencies:
       '@astrojs/compiler': 3.0.1
-      '@typescript-eslint/scope-manager': 8.61.0
-      '@typescript-eslint/types': 8.61.0
+      '@typescript-eslint/scope-manager': 8.69.0
+      '@typescript-eslint/types': 8.69.0
       astrojs-compiler-sync: 1.1.1(@astrojs/compiler@3.0.1)
       debug: 4.4.3
       entities: 7.0.1
@@ -3777,8 +3914,24 @@ snapshots:
       espree: 10.4.0
       fast-glob: 3.3.3
       is-glob: 4.0.3
-      semver: 7.8.4
+      semver: 7.8.5
     transitivePeerDependencies:
+      - supports-color
+
+  astro-eslint-parser@3.1.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2):
+    dependencies:
+      '@astrojs/compiler-rs': 0.4.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
+      '@typescript-eslint/scope-manager': 8.69.0
+      '@typescript-eslint/types': 8.69.0
+      debug: 4.4.3
+      eslint-scope: 9.1.2
+      eslint-visitor-keys: 5.0.1
+      espree: 11.2.0
+      semver: 7.8.5
+      tinyglobby: 0.2.17
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
       - supports-color
 
   astrojs-compiler-sync@1.1.1(@astrojs/compiler@3.0.1):

@@ -2,16 +2,16 @@
 
 ## プロジェクト構成とモジュール構成
 
-このパッケージは、共有 ESLint / Prettier 設定を TypeScript で公開しています。実装は `src/` 配下にあり、`src/eslint/` には ESLint の factory・rules・各種 preset、`src/prettier/` には Prettier の preset と補助処理を配置します。新しい設定を追加する場合は対応する `configs/` に置き、各ディレクトリの `index.ts` から再エクスポートしてください。
+このリポジトリは、共有 ESLint / Prettier / Oxlint / Oxfmt 設定を TypeScript で公開する monorepo です。各設定は `packages/<tool>-config/` にあり、`src/factory.ts` の factory と `src/configs/` の preset で構成します。新しい設定を追加する場合は対応する `configs/` に置き、`index.ts` から再エクスポートしてください。Oxlint / Oxfmt の設定は ESLint / Prettier の設定とは独立しており、ツールの既定に必要なものだけを追加する方針です。Oxlint に追加するルールは、既定で有効なもの（`correctness` カテゴリ）と重複させないでください。
 
 ## ビルド・テスト・開発コマンド
 
-- `pnpm build`: `src/eslint/index.ts` と `src/prettier/index.ts` を `dist/` にビルドします。
+- `pnpm build`: 各パッケージの `src/index.ts` を `dist/` にビルドします。
 - `pnpm lint`: リポジトリ全体に ESLint を実行します。
 - `pnpm format:check`: Prettier の整形状態を検証します。
 - `pnpm typecheck`: `tsc --noEmit` で型検査を実行します。
 - `pnpm typegen`: ESLint rule 定義変更時に型生成を更新します。
-- `pnpm test:smoke`: 全フレームワークの設定を有効にして `smoke/fixtures` を lint し、設定の読み込みエラーや非推奨ルールの使用を検出します。
+- `pnpm test:smoke`: 全フレームワークの設定を有効にして `smoke/fixtures` を ESLint・Oxlint で検査し、Oxfmt の設定を読み込んで、設定の読み込みエラーや非推奨ルールの使用を検出します。Oxlint の同梱ルールのテストも実行します。
 
 作業後は `pnpm typecheck && pnpm build && pnpm lint && pnpm format:check && pnpm test:smoke` を通してください。
 

@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 
+import pluginReact from "@eslint-react/eslint-plugin";
 import pluginNext from "@next/eslint-plugin-next";
 import type { ESLint } from "eslint";
 import pluginAstro from "eslint-plugin-astro";
@@ -9,7 +10,6 @@ import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 import pluginNode from "eslint-plugin-n";
 // @ts-expect-error: This package doesn't have types
 import pluginQwik from "eslint-plugin-qwik";
-import pluginReact from "eslint-plugin-react";
 import pluginRegExp from "eslint-plugin-regexp";
 import pluginImportSort from "eslint-plugin-simple-import-sort";
 import pluginStorybook from "eslint-plugin-storybook";

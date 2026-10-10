@@ -1,5 +1,24 @@
 # @shun-shobon/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- beda65f: fix(deps): update dependency eslint-plugin-simple-import-sort to v14
+
+### Minor Changes
+
+- f2c90d0: fix(deps): update dependency @next/eslint-plugin-next to v16.4.0
+- 69e3ba6: fix(deps): update dependency eslint-plugin-regexp to v3.3.1
+- bd21bde: fix(deps): update dependency globals to v17.13.0
+- 99bf479: fix(deps): update typescript-eslint monorepo to v8.71.1
+
+### Patch Changes
+
+- 2cde813: fix(deps): update dependency @eslint-react/eslint-plugin to v5.24.8
+- 83fd550: fix(deps): update dependency eslint-plugin-qwik to v1.20.2
+- 728ea68: fix(deps): update dependency eslint-plugin-storybook to v10.6.1
+
 ## 2.0.0
 
 ### Major Changes

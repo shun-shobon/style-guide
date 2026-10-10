@@ -19,33 +19,37 @@ tester.run("nullish-comparison", plugin.rules["nullish-comparison"], {
 		"a != null",
 		"a === 0",
 		"a !== ''",
+		"a === undefined",
+		"a !== undefined",
 		"typeof a === 'undefined'",
 	],
 	invalid: [
 		{
 			code: "a === null",
-			output: "a == null",
-			errors: [{ messageId: "loose" }],
+			errors: [
+				{
+					messageId: "loose",
+					suggestions: [{ messageId: "replace", output: "a == null" }],
+				},
+			],
 		},
 		{
 			code: "a !== null",
-			output: "a != null",
-			errors: [{ messageId: "loose" }],
-		},
-		{
-			code: "a === undefined",
-			output: "a == null",
-			errors: [{ messageId: "loose" }],
-		},
-		{
-			code: "a.b !== undefined",
-			output: "a.b != null",
-			errors: [{ messageId: "loose" }],
+			errors: [
+				{
+					messageId: "loose",
+					suggestions: [{ messageId: "replace", output: "a != null" }],
+				},
+			],
 		},
 		{
 			code: "null === f(x)",
-			output: "f(x) == null",
-			errors: [{ messageId: "loose" }],
+			errors: [
+				{
+					messageId: "loose",
+					suggestions: [{ messageId: "replace", output: "f(x) == null" }],
+				},
+			],
 		},
 	],
 });

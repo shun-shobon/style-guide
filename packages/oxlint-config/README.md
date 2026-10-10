@@ -23,7 +23,7 @@ Oxlint's default plugins are used with the `correctness`, `suspicious` and `peda
 
 - stricter type-aware TypeScript rules (`strict-boolean-expressions`, `no-unsafe-*`, and so on) when TypeScript is used,
 - `eqeqeq` that allows `== null`, and `no-implicit-coercion`,
-- `shun-shobon/nullish-comparison` rule, which enforces `== null` / `!= null` for nullish comparisons.
+- `shun-shobon/nullish-comparison` rule, which enforces `== null` / `!= null` instead of `=== null` / `!== null` (reported with a suggestion, not an auto-fix). Use `=== undefined` to check for `undefined` only.
 
 TypeScript (type-aware linting), React (with JSX A11y), Next.js and Vitest are enabled automatically based on the dependencies. Pass options to override the detection, and pass configs after the options to customize them.
 

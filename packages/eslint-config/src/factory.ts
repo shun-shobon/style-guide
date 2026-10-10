@@ -1,3 +1,4 @@
+import type { FlatGitignoreOptions } from "eslint-config-flat-gitignore";
 import { isPackageExists } from "local-pkg";
 
 import {
@@ -43,15 +44,7 @@ export async function shun_shobon(
 
 	if (enableGitignore) {
 		configQueue.push(
-			interopDefault(import("eslint-config-flat-gitignore")).then(
-				(gitignore) => [
-					gitignore(
-						typeof enableGitignore !== "boolean"
-							? { name: "shun-shobon/gitignore/setup", ...enableGitignore }
-							: { name: "shun-shobon/gitignore/setup" },
-					),
-				],
-			),
+			gitignore(typeof enableGitignore === "boolean" ? {} : enableGitignore),
 		);
 	}
 
@@ -118,9 +111,15 @@ export async function shun_shobon(
 	]);
 
 	// eslint-disable-next-line typescript/await-thenable
-	const configs = await Promise.all(configQueue).then((configs) =>
-		configs.flat(),
+	const configs = await Promise.all(configQueue);
+
+	return [...configs.flat(), ...userConfigs];
+}
+
+async function gitignore(options: FlatGitignoreOptions): Promise<ConfigItem[]> {
+	const pluginGitignore = await interopDefault(
+		import("eslint-config-flat-gitignore"),
 	);
 
-	return [...configs, ...userConfigs];
+	return [pluginGitignore({ name: "shun-shobon/gitignore/setup", ...options })];
 }

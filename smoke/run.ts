@@ -36,7 +36,7 @@ const variants: Variant[] = [
 ];
 
 const cwd = import.meta.dirname;
-let failed = false;
+let hasFailed = false;
 
 for (const variant of variants) {
 	const eslint = new ESLint({
@@ -62,17 +62,17 @@ for (const variant of variants) {
 		const formatter = await eslint.loadFormatter("stylish");
 		console.error(`[${variant.name}] lint problems found`);
 		console.error(await formatter.format(results));
-		failed = true;
+		hasFailed = true;
 	}
 	if (deprecatedRules.size > 0) {
 		console.error(
 			`[${variant.name}] deprecated rules are enabled: ${[...deprecatedRules].join(", ")}`,
 		);
-		failed = true;
+		hasFailed = true;
 	}
 	console.warn(`[${variant.name}] linted ${results.length} files`);
 }
 
-if (failed) {
+if (hasFailed) {
 	process.exitCode = 1;
 }

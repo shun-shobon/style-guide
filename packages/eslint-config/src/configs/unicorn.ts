@@ -18,8 +18,20 @@ export function unicorn(): ConfigItem[] {
 				"unicorn/empty-brace-spaces": "off",
 				"unicorn/no-nested-ternary": "off",
 				"unicorn/number-literal-case": "off",
+				"unicorn/no-leading-empty-lines": "off",
+
+				// prettier-plugin-jsdocが付与する行頭の`*`と競合するため無効化
+				"unicorn/no-asterisk-prefix-in-documentation-comments": "off",
+
+				// 同等のルールを有効化しているため無効化
+				// `operator-assignment`と`typescript/require-array-sort-compare`で検出できる
+				"unicorn/operator-assignment": "off",
+				"unicorn/require-array-sort-compare": "off",
 
 				// unicornの推奨ルールから不要なものを無効化
+
+				// `export default defineConfig()`のような設定ファイルの定型を検出してしまうため無効化
+				"unicorn/no-top-level-side-effects": "off",
 
 				// コンポーネント内の関数など、スコープを小さくしておきたい場合があるので無効化
 				"unicorn/consistent-function-scoping": "off",
@@ -31,7 +43,7 @@ export function unicorn(): ConfigItem[] {
 				"unicorn/no-array-callback-reference": "off",
 
 				// `.forEach()`のほうが簡潔に書ける場合があるので無効化
-				"unicorn/no-array-for-each": "off",
+				"unicorn/no-for-each": "off",
 
 				// `.reduce()`/`.reduceRight()`は使ったほうが簡潔に書ける場合があるので無効化
 				"unicorn/no-array-reduce": "off",
@@ -52,7 +64,7 @@ export function unicorn(): ConfigItem[] {
 				"unicorn/prefer-spread": "off",
 
 				// 略語の方が簡潔に書ける場合があるので無効化
-				"unicorn/prevent-abbreviations": "off",
+				"unicorn/name-replacements": "off",
 
 				// switch文のcase節を常にブロックにするのは冗長なので必要なときのみブロックにする
 				"unicorn/switch-case-braces": ["warn", "avoid"],

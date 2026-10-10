@@ -33,7 +33,7 @@
 		"@eslint/core": "1.2.1",
 		"@eslint/js": "10.0.1",
 		"@next/eslint-plugin-next": "16.4.0",
-		"@typescript-eslint/parser": "8.69.0",
+		"@typescript-eslint/parser": "8.71.1",
 		"astro-eslint-parser": "3.2.0",
 		"eslint-config-flat-gitignore": "2.4.0",
 		"eslint-import-resolver-typescript": "4.4.5",
@@ -48,7 +48,7 @@
 		"eslint-plugin-unicorn": "77.0.0",
 		"globals": "17.13.0",
 		"local-pkg": "1.2.1",
-		"typescript-eslint": "8.69.0"
+		"typescript-eslint": "8.71.1"
 	},
 	"devDependencies": {
 		"eslint-typegen": "2.3.1"

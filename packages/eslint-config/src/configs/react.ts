@@ -1,44 +1,38 @@
 import { GLOB_JSX, GLOB_TSX } from "../globs";
 import { pluginJsxA11y } from "../plugins";
 import type { ConfigItem, OptionsHasTypeScript, Rules } from "../types";
-import { interopDefault } from "../utils";
+import { interopDefault, renameRules } from "../utils";
 
 export async function react(
 	options: OptionsHasTypeScript = {},
 ): Promise<ConfigItem[]> {
 	const { typescript = false } = options;
 
-	const [pluginReact, pluginReactHooks] = await Promise.all([
-		interopDefault(import("eslint-plugin-react")),
-		interopDefault(import("eslint-plugin-react-hooks")),
-	]);
+	const pluginReact = await interopDefault(
+		import("@eslint-react/eslint-plugin"),
+	);
+
+	const strictConfig = pluginReact.configs.strict;
 
 	return [
 		{
 			name: "shun-shobon/react/setup",
 			plugins: {
-				"react": pluginReact,
-
-				"react-hooks": pluginReactHooks,
+				react: pluginReact,
 			},
-			settings: {
-				react: {
-					version: "detect",
-				},
-			},
+			settings: { ...strictConfig.settings },
 		},
 		{
 			name: "shun-shobon/react/rules",
 			files: [GLOB_JSX, GLOB_TSX],
 			rules: {
-				// reactの推奨ルールを有効化
-				...(pluginReact.configs.recommended.rules as Rules),
+				// reactの厳格なルールを有効化
+				...renameRules(strictConfig.rules!, "@eslint-react/", "react/"),
 
-				// React v17以降のJSX Runtimeを使う場合の不要なルールを無効化
-				...(pluginReact.configs["jsx-runtime"].rules as Rules),
-
-				// React Hooksの推奨ルールを有効化
-				...(pluginReactHooks.configs.recommended.rules as Rules),
+				// eslint-plugin-react-hooksの推奨ルールに含まれていたものを有効化
+				"react/globals": "error",
+				"react/immutability": "error",
+				"react/refs": "error",
 
 				// JSX A11yの厳格なルールを有効化
 				// eslint-disable-next-line typescript/no-unsafe-member-access
@@ -46,39 +40,17 @@ export async function react(
 
 				// その他必要なものを有効化
 
-				// `onClick`などのイベントハンドラーの命名規則をチェック
-				"react/jsx-handler-names": "warn",
-
-				// ContextのProviderに即値を渡さないようにする
-				// 即値で渡すと、Providerが含まれるコンポーネントの再描画時に新しい値が渡されてしまい、再描画が発生する
-				"react/jsx-no-constructed-context-values": "warn",
-
 				// `React.Fragment`を省略可能な場合は省略する
 				// ただし、フラグメントのみの場合は許可する
 				"react/jsx-no-useless-fragment": ["warn", { allowExpressions: true }],
 
-				// rel 属性の値をチェック
-				"react/no-invalid-html-attribute": "warn",
-
-				// propsのデフォルト値としてobjectやarrayのリテラルを使用しないようにする
-				// 使用してしまうと、再描画が発生する可能性がある
-				"react/no-object-type-as-default-prop": "warn",
-
-				// コンポーネント内でコンポーネントを定義するのを許可しない
-				"react/no-unstable-nested-components": "error",
-
 				...(typescript
-					? {
-							// TypeScriptの型チェックで検出できるものは無効化
-
-							// propTypesはTSで代替できるので無効化
-							"react/prop-types": "off",
-
-							// HTMLの属性名として認識されていない属性名を許可
-							// TSで型チェックしているので不要
-							"react/no-unknown-property": "off",
-						}
-					: {}),
+					? {}
+					: {
+							// HTMLの属性名として認識されていない属性名を許可しない
+							// TSでは型チェックで検出できるため不要
+							"react/dom-no-unknown-property": "error",
+						}),
 
 				// 曖昧なリンクのテキストを許可しない
 				"jsx-a11y/anchor-ambiguous-text": "error",

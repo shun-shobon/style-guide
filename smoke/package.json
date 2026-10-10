@@ -1,0 +1,13 @@
+{
+	"name": "smoke",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"test": "node run.ts"
+	},
+	"devDependencies": {
+		"@builder.io/qwik": "1.20.2",
+		"@shun-shobon/eslint-config": "workspace:*",
+		"@types/react": "19.3.0"
+	}
+}

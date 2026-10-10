@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"lib": ["es2023", "dom"],
+		"jsx": "react-jsx",
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+	},
+	"include": ["run.ts", "fixtures/**/*", "fixtures/react/.storybook/*"],
+	"exclude": ["fixtures/qwik"],
+}

@@ -11,8 +11,9 @@
 - `pnpm format:check`: Prettier の整形状態を検証します。
 - `pnpm typecheck`: `tsc --noEmit` で型検査を実行します。
 - `pnpm typegen`: ESLint rule 定義変更時に型生成を更新します。
+- `pnpm test:smoke`: 全フレームワークの設定を有効にして `smoke/fixtures` を lint し、設定の読み込みエラーや非推奨ルールの使用を検出します。
 
-作業後は `pnpm typecheck && pnpm build && pnpm lint && pnpm format:check` を通してください。
+作業後は `pnpm typecheck && pnpm build && pnpm lint && pnpm format:check && pnpm test:smoke` を通してください。
 
 ## コーディングスタイルと命名規則
 

@@ -19,6 +19,10 @@
 
 TypeScript + ESM を前提にします。インデントはタブです。整形や lint ルールはこのリポジトリ自身の Prettier / ESLint 設定に従うため、手で整えるより `pnpm format` や `pnpm lint:fix` を優先してください。設定モジュールは小さく分割し、`disable-type-checked.ts` のような kebab-case のファイル名と `index.ts` の公開エントリを維持します。
 
+## GitHub Actions
+
+- `uses:` はタグで書き、SHA は `.github/workflows/actions.lock` で固定します。`uses:` を変えたら `gh-actions-lock`（mise で入る）を実行してロックファイルを更新してください。
+
 ## コミット
 
 Conventional Commits 形式に従うこと。

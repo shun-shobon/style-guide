@@ -22,6 +22,7 @@ TypeScript + ESM を前提にします。インデントはタブです。整形
 ## GitHub Actions
 
 - `uses:` はタグで書き、SHA は `.github/workflows/actions.lock` で固定します。`uses:` を変えたら `gh-actions-lock`（mise で入る）を実行してロックファイルを更新してください。
+- リリースは easy-release で行います。`release` ワークフローを手動実行して作られる準備 PR をマージすると、全パッケージが同一バージョンで npm と GitHub Releases に公開されます。changeset ファイルや CHANGELOG は作りません。
 
 ## コミット
 

@@ -16,7 +16,6 @@
 		}
 	},
 	"files": [
-		"CHANGELOG.md",
 		"dist",
 		"README.md"
 	],

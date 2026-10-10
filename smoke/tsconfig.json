@@ -6,6 +6,12 @@
 		"allowImportingTsExtensions": true,
 		"noEmit": true,
 	},
-	"include": ["run.ts", "fixtures/**/*", "fixtures/react/.storybook/*"],
+	"include": [
+		"run.ts",
+		"oxlint-plugin.test.ts",
+		"*.config.ts",
+		"fixtures/**/*",
+		"fixtures/react/.storybook/*",
+	],
 	"exclude": ["fixtures/qwik"],
 }

@@ -1,0 +1,40 @@
+{
+	"name": "@shun-shobon/oxfmt-config",
+	"version": "6.0.0",
+	"type": "module",
+	"description": "shun-shobon's Oxfmt config",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shun-shobon/style-guide.git"
+	},
+	"homepage": "https://github.com/shun-shobon/style-guide/tree/main/packages/oxfmt-config#readme",
+	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
+	"license": "MIT",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsdown",
+		"typecheck": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"oxfmt": "^0.72.0"
+	},
+	"dependencies": {
+		"local-pkg": "1.2.1"
+	},
+	"devDependencies": {
+		"oxfmt": "0.72.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
+	"sideEffects": false
+}

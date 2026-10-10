@@ -6,6 +6,8 @@ This repository is a monorepo for shun-shobon's shared linting and formatting co
 
 - [`@shun-shobon/eslint-config`](./packages/eslint-config/README.md)
 - [`@shun-shobon/prettier-config`](./packages/prettier-config/README.md)
+- [`@shun-shobon/oxlint-config`](./packages/oxlint-config/README.md)
+- [`@shun-shobon/oxfmt-config`](./packages/oxfmt-config/README.md)
 
 ## Development
 

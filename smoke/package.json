@@ -3,11 +3,16 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"test": "node run.ts"
+		"test": "node run.ts && node --test oxlint-plugin.test.ts && oxlint --deny-warnings fixtures/common fixtures/react && oxfmt --stdin-filepath math.ts < fixtures/common/math.ts > /dev/null"
 	},
 	"devDependencies": {
 		"@builder.io/qwik": "1.20.2",
 		"@shun-shobon/eslint-config": "workspace:*",
-		"@types/react": "19.3.0"
+		"@shun-shobon/oxfmt-config": "workspace:*",
+		"@shun-shobon/oxlint-config": "workspace:*",
+		"@types/react": "19.3.0",
+		"oxfmt": "0.72.0",
+		"oxlint": "1.87.0",
+		"oxlint-tsgolint": "7.0.2003"
 	}
 }

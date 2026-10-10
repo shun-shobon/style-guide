@@ -310,9 +310,24 @@ importers:
       '@shun-shobon/eslint-config':
         specifier: workspace:*
         version: link:../packages/eslint-config
+      '@shun-shobon/oxfmt-config':
+        specifier: workspace:*
+        version: link:../packages/oxfmt-config
+      '@shun-shobon/oxlint-config':
+        specifier: workspace:*
+        version: link:../packages/oxlint-config
       '@types/react':
         specifier: 19.3.0
         version: 19.3.0
+      oxfmt:
+        specifier: 0.72.0
+        version: 0.72.0
+      oxlint:
+        specifier: 1.87.0
+        version: 1.87.0(oxlint-tsgolint@7.0.2003)
+      oxlint-tsgolint:
+        specifier: 7.0.2003
+        version: 7.0.2003
 
 packages:
 

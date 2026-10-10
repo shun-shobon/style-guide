@@ -1,0 +1,50 @@
+{
+	"name": "@shun-shobon/oxlint-config",
+	"version": "6.0.0",
+	"type": "module",
+	"description": "shun-shobon's Oxlint config",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shun-shobon/style-guide.git"
+	},
+	"homepage": "https://github.com/shun-shobon/style-guide/tree/main/packages/oxlint-config#readme",
+	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
+	"license": "MIT",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs"
+		},
+		"./plugin": {
+			"import": "./dist/plugin.mjs"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsdown",
+		"typecheck": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"oxlint": "^1.87.0",
+		"oxlint-tsgolint": "^7.0.2003"
+	},
+	"peerDependenciesMeta": {
+		"oxlint-tsgolint": {
+			"optional": true
+		}
+	},
+	"dependencies": {
+		"local-pkg": "1.2.1"
+	},
+	"devDependencies": {
+		"oxlint": "1.87.0",
+		"oxlint-tsgolint": "7.0.2003"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
+	"sideEffects": false
+}

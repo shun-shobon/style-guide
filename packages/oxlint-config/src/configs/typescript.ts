@@ -27,6 +27,11 @@ export function typescript(): Config {
 				{ ignoreArrowShorthand: true },
 			],
 
+			// `return await`を使う
+			// 一貫性のためと、awaitが無くなったときにasyncを外すのは面倒なため
+			// また、スタックトレースが読みやすくなる
+			"typescript/return-await": ["warn", "always"],
+
 			// 型情報を使うtypescript側のルールと重複するため無効化
 			"no-implied-eval": "off",
 			"no-throw-literal": "off",

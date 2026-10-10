@@ -42,6 +42,9 @@ jobs:
       - name: Setup | Development environment
         uses: $/.github/actions/setup
 
+      - name: Build | Packages
+        run: pnpm run build
+
       - name: Run | Create Release Pull Request
         uses: shun-shobon/easy-release@v0.2.0
         with:

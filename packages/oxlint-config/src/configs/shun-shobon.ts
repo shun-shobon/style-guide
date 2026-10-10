@@ -10,7 +10,8 @@ export function shunShobon(): Config {
 			},
 		],
 		rules: {
-			// null・undefinedとの比較は`== null`/`!= null`に統一する
+			// nullとの比較は`== null`/`!= null`に統一する
+			// undefinedのみを判定したい場合は`=== undefined`を使う
 			"shun-shobon/nullish-comparison": "error",
 		},
 	};

@@ -3,35 +3,42 @@ import type { Rule } from "../types";
 export const nullishComparison: Rule = {
 	meta: {
 		type: "suggestion",
-		fixable: "code",
+		// 対象が undefined になり得るかは型を見ないと分からず、`== null` への置き換えは意味を変えうるため自動修正にしない
+		hasSuggestions: true,
 		messages: {
-			loose: "null・undefined との比較は `{{operator}} null` で書いてください",
+			loose: "null との比較は `{{operator}} null` で書いてください",
+			replace: "`{{operator}} null` に置き換える",
 		},
 	},
 	create(context) {
 		return {
 			BinaryExpression(node) {
 				if (node.operator !== "===" && node.operator !== "!==") return;
-				const isNullish = (n: typeof node.left) =>
-					(n.type === "Literal" && n.value == null && n.raw === "null") ||
-					(n.type === "Identifier" && n.name === "undefined");
-				const nullishSide = isNullish(node.right)
+				const isNull = (n: typeof node.left) =>
+					n.type === "Literal" && n.raw === "null";
+				const nullSide = isNull(node.right)
 					? node.right
-					: isNullish(node.left)
+					: isNull(node.left)
 						? node.left
 						: null;
-				if (nullishSide == null) return;
+				if (nullSide == null) return;
 				const operator = node.operator === "===" ? "==" : "!=";
-				const other = nullishSide === node.right ? node.left : node.right;
+				const other = nullSide === node.right ? node.left : node.right;
 				context.report({
 					node,
 					messageId: "loose",
 					data: { operator },
-					fix: (fixer) =>
-						fixer.replaceText(
-							node,
-							`${context.sourceCode.getText(other)} ${operator} null`,
-						),
+					suggest: [
+						{
+							messageId: "replace",
+							data: { operator },
+							fix: (fixer) =>
+								fixer.replaceText(
+									node,
+									`${context.sourceCode.getText(other)} ${operator} null`,
+								),
+						},
+					],
 				});
 			},
 		};

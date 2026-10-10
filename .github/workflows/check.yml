@@ -69,3 +69,18 @@ jobs:
 
       - name: Run | Typecheck
         run: pnpm run typecheck
+
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Setup | Node.js
+        uses: ./.github/actions/setup-node
+
+      - name: Run | Build
+        run: pnpm run build
+
+      - name: Run | Smoke test
+        run: pnpm run test:smoke

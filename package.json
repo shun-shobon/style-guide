@@ -18,6 +18,7 @@
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"release": "pnpm build && changeset publish",
+		"test:smoke": "pnpm --filter smoke run test",
 		"typecheck": "pnpm -r --filter './packages/*' run typecheck",
 		"typegen": "pnpm --filter @shun-shobon/eslint-config run typegen",
 		"version-package": "changeset version && pnpm format"

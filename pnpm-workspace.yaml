@@ -1,5 +1,6 @@
 packages:
   - "packages/*"
+  - "smoke"
 
 minimumReleaseAge: 1440
 

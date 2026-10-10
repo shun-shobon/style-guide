@@ -267,26 +267,26 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       prettier:
-        specifier: ^3.0.0
-        version: 3.8.4
+        specifier: ^3.5.3
+        version: 3.9.6
       prettier-plugin-astro:
-        specifier: 0.14.1
-        version: 0.14.1
+        specifier: 1.1.0
+        version: 1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.6)
       prettier-plugin-jsdoc:
         specifier: 1.5.0
-        version: 1.5.0(prettier@3.8.4)
+        version: 1.5.0(prettier@3.9.6)
       prettier-plugin-pkg:
         specifier: 0.22.1
-        version: 0.22.1(prettier@3.8.4)
+        version: 0.22.1(prettier@3.9.6)
       prettier-plugin-tailwindcss:
         specifier: 0.8.1
-        version: 0.8.1(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.8.4))(prettier@3.8.4)
+        version: 0.8.1(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.6))(prettier-plugin-jsdoc@1.5.0(prettier@3.9.6))(prettier@3.9.6)
 
   smoke:
     devDependencies:
       '@builder.io/qwik':
         specifier: 1.20.2
-        version: 1.20.2(vite@7.3.7(@types/node@26.4.1)(yaml@2.9.1))
+        version: 1.20.2(vite@7.3.7(@types/node@24.13.3)(yaml@2.9.1))
       '@shun-shobon/eslint-config':
         specifier: workspace:*
         version: link:../packages/eslint-config
@@ -302,16 +302,34 @@ packages:
     peerDependencies:
       '@types/json-schema': ^7.0.15
 
+  '@astrojs/compiler-binding-android-arm64@0.4.1':
+    resolution: {integrity: sha512-Wtx2DZORuNTLASLLZ8hlrjFaJe1LUloatcCn9EPq7knBhRpjMGXeJANIJMeBZG4igvz7x+3nyAJM2iwCSW9xog==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [android]
+
   '@astrojs/compiler-binding-android-arm64@0.5.1':
     resolution: {integrity: sha512-nMb2nMIJtcWLNH+fV75Enmi+jp4tIOYOfsv4XtpgdOWkqc9P4uSSdK5u1xb340AzrXo5V18SxLl/nc3vcqtamQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
+  '@astrojs/compiler-binding-darwin-arm64@0.4.1':
+    resolution: {integrity: sha512-7iwXcU+hB60Y1SvOfnWHNioT72gDsDQKaDipXh2Onwp/TvQMozhbvhy13wJR8Af940a0h6PbddCeJFpj791UDA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [darwin]
+
   '@astrojs/compiler-binding-darwin-arm64@0.5.1':
     resolution: {integrity: sha512-5k4+nZ/WRt+dcVow4z7rBuI7iv9A58h/uQ91YJe1PrTivbcCkq3u2Ynx/AZJwII4CsZawBCeGpojkFjutZBhBQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
+    os: [darwin]
+
+  '@astrojs/compiler-binding-darwin-x64@0.4.1':
+    resolution: {integrity: sha512-pifjICos49RXhSVKSDu5gDB0/8j0O7DmxSp1DaWW2PyLG5ekwSkcrfOZto5JqhdI7QYMZB3XOiXpsdOXpS4npA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
     os: [darwin]
 
   '@astrojs/compiler-binding-darwin-x64@0.5.1':
@@ -320,12 +338,26 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@astrojs/compiler-binding-linux-arm64-gnu@0.4.1':
+    resolution: {integrity: sha512-hsZMlNWc6LqWHh9LlSwTq1/XCY7pxA5rkkKIdZRV8mgbOz9OwLvjEoe5Jry13eIZjMUQO8XnQyzk8o/Pjw2YFA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
   '@astrojs/compiler-binding-linux-arm64-gnu@0.5.1':
     resolution: {integrity: sha512-x5LRpyCoMKuu3INr18cn42YhwSOaRpp9b5Ny3eJJ/sWVeejC16Zeshu1JlvlSmEZACLeWxU5JM0RX6T6nI+YyA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
+
+  '@astrojs/compiler-binding-linux-arm64-musl@0.4.1':
+    resolution: {integrity: sha512-a3EW27f+Z9uf57vYmpLgUriA1y9wDhKz57PT8D8XlFZt2HZEWhUxKuxI1jvKVI9p8okYee11WXEm/FHY1G9yoQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
 
   '@astrojs/compiler-binding-linux-arm64-musl@0.5.1':
     resolution: {integrity: sha512-mL7tQEuDk3rGfaKmrO63nw6WBy1TPVioQGmVyjcAr+C+a/k3SVMYBytNSMqH9mZPT/Swj30JaZ2N842Z1NnOEQ==}
@@ -334,12 +366,26 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@astrojs/compiler-binding-linux-x64-gnu@0.4.1':
+    resolution: {integrity: sha512-XruPTKB/SS4DFzeAjQ1ZyM0ieHDjapHkOSnnzRApZ4FXY2YAI7UY3mETjfJiIS/acyZyrnPH5jObv1gATTdUJQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
   '@astrojs/compiler-binding-linux-x64-gnu@0.5.1':
     resolution: {integrity: sha512-uLGc9jtxwiDe4cQyhNPQim4ECiB/YzbWlXssfLAv8r374kArfTwBHjwR2+j+XVyF71yCx5mF9YNRclRqdNBgeg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
+
+  '@astrojs/compiler-binding-linux-x64-musl@0.4.1':
+    resolution: {integrity: sha512-E8j7lGanqNpudtkUbsFaOLJhmwFe4Ecqux7K9hkj4wULIPNZRM2bYZNcMSj8r1oWvaUiwZl8LaaNwv3+14jqhw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
 
   '@astrojs/compiler-binding-linux-x64-musl@0.5.1':
     resolution: {integrity: sha512-G0cywinaQUc8v1MrytvYKUX7svTDMmYtOCZfxjwKPbJi59zIqM+Ll0rWgO0GQWLZH3XoPYo19ZwlP3Xt9ep9YA==}
@@ -348,15 +394,32 @@ packages:
     os: [linux]
     libc: [musl]
 
+  '@astrojs/compiler-binding-wasm32-wasi@0.4.1':
+    resolution: {integrity: sha512-vNLxIv41ZE+nmPFtw24cRW5ZXG+ZPcAGtgigtjCP8lvcxKI7u2GrXoMsCgEH5fMw8WCEJpwLvsVBg15rJKAkyA==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+
   '@astrojs/compiler-binding-wasm32-wasi@0.5.1':
     resolution: {integrity: sha512-yMhLL8asmLydoAdnEZxAw6eLfNDs3YJl6jqn0pjPt6zrb2U5qIDLnii4/twThpIFODKkQ6YDpBRTOz/vSfZCxw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [wasm32]
 
+  '@astrojs/compiler-binding-win32-arm64-msvc@0.4.1':
+    resolution: {integrity: sha512-/xTDgRsFDoTh0/+KFXJ74DY4Jqn8CoSHwa8UP5RAblHfnRHkenwfSl4zYDET61O9vXKLk09UzHjjq09yP20/AQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [arm64]
+    os: [win32]
+
   '@astrojs/compiler-binding-win32-arm64-msvc@0.5.1':
     resolution: {integrity: sha512-aClIG6poFt3Wf/bZykrEAX2nAnKvBHW6RXiKUa69QjBtWH0/FOlOAjnFcxRNlhej2AMWNYFx0o+LGjwMcH8P7Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
+    os: [win32]
+
+  '@astrojs/compiler-binding-win32-x64-msvc@0.4.1':
+    resolution: {integrity: sha512-0x5J6iHZO0Fjo/CVzoIbXKzWnGESftDbEUQ/oXQ61HhUAFoR7+T1jfToZSNAS+gYyBXHSTpMWYC7lzarbhClcg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    cpu: [x64]
     os: [win32]
 
   '@astrojs/compiler-binding-win32-x64-msvc@0.5.1':
@@ -365,16 +428,21 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@astrojs/compiler-binding@0.4.1':
+    resolution: {integrity: sha512-ZYVDW1P58OXyxqZbOMp+/2U9KA7y2esIx9r4pWdpZ/l6fCZhaw4ul+D7EgpRVxYLkyTWqzANbTTUFGPFP8zDHA==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+
   '@astrojs/compiler-binding@0.5.1':
     resolution: {integrity: sha512-oczyolLUl9mNrtuBuNjuvn5thpHrFLXAHAWGTRg0JDHQ8cGVsVeFekOu2uSoQGgainJIi+A3/9m0DyYwz3Nlnw==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
+  '@astrojs/compiler-rs@0.4.1':
+    resolution: {integrity: sha512-//NmAuRhy7eU9iP0ceI5Pymy55M+nUZ//kS6XeOyhBWdDib2KbJOyFaVJ52k7sDkJwTKVox7oPu3SpYiVnGm5A==}
+    engines: {node: '>=22.12.0'}
+
   '@astrojs/compiler-rs@0.5.1':
     resolution: {integrity: sha512-1k1acnX7DepIiea9U9/Y+d1hdAFfylu1ZQQkkYgRSwBOBAsXInolyZuh/2tax+83vu/A+hOYP6P3+265RvMTvw==}
     engines: {node: '>=22.12.0'}
-
-  '@astrojs/compiler@2.13.1':
-    resolution: {integrity: sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg==}
 
   '@builder.io/qwik@1.20.2':
     resolution: {integrity: sha512-wAP6Wa/N0F6IlWirFm/SlrfukmsJaWa7ABIH0OACmZVC0llDySpy1TXZ1WYMAQG1HnKa9hT3H8l3hKckGmXQBA==}
@@ -946,6 +1014,9 @@ packages:
   '@pnpm/deps.graph-sequencer@1100.0.1':
     resolution: {integrity: sha512-pOr5+q1fLYKwFN3LAJuGZEnfXDcQ73zqgDHMtGy+K+uIoUqyY+6MeDCWFwfu+4EFuq76I5EPFofoNAI+Bmmq4A==}
     engines: {node: '>=22.13'}
+
+  '@prettier/parse-srcset@3.1.0':
+    resolution: {integrity: sha512-FIRv2rZotO9NP/r66taYqD1zICpPiBbrECqjKV/xqNotqDxF7fLzzUeK+1RSRx9Tenk0DajR/GcRmTJ2qtHaKQ==}
 
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
@@ -2746,9 +2817,11 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-astro@0.14.1:
-    resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
-    engines: {node: ^14.15.0 || >=16.0.0}
+  prettier-plugin-astro@1.1.0:
+    resolution: {integrity: sha512-ujJ1VX+iin4eYJPHVCEbmXHzrEVsi1SaVehHtbAteTZv8VTrZyBiZPmYc6Ud6+fkr/UBMXuEu3N3+d49h7YfKw==}
+    engines: {node: '>=22.12.0'}
+    peerDependencies:
+      prettier: ^3.5.3
 
   prettier-plugin-jsdoc@1.5.0:
     resolution: {integrity: sha512-Fehp5qkFQhNFcxUilDPEcqHX8AdP6oGyCRLatqRc0gLXv3qOtndTnnUxfHCYc26I4Lc1A4lVozAtWEE8o7ubUA==}
@@ -2816,11 +2889,6 @@ packages:
         optional: true
       prettier-plugin-svelte:
         optional: true
-
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
-    engines: {node: '>=14'}
-    hasBin: true
 
   prettier@3.9.6:
     resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
@@ -2922,8 +2990,9 @@ packages:
     resolution: {integrity: sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==}
     engines: {node: '>= 0.4'}
 
-  sass-formatter@0.7.9:
-    resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
+  sass-formatter@0.8.0:
+    resolution: {integrity: sha512-Nf4eMGE2O5vnJG7KPCRyksWS9gVKSYoUWtPeMXRRxwZSPVQhSGtL602xVYS65LvMkHmkvKa7xpauF0+/5pPwrg==}
+    hasBin: true
 
   scslre@0.3.0:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
@@ -3262,25 +3331,54 @@ snapshots:
       '@types/json-schema': 7.0.15
       js-yaml: 4.2.0
 
+  '@astrojs/compiler-binding-android-arm64@0.4.1':
+    optional: true
+
   '@astrojs/compiler-binding-android-arm64@0.5.1':
+    optional: true
+
+  '@astrojs/compiler-binding-darwin-arm64@0.4.1':
     optional: true
 
   '@astrojs/compiler-binding-darwin-arm64@0.5.1':
     optional: true
 
+  '@astrojs/compiler-binding-darwin-x64@0.4.1':
+    optional: true
+
   '@astrojs/compiler-binding-darwin-x64@0.5.1':
+    optional: true
+
+  '@astrojs/compiler-binding-linux-arm64-gnu@0.4.1':
     optional: true
 
   '@astrojs/compiler-binding-linux-arm64-gnu@0.5.1':
     optional: true
 
+  '@astrojs/compiler-binding-linux-arm64-musl@0.4.1':
+    optional: true
+
   '@astrojs/compiler-binding-linux-arm64-musl@0.5.1':
+    optional: true
+
+  '@astrojs/compiler-binding-linux-x64-gnu@0.4.1':
     optional: true
 
   '@astrojs/compiler-binding-linux-x64-gnu@0.5.1':
     optional: true
 
+  '@astrojs/compiler-binding-linux-x64-musl@0.4.1':
+    optional: true
+
   '@astrojs/compiler-binding-linux-x64-musl@0.5.1':
+    optional: true
+
+  '@astrojs/compiler-binding-wasm32-wasi@0.4.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
+    dependencies:
+      '@napi-rs/wasm-runtime': 1.2.5(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
     optional: true
 
   '@astrojs/compiler-binding-wasm32-wasi@0.5.1':
@@ -3290,11 +3388,33 @@ snapshots:
       '@napi-rs/wasm-runtime': 1.2.5(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
     optional: true
 
+  '@astrojs/compiler-binding-win32-arm64-msvc@0.4.1':
+    optional: true
+
   '@astrojs/compiler-binding-win32-arm64-msvc@0.5.1':
+    optional: true
+
+  '@astrojs/compiler-binding-win32-x64-msvc@0.4.1':
     optional: true
 
   '@astrojs/compiler-binding-win32-x64-msvc@0.5.1':
     optional: true
+
+  '@astrojs/compiler-binding@0.4.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
+    optionalDependencies:
+      '@astrojs/compiler-binding-android-arm64': 0.4.1
+      '@astrojs/compiler-binding-darwin-arm64': 0.4.1
+      '@astrojs/compiler-binding-darwin-x64': 0.4.1
+      '@astrojs/compiler-binding-linux-arm64-gnu': 0.4.1
+      '@astrojs/compiler-binding-linux-arm64-musl': 0.4.1
+      '@astrojs/compiler-binding-linux-x64-gnu': 0.4.1
+      '@astrojs/compiler-binding-linux-x64-musl': 0.4.1
+      '@astrojs/compiler-binding-wasm32-wasi': 0.4.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
+      '@astrojs/compiler-binding-win32-arm64-msvc': 0.4.1
+      '@astrojs/compiler-binding-win32-x64-msvc': 0.4.1
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   '@astrojs/compiler-binding@0.5.1':
     optionalDependencies:
@@ -3309,18 +3429,23 @@ snapshots:
       '@astrojs/compiler-binding-win32-arm64-msvc': 0.5.1
       '@astrojs/compiler-binding-win32-x64-msvc': 0.5.1
 
+  '@astrojs/compiler-rs@0.4.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
+    dependencies:
+      '@astrojs/compiler-binding': 0.4.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+
   '@astrojs/compiler-rs@0.5.1':
     dependencies:
       '@astrojs/compiler-binding': 0.5.1
 
-  '@astrojs/compiler@2.13.1': {}
-
-  '@builder.io/qwik@1.20.2(vite@7.3.7(@types/node@26.4.1)(yaml@2.9.1))':
+  '@builder.io/qwik@1.20.2(vite@7.3.7(@types/node@24.13.3)(yaml@2.9.1))':
     dependencies:
       csstype: 3.2.3
       launch-editor: 2.14.2
       rollup: 4.64.3
-      vite: 7.3.7(@types/node@26.4.1)(yaml@2.9.1)
+      vite: 7.3.7(@types/node@24.13.3)(yaml@2.9.1)
 
   '@changesets/apply-release-plan@8.1.1':
     dependencies:
@@ -3854,6 +3979,8 @@ snapshots:
   '@pkgr/core@0.3.6': {}
 
   '@pnpm/deps.graph-sequencer@1100.0.1': {}
+
+  '@prettier/parse-srcset@3.1.0': {}
 
   '@quansync/fs@1.0.0':
     dependencies:
@@ -5132,6 +5259,10 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.5
 
+  fdir@6.5.0(picomatch@4.0.7):
+    optionalDependencies:
+      picomatch: 4.0.7
+
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
@@ -5775,33 +5906,35 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-astro@0.14.1:
+  prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.6):
     dependencies:
-      '@astrojs/compiler': 2.13.1
-      prettier: 3.8.4
-      sass-formatter: 0.7.9
+      '@astrojs/compiler-rs': 0.4.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
+      '@prettier/parse-srcset': 3.1.0
+      prettier: 3.9.6
+      sass-formatter: 0.8.0
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
-  prettier-plugin-jsdoc@1.5.0(prettier@3.8.4):
+  prettier-plugin-jsdoc@1.5.0(prettier@3.9.6):
     dependencies:
       binary-searching: 2.0.5
       comment-parser: 1.4.7
       mdast-util-from-markdown: 2.0.3
-      prettier: 3.8.4
+      prettier: 3.9.6
     transitivePeerDependencies:
       - supports-color
 
-  prettier-plugin-pkg@0.22.1(prettier@3.8.4):
+  prettier-plugin-pkg@0.22.1(prettier@3.9.6):
     dependencies:
-      prettier: 3.8.4
+      prettier: 3.9.6
 
-  prettier-plugin-tailwindcss@0.8.1(prettier-plugin-astro@0.14.1)(prettier-plugin-jsdoc@1.5.0(prettier@3.8.4))(prettier@3.8.4):
+  prettier-plugin-tailwindcss@0.8.1(prettier-plugin-astro@1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.6))(prettier-plugin-jsdoc@1.5.0(prettier@3.9.6))(prettier@3.9.6):
     dependencies:
-      prettier: 3.8.4
+      prettier: 3.9.6
     optionalDependencies:
-      prettier-plugin-astro: 0.14.1
-      prettier-plugin-jsdoc: 1.5.0(prettier@3.8.4)
-
-  prettier@3.8.4: {}
+      prettier-plugin-astro: 1.1.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.6)
+      prettier-plugin-jsdoc: 1.5.0(prettier@3.9.6)
 
   prettier@3.9.6: {}
 
@@ -5946,7 +6079,7 @@ snapshots:
       es-errors: 1.3.0
       is-regex: 1.2.1
 
-  sass-formatter@0.7.9:
+  sass-formatter@0.8.0:
     dependencies:
       suf-log: 2.5.3
 
@@ -6240,16 +6373,16 @@ snapshots:
 
   verkit@0.3.2: {}
 
-  vite@7.3.7(@types/node@26.4.1)(yaml@2.9.1):
+  vite@7.3.7(@types/node@24.13.3)(yaml@2.9.1):
     dependencies:
       esbuild: 0.28.2
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
       postcss: 8.5.15
       rollup: 4.64.3
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 24.13.3
       fsevents: 2.3.3
       yaml: 2.9.1
 

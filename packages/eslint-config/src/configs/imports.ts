@@ -14,9 +14,9 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 			settings: {
 				"import-x/parsers": {
 					espree: [".js", ".cjs", ".mjs", ".jsx"],
-					...(typescript
-						? { "@typescript-eslint/parser": [".ts", ".mts", ".cts", ".tsx"] }
-						: {}),
+					...(typescript && {
+						"@typescript-eslint/parser": [".ts", ".mts", ".cts", ".tsx"],
+					}),
 				},
 				"import-x/extensions": [
 					".js",

@@ -44,13 +44,11 @@ export async function react(
 				// ただし、フラグメントのみの場合は許可する
 				"react/jsx-no-useless-fragment": ["warn", { allowExpressions: true }],
 
-				...(typescript
-					? {}
-					: {
-							// HTMLの属性名として認識されていない属性名を許可しない
-							// TSでは型チェックで検出できるため不要
-							"react/dom-no-unknown-property": "error",
-						}),
+				...(!typescript && {
+					// HTMLの属性名として認識されていない属性名を許可しない
+					// TSでは型チェックで検出できるため不要
+					"react/dom-no-unknown-property": "error",
+				}),
 
 				// 曖昧なリンクのテキストを許可しない
 				"jsx-a11y/anchor-ambiguous-text": "error",

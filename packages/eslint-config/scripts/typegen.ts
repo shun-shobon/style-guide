@@ -36,4 +36,16 @@ const plugins = {
 
 const dts = await pluginsToRulesDTS(plugins, { includeAugmentation: false });
 
-await fs.writeFile("src/rules.ts", dts);
+// スキーマ内で同じ定義を複数回参照すると同一のinterfaceが重複して出力され、
+// インデックスシグネチャの重複で型エラーになるため取り除く
+const seenInterfaces = new Set<string>();
+const dedupedDts = dts.replaceAll(
+	/^interface \w+ \{\n[\s\S]*?\n\}\n/gmu,
+	(block) => {
+		if (seenInterfaces.has(block)) return "";
+		seenInterfaces.add(block);
+		return block;
+	},
+);
+
+await fs.writeFile("src/rules.ts", dedupedDts);

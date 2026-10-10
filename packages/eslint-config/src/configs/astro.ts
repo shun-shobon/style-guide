@@ -42,20 +42,8 @@ export async function astro(
 				// Astroの推奨ルールを有効化
 				...(pluginAstro.configs.recommended.at(-1)!.rules as Rules),
 
-				// Astroのjsx-a11yの拡張ルール(strict)を有効化
-				...(pluginAstro.configs["jsx-a11y-strict"].at(-1)!.rules as Rules),
-
-				// 曖昧なリンクのテキストを許可しない
-				"astro/jsx-a11y/anchor-ambiguous-text": "error",
-
-				// インタラクティブな要素にラベルが付いていないことを許可しない
-				"astro/jsx-a11y/control-has-associated-label": "error",
-
-				// html要素にlang属性が付与されていないことを許可しない
-				"astro/jsx-a11y/lang": "error",
-
-				// フォーカス可能な要素に `aria-hidden` 属性を付与することを許可しない
-				"astro/jsx-a11y/no-aria-hidden-on-focusable": "error",
+				// astro/jsx-a11y/* はeslint-plugin-jsx-a11yを利用者のプロジェクトからしか解決できず、
+				// このパッケージの依存として入れたものを読み込めないため有効化しない
 			},
 		},
 	];

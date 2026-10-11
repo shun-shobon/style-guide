@@ -1,8 +1,0 @@
-{
-	"extends": "../../tsconfig.json",
-	"compilerOptions": {
-		"jsxImportSource": "@builder.io/qwik",
-	},
-	"include": ["**/*"],
-	"exclude": [],
-}

@@ -4,14 +4,6 @@ packages:
 
 minimumReleaseAge: 1440
 
-allowBuilds:
-  esbuild: true
-  unrs-resolver: true
-
 saveExact: true
 
 trustPolicy: no-downgrade
-
-trustPolicyExclude:
-  - semver@6.3.1
-  - ts-api-utils@2.3.0

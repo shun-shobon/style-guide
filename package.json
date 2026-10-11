@@ -1,33 +1,33 @@
 {
 	"name": "style-guide",
-	"type": "module",
+	"private": true,
 	"description": "shun-shobon's engineering style guide monorepo",
+	"homepage": "https://github.com/shun-shobon/style-guide#readme",
+	"license": "MIT",
+	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/shun-shobon/style-guide.git"
 	},
-	"homepage": "https://github.com/shun-shobon/style-guide#readme",
-	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
-	"license": "MIT",
-	"private": true,
-	"packageManager": "pnpm@12.10.1",
+	"type": "module",
 	"scripts": {
 		"build": "pnpm -r --filter './packages/*' run build",
-		"format": "prettier --write .",
-		"format:check": "prettier --check .",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix",
+		"format": "oxfmt",
+		"format:check": "oxfmt --check",
+		"lint": "oxlint --disable-nested-config --deny-warnings",
+		"lint:fix": "oxlint --disable-nested-config --fix",
 		"test:smoke": "pnpm --filter smoke run test",
-		"typecheck": "pnpm -r --filter './packages/*' run typecheck",
-		"typegen": "pnpm --filter @shun-shobon/eslint-config run typegen"
+		"typecheck": "pnpm -r --filter './packages/*' run typecheck"
 	},
 	"devDependencies": {
-		"@shun-shobon/eslint-config": "workspace:*",
-		"@shun-shobon/prettier-config": "workspace:*",
+		"@shun-shobon/oxfmt-config": "workspace:*",
+		"@shun-shobon/oxlint-config": "workspace:*",
 		"@types/node": "24.19.1",
-		"eslint": "10.12.0",
-		"prettier": "3.9.9",
+		"oxfmt": "0.72.0",
+		"oxlint": "1.87.0",
+		"oxlint-tsgolint": "7.0.2003",
 		"tsdown": "0.23.0",
 		"typescript": "5.9.3"
-	}
+	},
+	"packageManager": "pnpm@12.10.1"
 }

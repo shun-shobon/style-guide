@@ -19,4 +19,4 @@ import { shun_shobon } from "@shun-shobon/oxfmt-config";
 export default shun_shobon();
 ```
 
-Oxfmt's default style is used as is. This config only enables sorting of imports and `package.json` keys (including `scripts`), and sorting of Tailwind CSS classes when `tailwindcss` is installed.
+Oxfmt's default style is used except for indenting with tabs. This config also enables sorting of imports and `package.json` keys (including `scripts`), and sorting of Tailwind CSS classes when `tailwindcss` is installed.

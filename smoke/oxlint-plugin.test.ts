@@ -76,3 +76,25 @@ tester.run("nullish-comparison", plugin.rules["nullish-comparison"], {
 		},
 	],
 });
+
+tester.run("no-infinite-for", plugin.rules["no-infinite-for"], {
+	valid: [
+		"while (true) {}",
+		"for (let i = 0; i < 10; i++) {}",
+		"for (; i < 10; ) {}",
+		"for (let i = 0; ; i++) {}",
+		"for (const a of b) {}",
+	],
+	invalid: [
+		{
+			code: "for (;;) { if (a) break; }",
+			output: "while (true) { if (a) break; }",
+			errors: [{ messageId: "infinite" }],
+		},
+		{
+			code: "for (;;) f();",
+			output: "while (true) f();",
+			errors: [{ messageId: "infinite" }],
+		},
+	],
+});

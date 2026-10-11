@@ -29,6 +29,23 @@ export function typescript(): Config {
 			// また、スタックトレースが読みやすくなる
 			"typescript/return-await": ["warn", "always"],
 
+			// 常に真偽が決まる条件を禁止する
+			// 途中で`break`するループのために`while (true)`のようなリテラルの条件は許可する
+			"typescript/no-unnecessary-condition": [
+				"error",
+				{ allowConstantLoopConditions: "only-allowed-literals" },
+			],
+
+			// `=== true`/`=== false`のような真偽値リテラルとの比較を禁止する
+			// `boolean | undefined`のような型でも`a ?? false`などで書かせる
+			"typescript/no-unnecessary-boolean-literal-compare": [
+				"error",
+				{
+					allowComparingNullableBooleansToTrue: false,
+					allowComparingNullableBooleansToFalse: false,
+				},
+			],
+
 			// 型情報を使うtypescript側のルールと重複するため無効化
 			"no-implied-eval": "off",
 			"no-throw-literal": "off",

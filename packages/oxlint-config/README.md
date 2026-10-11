@@ -25,6 +25,7 @@ Oxlint's default plugins are used with the `correctness`, `suspicious` and `peda
 - `eqeqeq` that allows `== null`, and `no-implicit-coercion`,
 - `shun-shobon/nullish-comparison` rule, which enforces `== null` / `!= null` instead of `=== null` / `!== null` (reported with a suggestion, not an auto-fix). Use `=== undefined` to check for `undefined` only.
 - `shun-shobon/no-react-namespace` rule, which enforces named imports from `react` (`import { useState } from "react"`, `import type { ReactNode } from "react"`) instead of `import React from "react"`, `import * as React from "react"` and the global `React.*` namespace types.
+- `shun-shobon/no-infinite-for` rule, which enforces `while (true)` instead of `for (;;)` for infinite loops (auto-fixable).
 
 TypeScript (type-aware linting), React (with JSX A11y), Next.js and Vitest are enabled automatically based on the dependencies. Pass options to override the detection, and pass configs after the options to customize them.
 

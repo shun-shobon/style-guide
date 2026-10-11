@@ -17,6 +17,9 @@ export function shunShobon(): Config {
 			// `React`の名前空間を使わず、`react`からの名前付きimportに統一する
 			// `import React from "react"`や`import * as React from "react"`、importせずに使える`React.ReactNode`のような型参照を禁止する
 			"shun-shobon/no-react-namespace": "error",
+
+			// 無限ループは`for (;;)`ではなく`while (true)`で書く
+			"shun-shobon/no-infinite-for": "error",
 		},
 	};
 }

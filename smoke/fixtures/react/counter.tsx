@@ -1,6 +1,7 @@
+import type { ReactNode } from "react";
 import { useState } from "react";
 
-export function Counter(): React.ReactNode {
+export function Counter(): ReactNode {
 	const [count, setCount] = useState(0);
 
 	return (

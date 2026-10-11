@@ -46,6 +46,9 @@ export function imports(options: OptionsHasTypeScript): ConfigItem[] {
 				// import文を一番上に書くのを強制
 				"import/first": "error",
 
+				// import文の後に空行を入れる
+				"import/newline-after-import": "warn",
+
 				// 同じパスからのimportをまとめる
 				"import/no-duplicates": "warn",
 

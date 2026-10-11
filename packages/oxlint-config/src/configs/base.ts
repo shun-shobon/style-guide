@@ -3,7 +3,7 @@ import type { Config } from "../types";
 export function base(): Config {
 	return {
 		// `plugins`を指定すると既定のプラグインが上書きされるため、既定のものも列挙する
-		plugins: ["eslint", "typescript", "unicorn", "oxc"],
+		plugins: ["eslint", "typescript", "unicorn", "oxc", "import"],
 		categories: {
 			correctness: "error",
 			suspicious: "error",
@@ -63,6 +63,31 @@ export function base(): Config {
 			// `return undefined`などの`undefined`の明示を禁止するルール
 			// undefinedを明示したい場合があるので無効化
 			"unicorn/no-useless-undefined": "off",
+
+			// type import時に`import type { foo } from "foo"`を強制
+			"import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
+
+			// import文を一番上に書くのを強制
+			"import/first": "error",
+
+			// 同じパスからのimportをまとめる
+			"import/no-duplicates": "warn",
+
+			// default import時に`{ default as foo } from "foo"`と書くのを警告
+			"import/no-named-default": "warn",
+
+			// import先のモジュールのexportを検査するルール
+			// ESLintの設定と揃えて無効化
+			"import/named": "off",
+			"import/namespace": "off",
+
+			// ファイルのimport数の上限を設けるルール
+			// 上限は機械的に決められないため無効化
+			"import/max-dependencies": "off",
+
+			// `import "./style.css"`のような副作用のためのimportを禁止するルール
+			// CSSやpolyfillの読み込みで必要なため無効化
+			"import/no-unassigned-import": "off",
 		},
 	};
 }

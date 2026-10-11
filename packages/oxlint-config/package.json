@@ -1,6 +1,6 @@
 {
 	"name": "@shun-shobon/oxlint-config",
-	"version": "7.0.0",
+	"version": "7.1.0",
 	"description": "shun-shobon's Oxlint config",
 	"homepage": "https://github.com/shun-shobon/style-guide/tree/main/packages/oxlint-config#readme",
 	"license": "MIT",

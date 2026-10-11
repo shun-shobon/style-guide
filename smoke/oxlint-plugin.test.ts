@@ -12,6 +12,29 @@ RuleTester.it = (name, fn) => {
 };
 
 const tester = new RuleTester();
+const tsTester = new RuleTester({ languageOptions: { parserOptions: { lang: "ts" } } });
+
+tsTester.run("no-react-namespace", plugin.rules["no-react-namespace"], {
+	valid: [
+		"import type { ReactNode } from 'react'; let a: ReactNode;",
+		"let a: Foo.ReactNode;",
+		"let a: React;",
+		"import { useState, type ReactNode } from 'react';",
+		"import Foo from 'foo';",
+	],
+	invalid: [
+		{ code: "import React from 'react';", errors: [{ messageId: "import" }] },
+		{ code: "import * as React from 'react';", errors: [{ messageId: "import" }] },
+		{ code: "import { default as R } from 'react';", errors: [{ messageId: "import" }] },
+		{ code: "import React, { useState } from 'react';", errors: [{ messageId: "import" }] },
+		{ code: "let a: React.ReactNode;", errors: [{ messageId: "namespace" }] },
+		{ code: "let a: React.ComponentProps<'div'>;", errors: [{ messageId: "namespace" }] },
+		{
+			code: "let a: React.JSX.Element;",
+			errors: [{ messageId: "namespace", data: { name: "JSX" } }],
+		},
+	],
+});
 
 tester.run("nullish-comparison", plugin.rules["nullish-comparison"], {
 	valid: [

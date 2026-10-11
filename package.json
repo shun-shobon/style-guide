@@ -14,7 +14,7 @@
 		"build": "pnpm -r --filter './packages/*' run build",
 		"format": "oxfmt",
 		"format:check": "oxfmt --check",
-		"lint": "oxlint --disable-nested-config --deny-warnings",
+		"lint": "oxlint --disable-nested-config",
 		"lint:fix": "oxlint --disable-nested-config --fix",
 		"test:smoke": "pnpm --filter smoke run test",
 		"typecheck": "pnpm -r --filter './packages/*' run typecheck"

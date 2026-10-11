@@ -20,9 +20,10 @@
 		"forceConsistentCasingInFileNames": true,
 
 		"lib": ["es2023"],
+		"types": ["node"],
 		"target": "es2023",
 		"module": "esnext",
-		"moduleResolution": "bundler",
+		"moduleResolution": "bundler"
 	},
-	"exclude": ["**/node_modules", "**/dist"],
+	"exclude": ["**/node_modules", "**/dist"]
 }

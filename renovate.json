@@ -1,11 +1,4 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["local>shun-shobon/renovate-config"],
-	"packageRules": [
-		{
-			"matchManagers": ["npm"],
-			"matchPackageNames": ["prettier-plugin-jsdoc"],
-			"enabled": false
-		}
-	]
+	"extends": ["local>shun-shobon/renovate-config"]
 }

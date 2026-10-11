@@ -4,12 +4,8 @@ import { base, imports, packageJson, tailwindcss } from "./configs";
 import type { Config, OptionsConfig } from "./types";
 import { mergeConfig } from "./utils";
 
-export function shun_shobon(
-	options: OptionsConfig = {},
-	userConfig: Config = {},
-): Config {
-	const { tailwindcss: enableTailwindcss = isPackageExists("tailwindcss") } =
-		options;
+export function shun_shobon(options: OptionsConfig = {}, userConfig: Config = {}): Config {
+	const { tailwindcss: enableTailwindcss = isPackageExists("tailwindcss") } = options;
 
 	const configs: Config[] = [base(), imports(), packageJson()];
 

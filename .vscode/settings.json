@@ -1,9 +1,0 @@
-{
-	"typescript.tsdk": "node_modules/typescript/lib",
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"eslint.useFlatConfig": true,
-	"[javascript][javascriptreact][typescript][typescriptreact]": {
-		"editor.insertSpaces": false,
-		"editor.tabSize": 2
-	}
-}

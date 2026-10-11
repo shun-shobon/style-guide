@@ -14,13 +14,8 @@ export const nullishComparison: Rule = {
 		return {
 			BinaryExpression(node) {
 				if (node.operator !== "===" && node.operator !== "!==") return;
-				const isNull = (n: typeof node.left) =>
-					n.type === "Literal" && n.raw === "null";
-				const nullSide = isNull(node.right)
-					? node.right
-					: isNull(node.left)
-						? node.left
-						: null;
+				const isNull = (n: typeof node.left) => n.type === "Literal" && n.raw === "null";
+				const nullSide = isNull(node.right) ? node.right : isNull(node.left) ? node.left : null;
 				if (nullSide == null) return;
 				const operator = node.operator === "===" ? "==" : "!=";
 				const other = nullSide === node.right ? node.left : node.right;
@@ -33,10 +28,7 @@ export const nullishComparison: Rule = {
 							messageId: "replace",
 							data: { operator },
 							fix: (fixer) =>
-								fixer.replaceText(
-									node,
-									`${context.sourceCode.getText(other)} ${operator} null`,
-								),
+								fixer.replaceText(node, `${context.sourceCode.getText(other)} ${operator} null`),
 						},
 					],
 				});

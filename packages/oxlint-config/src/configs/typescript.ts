@@ -22,10 +22,7 @@ export function typescript(): Config {
 
 			// 戻り値が`void`の式を値として使うことを禁止する
 			// `() => f()`のようなアロー関数の省略記法は許可する
-			"typescript/no-confusing-void-expression": [
-				"error",
-				{ ignoreArrowShorthand: true },
-			],
+			"typescript/no-confusing-void-expression": ["error", { ignoreArrowShorthand: true }],
 
 			// `return await`を使う
 			// 一貫性のためと、awaitが無くなったときにasyncを外すのは面倒なため

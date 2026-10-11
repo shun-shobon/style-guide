@@ -1,6 +1,6 @@
 {
 	"name": "@shun-shobon/oxfmt-config",
-	"version": "6.0.1",
+	"version": "7.0.0",
 	"description": "shun-shobon's Oxfmt config",
 	"homepage": "https://github.com/shun-shobon/style-guide/tree/main/packages/oxfmt-config#readme",
 	"license": "MIT",

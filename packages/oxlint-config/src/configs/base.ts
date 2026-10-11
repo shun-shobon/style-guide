@@ -17,7 +17,7 @@ export function base(): Config {
 		rules: {
 			// `===`/`!==`での比較を強制する
 			// ただし`== null`でのnullチェックは許可する
-			"eqeqeq": ["error", "always", { null: "ignore" }],
+			eqeqeq: ["error", "always", { null: "ignore" }],
 
 			// `!!a`や`+a`などの暗黙の型変換を禁止する
 			"no-implicit-coercion": "error",

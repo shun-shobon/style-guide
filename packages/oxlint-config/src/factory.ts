@@ -4,10 +4,7 @@ import { base, next, react, shunShobon, typescript, vitest } from "./configs";
 import type { Config, OptionsConfig } from "./types";
 import { mergeConfig } from "./utils";
 
-export function shun_shobon(
-	options: OptionsConfig = {},
-	...userConfigs: Config[]
-): Config {
+export function shun_shobon(options: OptionsConfig = {}, ...userConfigs: Config[]): Config {
 	const {
 		ignores = [],
 		typescript: enableTypescript = isPackageExists("typescript"),

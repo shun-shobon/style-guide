@@ -1,15 +1,20 @@
 {
 	"name": "@shun-shobon/oxlint-config",
 	"version": "6.0.1",
-	"type": "module",
 	"description": "shun-shobon's Oxlint config",
+	"homepage": "https://github.com/shun-shobon/style-guide/tree/main/packages/oxlint-config#readme",
+	"license": "MIT",
+	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/shun-shobon/style-guide.git"
 	},
-	"homepage": "https://github.com/shun-shobon/style-guide/tree/main/packages/oxlint-config#readme",
-	"author": "NISHIZAWA Shuntaro <me@s2n.tech> (https://s2n.tech/)",
-	"license": "MIT",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"type": "module",
+	"sideEffects": false,
 	"exports": {
 		".": {
 			"import": "./dist/index.mjs"
@@ -18,13 +23,20 @@
 			"import": "./dist/plugin.mjs"
 		}
 	},
-	"files": [
-		"dist",
-		"README.md"
-	],
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
 	"scripts": {
 		"build": "tsdown",
 		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"local-pkg": "1.2.1"
+	},
+	"devDependencies": {
+		"oxlint": "1.87.0",
+		"oxlint-tsgolint": "7.0.2003"
 	},
 	"peerDependencies": {
 		"oxlint": "^1.87.0",
@@ -34,17 +46,5 @@
 		"oxlint-tsgolint": {
 			"optional": true
 		}
-	},
-	"dependencies": {
-		"local-pkg": "1.2.1"
-	},
-	"devDependencies": {
-		"oxlint": "1.87.0",
-		"oxlint-tsgolint": "7.0.2003"
-	},
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org"
-	},
-	"sideEffects": false
+	}
 }

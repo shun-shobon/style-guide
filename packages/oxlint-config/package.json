@@ -36,7 +36,7 @@
 	},
 	"devDependencies": {
 		"oxlint": "1.87.0",
-		"oxlint-tsgolint": "7.0.2003"
+		"oxlint-tsgolint": "7.0.2004"
 	},
 	"peerDependencies": {
 		"oxlint": "^1.87.0",

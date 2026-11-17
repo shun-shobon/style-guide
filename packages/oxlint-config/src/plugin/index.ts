@@ -1,8 +1,9 @@
 import { noInfiniteFor } from "./rules/no-infinite-for";
 import { noReactNamespace } from "./rules/no-react-namespace";
 import { nullishComparison } from "./rules/nullish-comparison";
+import type { Plugin } from "./types";
 
-export default {
+const plugin: Plugin = {
 	meta: { name: "shun-shobon" },
 	rules: {
 		"no-infinite-for": noInfiniteFor,
@@ -10,3 +11,5 @@ export default {
 		"nullish-comparison": nullishComparison,
 	},
 };
+
+export default plugin;

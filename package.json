@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@shun-shobon/oxfmt-config": "workspace:*",
 		"@shun-shobon/oxlint-config": "workspace:*",
-		"@types/node": "26.6.6",
+		"@types/node": "26.6.10",
 		"oxfmt": "0.80.0",
 		"oxlint": "1.95.0",
 		"oxlint-tsgolint": "7.0.2008",
